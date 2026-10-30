@@ -20,6 +20,7 @@ export interface ManagedCodeGraphService {
   /** Trusted in-process launcher only; never exposed as HTTP/MCP issuance. */
   issue(metadata: ManagedLaunchMetadata): ManagedLaunchGrant;
   revoke(scope: Readonly<ManagedScope>): void;
+  renew?(scope: Readonly<ManagedScope>): void;
   stop(): Promise<void>;
   /** The start factory has already bound its listener; repeat listen is idempotent. */
   listen(): Promise<void>;
@@ -102,6 +103,7 @@ export async function startManagedCodeGraphService(options: ManagedCodeGraphOpti
     url: transport.url, hookUrl: new URL('/hooks', transport.url).href,
     issue: (metadata: ManagedLaunchMetadata) => authority.issue(metadata),
     revoke: (scope: Readonly<ManagedScope>) => authority.revoke(scope),
+    ...(typeof authority.renew === 'function' ? { renew: authority.renew.bind(authority) } : {}),
     listen: async () => { if (stopped) throw new Error('Managed CodeGraph service is closed'); },
     address: () => transport.address(), health: () => transport.health(), close, stop: close,
   });

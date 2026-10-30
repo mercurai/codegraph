@@ -21,7 +21,7 @@ interface Reply { status: number; body: JsonRpcResponse | null; headers: http.In
 interface Observation { state: number; project: string; tool: string }
 interface ChildReply {
   id?: number; ready?: boolean; ok?: boolean; error?: string; value?: unknown;
-  url?: string; hookUrl?: string; engineStarts?: number; listens?: number; barrier?: string;
+  url?: string; hookUrl?: string; engineStarts?: number; listens?: number; barrier?: string; hasRenew?: boolean;
 }
 
 const childScript = `
@@ -77,6 +77,7 @@ process.on('message', async (message) => {
     let value;
     if (message.op === 'issue') value = service.issue(message.value);
     else if (message.op === 'revoke') value = service.revoke(message.value);
+    else if (message.op === 'renew') value = service.renew(message.value);
     else if (message.op === 'advance') { now += message.value; value = now; }
     else if (message.op === 'stop') value = await service.stop();
     else if (message.op === 'observations') value = observations;
@@ -93,12 +94,25 @@ process.on('message', async (message) => {
 });
 (async () => {
   try {
+    if (settings.legacyAuthority) {
+      const securityModule = require(path.join(process.argv[1], 'mcp/managed-security.js'));
+      const load = securityModule.loadManagedSecurity;
+      securityModule.loadManagedSecurity = async () => {
+        const security = await load();
+        return { ...security, createSharedLaunchAuthority(options) {
+          const authority = security.createSharedLaunchAuthority(options);
+          if (typeof authority.renew !== 'function') throw new Error('Renewable fixture package required');
+          const { renew, ...legacy } = authority;
+          return legacy;
+        } };
+      };
+    }
     const { startManagedCodeGraphService } = require(path.join(process.argv[1], 'mcp/managed-service.js'));
     service = await startManagedCodeGraphService({ now: () => new Date(now), ttlMs: ${ttlMs},
       maxIdentities: 64, maxLaunches: 8, mcpServerName: 'codegraph',
       http: { host: '127.0.0.1', port: 0, allowedOrigins: [], maxBodyBytes: 4096, ...settings.http },
       engine: { watch: false, queryPool: false, maxOpenProjects: 2, ...settings.engine } });
-    process.send({ ready: true, url: service.url, hookUrl: service.hookUrl, engineStarts, listens });
+    process.send({ ready: true, url: service.url, hookUrl: service.hookUrl, engineStarts, listens, hasRenew: typeof service.renew === 'function' });
   } catch (error) {
     process.send({ ready: false, error: error instanceof Error ? error.message : 'Startup failed', engineStarts, listens });
   }
@@ -177,6 +191,7 @@ export async function resolve(specifier, context, nextResolve) {
   afterAll(() => { if (fixture) fs.rmSync(fixture, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 }); });
 
   async function start(expectReady = true, settings: {
+    legacyAuthority?: boolean;
     http?: { maxSessions?: number; maxConversations?: number };
     engine?: { watch?: boolean; maxOpenProjects?: number };
   } = {}): Promise<ChildReply> {
@@ -302,6 +317,38 @@ export async function resolve(specifier, context, nextResolve) {
     expect(observations.map((entry) => entry.project)).toEqual([projectA, projectA, projectA]);
     expect(observations[0]!.state).not.toBe(observations[1]!.state);
     expect(observations[0]!.state).toBe(observations[2]!.state);
+  });
+
+  it.each(['codex', 'claude-code'] as const)('renews %s capabilities and native identity beyond their original expiry', async (provider) => {
+    expect((await start()).hasRenew).toBe(true);
+    const grant = await issue(provider); const connection = await connect(grant);
+    const untouched = await issue();
+    const meta = provider === 'codex'
+      ? { threadId: 'root', sessionId: 'root' }
+      : { 'claudecode/toolUseId': 'use-renewed' };
+    const registration = provider === 'codex'
+      ? { hook_event_name: 'SessionStart', session_id: 'root', cwd: projectA }
+      : { hook_event_name: 'PreToolUse', session_id: 'root', tool_use_id: 'use-renewed',
+          cwd: projectA, tool_name: 'mcp__codegraph__' + connection.tool };
+    expect((await hook(grant, registration)).status).toBe(202);
+    expect(resultText(await nativeCall(connection, meta))).toContain('managedAlpha');
+    expect((await control('advance', ttlMs / 2)).ok).toBe(true);
+    expect((await control('renew', grant.scope)).ok).toBe(true);
+    expect((await control('advance', ttlMs / 2 + 1)).ok).toBe(true);
+    expect(resultText(await nativeCall(connection, meta))).toContain('managedAlpha');
+    expect((await hook(grant, registration)).status).toBe(202);
+    expect((await hook(untouched, { hook_event_name: 'SessionStart', session_id: 'expired', cwd: projectA })).status).toBe(401);
+    const state = (await control('observations')).value as Observation[];
+    expect(state).toHaveLength(2);
+    expect(state[0]!.state).toBe(state[1]!.state);
+    expect((await control('inspect')).value).toMatchObject({ listens: 1, health: { transportSessions: 1 } });
+  });
+
+  it('starts without exposing renewal when the real authority lacks that optional method', async () => {
+    expect((await start(true, { legacyAuthority: true })).hasRenew).toBe(false);
+    const grant = await issue(); const connection = await connect(grant);
+    expect((await hook(grant, { hook_event_name: 'SessionStart', session_id: 'legacy', cwd: projectA })).status).toBe(202);
+    expect(resultText(await nativeCall(connection, { threadId: 'legacy', sessionId: 'legacy' }))).toContain('managedAlpha');
   });
 
   it('registers Claude native tool-use identity using the real discovered tool catalog', async () => {

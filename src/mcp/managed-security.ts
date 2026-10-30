@@ -44,6 +44,7 @@ export interface ManagedLaunchAuthority {
   metadata(scope: Readonly<ManagedScope>): Readonly<ManagedLaunchMetadata>;
   isActive(scope: Readonly<ManagedScope>): boolean;
   revoke(scope: Readonly<ManagedScope>): void;
+  renew?(scope: Readonly<ManagedScope>): void;
   close(): void;
 }
 
@@ -63,6 +64,7 @@ export interface ManagedSecurityModules {
 export interface ManagedControlledService {
   issue(metadata: ManagedLaunchMetadata): ManagedLaunchGrant;
   revoke(scope: Readonly<ManagedScope>): void;
+  renew?(scope: Readonly<ManagedScope>): void;
   listen(): Promise<void>;
   address(): AddressInfo;
   health(): { state: 'starting' | 'ready' | 'draining' | 'closed'; transportSessions: number;

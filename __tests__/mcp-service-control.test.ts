@@ -18,7 +18,7 @@ const { WASM_RUNTIME_FLAGS } = require('../dist/extraction/wasm-runtime-flags') 
 type RecordValue = Record<string, unknown>;
 interface Frame { type: string; value: RecordValue }
 interface Grant { handle: string; mcpCapability: string; hookCapability: string }
-interface Ready { generation: string; mcpUrl: string; hooksUrl: string; healthUrl: string }
+interface Ready { generation: string; mcpUrl: string; hooksUrl: string; healthUrl: string; renew?: true }
 interface Reply { status: number; headers: http.IncomingHttpHeaders; body: JsonRpcResponse | null }
 
 function deferred<T>() {
@@ -38,7 +38,7 @@ const path = require('path');
 const childProcess = require('child_process');
 const net = require('net');
 const root = process.argv[1], mode = process.argv[2];
-let engineStarts = 0, listens = 0, spawnAttempts = 0, stopFailure = false, gate;
+let engineStarts = 0, listens = 0, spawnAttempts = 0, stopFailure = false, gate, now = 100000;
 const report = value => process.send?.(value);
 if (mode === 'import' || mode === 'missing-flags') {
   for (const name of ['spawn', 'spawnSync', 'exec', 'execSync', 'execFile', 'execFileSync', 'fork']) {
@@ -79,10 +79,24 @@ async function run() {
       gate = { workspace: message.workspace, held, release, entered: false };
     } else if (message.op === 'release') { gate?.release(); gate = undefined; }
     else if (message.op === 'stop-failure') stopFailure = true;
+    else if (message.op === 'advance') now += message.advanceMs;
     setImmediate(() => report({ event: 'fixture-ack', id: message.id, engineStarts, listens }));
   });
   try {
-    await require(path.join(root, 'mcp/service-main.js')).main(process.stdin, process.stdout, () => new Date(100000));
+    if (mode === 'legacy-authority') {
+      const securityModule = require(path.join(root, 'mcp/managed-security.js'));
+      const load = securityModule.loadManagedSecurity;
+      securityModule.loadManagedSecurity = async () => {
+        const security = await load();
+        return { ...security, createSharedLaunchAuthority(options) {
+          const authority = security.createSharedLaunchAuthority(options);
+          if (typeof authority.renew !== 'function') throw new Error('Renewable fixture package required');
+          const { renew, ...legacy } = authority;
+          return legacy;
+        } };
+      };
+    }
+    await require(path.join(root, 'mcp/service-main.js')).main(process.stdin, process.stdout, () => new Date(now));
     report({ event: 'done', failed: false, engineStarts, listens, spawnAttempts });
   } catch (error) {
     report({ event: 'done', failed: true, errorCode: error?.code ?? null, engineStarts, listens, spawnAttempts });
@@ -203,9 +217,9 @@ export async function resolve(specifier, context, nextResolve) {
           await wait();
         }
       },
-      async fixture(op: string, workspace?: string): Promise<RecordValue> {
+      async fixture(op: string, workspace?: string, advanceMs?: number): Promise<RecordValue> {
         const id = ++sequence;
-        child.send({ op, id, workspace });
+        child.send({ op, id, workspace, advanceMs });
         return channel.event('fixture-ack', id);
       },
       write: (type: string, value: unknown) => child.stdin.write(frame(type, value)),
@@ -317,6 +331,31 @@ export async function resolve(specifier, context, nextResolve) {
     expect(await channel.fixture('checkpoint')).toMatchObject({ engineStarts: 1, listens: 1 });
     expect((await rpc(channel, ready, 'shutdown')).result).toEqual({ closed: true });
     expect(await channel.exited).toBe(0); expect(channel.cleanOutput()).toBe(true);
+  });
+
+  it('advertises renewal and keeps the same private grant usable beyond its original expiry', async () => {
+    const channel = start(); const ready = await bootstrap(channel);
+    expect(ready.renew).toBe(true);
+    const grant = await issue(channel, ready); const connection = await connect(ready, grant, projectA);
+    expect(textOf(await query(ready, grant, connection, 'controlAlpha'))).toContain('export function controlAlpha');
+    await channel.fixture('advance', undefined, 30_000);
+    expect((await rpc(channel, ready, 'renew', { handle: grant.handle })).result).toEqual({ renewed: true });
+    await channel.fixture('advance', undefined, 30_001);
+    expect((await rpc(channel, ready, 'status')).ok).toBe(true);
+    expect(textOf(await query(ready, grant, connection, 'controlAlpha'))).toContain('export function controlAlpha');
+    expect((await send(ready.hooksUrl, { hook_event_name: 'SessionStart', session_id: 'late', cwd: projectA }, grant.hookCapability)).status).toBe(202);
+    expect((await rpc(channel, ready, 'renew', { handle: grant.handle })).result).toEqual({ renewed: true });
+    expect(await channel.fixture('checkpoint')).toMatchObject({ engineStarts: 1, listens: 1 });
+    expect(channel.leaked(grant.mcpCapability) || channel.leaked(grant.hookCapability)).toBe(false);
+  });
+
+  it('omits the Ready renewal flag and serves requests with a legacy authority', async () => {
+    const channel = start('legacy-authority'); const ready = await bootstrap(channel);
+    expect(Object.hasOwn(ready, 'renew')).toBe(false);
+    const grant = await issue(channel, ready); const connection = await connect(ready, grant, projectA);
+    expect(textOf(await query(ready, grant, connection, 'controlAlpha'))).toContain('export function controlAlpha');
+    expect((await rpc(channel, ready, 'shutdown')).result).toEqual({ closed: true });
+    expect(await channel.exited).toBe(0);
   });
 
   it.each(['extra', 'invalid-limit', 'invalid-watch', 'invalid-host', 'wrong-kind'])('rejects bootstrap %s before an engine or listener exists', async (variant) => {
