@@ -14,7 +14,7 @@ import * as os from 'os';
 import * as path from 'path';
 import type CodeGraph from '../index';
 import { resolveServerRoot } from '../directory';
-import { ToolHandler } from './tools';
+import { ToolHandler, MAX_CACHED_PROJECTS } from './tools';
 import { WslSharedIndexError } from '../db/wsl-shared-index';
 import { DatabaseOpenError, isDatabaseOpenFailure } from '../db/open-error';
 import type { NodeSqliteUnavailableError } from '../db/node-sqlite';
@@ -45,6 +45,12 @@ function reportableOpenFailure(err: unknown): WslSharedIndexError | DatabaseOpen
 }
 
 export interface MCPEngineOptions {
+  /** Shared HTTP service: accept explicit projects without selecting a default root. */
+  explicitProjectsOnly?: boolean;
+  /** Hard project admission; shared HTTP defaults to MAX_CACHED_PROJECTS. */
+  maxOpenProjects?: number;
+  /** Maximum waiting worker jobs (running workers are counted separately). */
+  maxQueuedJobs?: number;
   /** Serve existing index contents without syncing, watching, or claiming a writer slot. */
   readOnly?: boolean;
   /**
@@ -97,7 +103,8 @@ export class MCPEngine {
   // Retained synchronization ownership for each cached explicit project.
   private explicitProjects = new Map<CodeGraph, ProjectLease>();
   private defaultLease: ProjectLease | null = null;
-  private opts: Required<Omit<MCPEngineOptions, 'writerLockRoot' | 'queryPoolDefaultMax'>> & Pick<MCPEngineOptions, 'queryPoolDefaultMax'>;
+  private opts: Required<Omit<MCPEngineOptions, 'writerLockRoot' | 'queryPoolDefaultMax' | 'maxOpenProjects' | 'maxQueuedJobs'>>
+    & Pick<MCPEngineOptions, 'queryPoolDefaultMax' | 'maxQueuedJobs'>;
   private closed = false;
   private stopPromise: Promise<void> | null = null;
   // Off-loop read-tool pool. Workers each hold their own WAL read connections;
@@ -105,8 +112,15 @@ export class MCPEngine {
   private queryPool: QueryPool | null = null;
 
   constructor(opts: MCPEngineOptions = {}) {
-    this.opts = { readOnly: opts.readOnly ?? false, watch: opts.watch ?? true, queryPool: opts.queryPool ?? false, queryPoolDefaultMax: opts.queryPoolDefaultMax };
+    if (opts.explicitProjectsOnly && opts.writerLockRoot) {
+      throw new Error('Explicit-project-only engines acquire writer ownership per project');
+    }
+    this.opts = { explicitProjectsOnly: opts.explicitProjectsOnly ?? false, readOnly: opts.readOnly ?? false, watch: opts.watch ?? true,
+      queryPool: opts.queryPool ?? false, queryPoolDefaultMax: opts.queryPoolDefaultMax, maxQueuedJobs: opts.maxQueuedJobs };
     this.toolHandler = new ToolHandler(null);
+    if (opts.explicitProjectsOnly || opts.maxOpenProjects !== undefined) {
+      this.toolHandler.setMaxOpenProjects(opts.maxOpenProjects ?? MAX_CACHED_PROJECTS);
+    }
     this.toolHandler.setProjectLifecycle({
       open: (root, open) => {
         // Explicit projects and read-only fallbacks also hold SQLite handles.
@@ -138,6 +152,7 @@ export class MCPEngine {
       }
       this.writerLockRoot = opts.writerLockRoot;
     }
+    if (this.opts.explicitProjectsOnly) this.maybeStartPool(null);
   }
 
   /**
@@ -158,7 +173,8 @@ export class MCPEngine {
       return;
     }
     try {
-      this.queryPool = new QueryPool({ root, size });
+      this.queryPool = new QueryPool({ root, size, maxQueuedJobs: this.opts.maxQueuedJobs,
+        waitForCompletion: this.opts.explicitProjectsOnly });
       this.toolHandler.setQueryPool(this.queryPool);
       process.stderr.write(`[CodeGraph MCP] Query pool: up to ${size} worker thread(s) for concurrent reads.\n`);
     } catch (err) {
@@ -175,6 +191,7 @@ export class MCPEngine {
    * first `ensureInitialized` call.
    */
   setProjectPathHint(projectPath: string): void {
+    if (this.opts.explicitProjectsOnly) throw new Error('Explicit-project-only engines cannot select a default project');
     this.projectPath = projectPath;
     this.toolHandler.setDefaultProjectHint(projectPath);
   }
@@ -182,6 +199,11 @@ export class MCPEngine {
   /** Whether this engine only reads: no watcher, no sync, no writer slot. */
   isReadOnly(): boolean {
     return this.opts.readOnly;
+  }
+
+  /** Shared service sessions must never initialize an ambient/default project. */
+  isExplicitProjectsOnly(): boolean {
+    return this.opts.explicitProjectsOnly;
   }
 
   /** Project root that the engine resolved on first init (null if none). */
@@ -209,7 +231,7 @@ export class MCPEngine {
    * search misses (just leaves `cg` null so the next call can retry).
    */
   async ensureInitialized(searchFrom: string): Promise<void> {
-    if (this.closed) return;
+    if (this.closed || this.opts.explicitProjectsOnly) return;
     if (this.toolHandler.hasDefaultCodeGraph()) return;
     if (this.initPromise) {
       try { await this.initPromise; } catch { /* let caller retry */ }
@@ -233,7 +255,7 @@ export class MCPEngine {
    * to pick up a project that appeared *after* the engine started.
    */
   retryInitializeSync(searchFrom: string): void {
-    if (this.closed) return;
+    if (this.closed || this.opts.explicitProjectsOnly) return;
     if (this.toolHandler.hasDefaultCodeGraph()) return;
     this.toolHandler.setDefaultProjectHint(searchFrom);
     // Same resolution `doInitialize` used: up-walk, then the bounded workspace

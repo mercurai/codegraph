@@ -97,9 +97,22 @@ interface Job {
   settled: boolean;
   enqueuedAt: number;
   softTimer?: NodeJS.Timeout;
+  options: QueryRunOptions;
+  removeAbortListener?: () => void;
+}
+
+/** In-process ownership data; only routing booleans cross the worker boundary. */
+export interface QueryRunOptions {
+  signal?: AbortSignal;
+  strictWorktree?: boolean;
+  releaseAfterCall?: boolean;
 }
 
 export interface QueryPoolOptions {
+  /** Hard waiting-job bound, excluding running workers. Defaults to 64. */
+  maxQueuedJobs?: number;
+  /** Shared HTTP retains admission until real completion; its transport owns cancellation. */
+  waitForCompletion?: boolean;
   /** Default project root each worker opens at spawn, or null for per-call projects. */
   root: string | null;
   /** Max worker threads. Defaults to `clamp(cores-1, 1, 16)`. */
@@ -167,6 +180,10 @@ export class QueryPool {
   // away — what destroy() waits on before terminating it (see
   // WORKER_START_SETTLE_MS).
   private starts = new Map<PoolWorker, { settled: Promise<void>; settle: () => void }>();
+  /** Retirement owns the in-flight job and worker slot until the actual exit event. */
+  private readonly retirements = new Map<PoolWorker, Promise<void>>();
+  private readonly exits = new Map<PoolWorker, { exited: Promise<void>; resolve: () => void }>();
+  private destroyPromise: Promise<void> | undefined;
   private nextId = 1;
   private totalCrashes = 0;
   private destroyed = false;
@@ -176,8 +193,13 @@ export class QueryPool {
   private readonly maxRetries: number;
   private readonly createWorker: () => PoolWorker;
   private readonly startSettleMs: number;
+  private readonly maxQueuedJobs: number;
+  private readonly waitForCompletion: boolean;
 
   constructor(opts: QueryPoolOptions) {
+    this.maxQueuedJobs = opts.maxQueuedJobs ?? 64;
+    if (!Number.isSafeInteger(this.maxQueuedJobs) || this.maxQueuedJobs < 1) throw new Error('maxQueuedJobs must be a positive integer');
+    this.waitForCompletion = opts.waitForCompletion ?? false;
     this.root = opts.root;
     this.maxSize = Math.max(1, Math.min(opts.size ?? Math.max(1, os.cpus().length - 1), MAX_POOL_SIZE));
     this.softTimeoutMs = opts.softTimeoutMs ?? resolveBusyTimeoutMs();
@@ -233,16 +255,24 @@ export class QueryPool {
     let settle!: () => void;
     const settled = new Promise<void>((resolve) => { settle = resolve; });
     this.starts.set(w, { settled, settle });
+    let resolveExit!: () => void;
+    const exited = new Promise<void>((resolve) => { resolveExit = resolve; });
+    this.exits.set(w, { exited, resolve: resolveExit });
     w.on('message', (m) => this.onMessage(w, (m ?? {}) as WorkerMessage));
     w.on('error', () => { this.startSettled(w); this.onWorkerGone(w); });
-    w.on('exit', (code) => { this.startSettled(w); if (code !== 0) this.onWorkerGone(w); });
+    w.on('exit', (code) => {
+      this.exits.get(w)?.resolve();
+      this.startSettled(w);
+      if (code !== 0) this.onWorkerGone(w);
+      if (!this.retirements.has(w)) this.exits.delete(w);
+    });
   }
 
   private onMessage(w: PoolWorker, m: WorkerMessage): void {
     // Before the retired-worker check: destroy() waits on this for a worker
     // it has already let go of.
     if (m?.type === 'ready') this.startSettled(w);
-    if (!m || !this.workers.has(w)) return; // ignore late messages from retired workers
+    if (!m || !this.workers.has(w) || this.retirements.has(w)) return; // ignore late results during retirement
     if (m.type === 'ready') {
       if (!this.pendingWorkers.delete(w)) return; // already handled this handshake
       if (m.ok === false) {
@@ -252,6 +282,13 @@ export class QueryPool {
       this.everReady = true;
       this.idle.push(w);
       this.drain();
+      return;
+    }
+    if (m.type === 'retire') {
+      const job = this.inflight.get(w);
+      if (!job || job.id !== m.id) return;
+      this.totalCrashes++;
+      void this.retireWorker(w, m.result ?? { isError: true, content: [{ type: 'text', text: 'codegraph worker reader cleanup failed.' }] });
       return;
     }
     if (m.type === 'result') {
@@ -267,7 +304,7 @@ export class QueryPool {
   // retry its in-flight job once; a job that keeps crashing workers fails
   // gracefully so it can't loop the pool forever.
   private onWorkerGone(w: PoolWorker): void {
-    if (!this.workers.has(w)) return; // already handled (error+exit both fire)
+    if (!this.workers.has(w) || this.retirements.has(w)) return; // retirement owns its exit
     this.workers.delete(w);
     this.pendingWorkers.delete(w);
     this.idle = this.idle.filter((x) => x !== w);
@@ -277,7 +314,7 @@ export class QueryPool {
     try { void w.terminate(); } catch { /* already gone */ }
     if (this.healthy) this.spawnOne(); // keep capacity
     if (job) {
-      if (job.retries < this.maxRetries && this.healthy) {
+      if (job.retries < this.maxRetries && this.healthy && !job.options.signal?.aborted) {
         job.retries++;
         this.queue.unshift(job); // head of line — retry promptly
       } else {
@@ -285,6 +322,37 @@ export class QueryPool {
       }
     }
     this.drain();
+  }
+
+  /** Never release a job whose worker may still own SQLite/read resources. */
+  private retireWorker(w: PoolWorker, result: ToolResult): Promise<void> {
+    const existing = this.retirements.get(w);
+    if (existing) return existing;
+    const job = this.inflight.get(w);
+    const exit = this.exits.get(w);
+    if (!job || !exit) return Promise.resolve();
+    let finish!: () => void;
+    const retired = new Promise<void>((resolve) => { finish = resolve; });
+    this.retirements.set(w, retired);
+    // Leave workers/inflight populated: limits count the retiring owner until
+    // confirmed exit. Its late result is ignored by onMessage above.
+    if (job.softTimer) clearTimeout(job.softTimer);
+    const retire = async (): Promise<void> => {
+      try { await w.terminate(); } catch { /* Exit, not a termination attempt, is the ownership proof. */ }
+      await exit.exited;
+      this.workers.delete(w);
+      this.pendingWorkers.delete(w);
+      this.idle = this.idle.filter((candidate) => candidate !== w);
+      this.inflight.delete(w);
+      this.exits.delete(w);
+      this.retirements.delete(w);
+      if (this.healthy) this.spawnOne();
+      this.settle(job, result);
+      this.drain();
+      finish();
+    };
+    void retire();
+    return retired;
   }
 
   private drain(): void {
@@ -299,6 +367,12 @@ export class QueryPool {
     ) {
       this.spawnOne();
     }
+    if (!this.healthy) {
+      // No soft backstop exists in shared HTTP mode. Accepted work must settle
+      // when the circuit opens, including exhaustion through factory throws.
+      for (const job of this.queue.splice(0)) this.settle(job, busyGuidance(0));
+      return;
+    }
     while (this.idle.length && this.queue.length) {
       // Skip jobs the backstop already answered.
       let job: Job | undefined;
@@ -306,7 +380,8 @@ export class QueryPool {
       if (!job || job.settled) break;
       const w = this.idle.pop()!;
       this.inflight.set(w, job);
-      w.postMessage({ type: 'call', id: job.id, toolName: job.toolName, args: job.args });
+      w.postMessage({ type: 'call', id: job.id, toolName: job.toolName, args: job.args,
+        context: { strictWorktree: job.options.strictWorktree, releaseAfterCall: job.options.releaseAfterCall } });
     }
   }
 
@@ -314,24 +389,48 @@ export class QueryPool {
     if (job.settled) return; // already answered (by backstop or worker)
     job.settled = true;
     if (job.softTimer) clearTimeout(job.softTimer);
+    job.removeAbortListener?.();
     job.resolve(result);
   }
 
   /** Run a read tool on the pool. Always resolves (never rejects). */
-  run(toolName: string, args: Record<string, unknown>): Promise<ToolResult> {
+  run(toolName: string, args: Record<string, unknown>, options: QueryRunOptions = {}): Promise<ToolResult> {
+    // Settled backstop entries do not consume queue capacity indefinitely.
+    this.queue = this.queue.filter((job) => !job.settled);
+    if (options.signal?.aborted) return Promise.resolve({ content: [{ type: 'text', text: 'Request canceled.' }] });
+    if (!this.healthy || (this.idle.length === 0 && this.queue.length >= this.maxQueuedJobs)) {
+      return Promise.resolve(busyGuidance(0));
+    }
     return new Promise<ToolResult>((resolve) => {
       const job: Job = {
         id: this.nextId++, toolName, args, resolve,
-        retries: 0, settled: false, enqueuedAt: Date.now(),
+        retries: 0, settled: false, enqueuedAt: Date.now(), options,
       };
       // Don't let the caller wait past softTimeoutMs. The worker may still be
       // busy (we can't cancel synchronous CPU), but the CLIENT gets a prompt,
       // success-shaped "retry" instead of a hard timeout.
-      job.softTimer = setTimeout(() => {
-        if (!job.settled) this.settle(job, busyGuidance(Date.now() - job.enqueuedAt));
-      }, this.softTimeoutMs);
-      job.softTimer.unref?.();
+      if (!this.waitForCompletion) {
+        job.softTimer = setTimeout(() => {
+          if (!job.settled) this.settle(job, busyGuidance(Date.now() - job.enqueuedAt));
+        }, this.softTimeoutMs);
+        job.softTimer.unref?.();
+      }
       this.queue.push(job);
+      if (options.signal) {
+        const cancel = (): void => {
+          const index = this.queue.indexOf(job);
+          if (index === -1) {
+            const owner = [...this.inflight].find(([, active]) => active === job)?.[0];
+            if (owner) void this.retireWorker(owner, { content: [{ type: 'text', text: 'Request canceled.' }] });
+            return;
+          }
+          this.queue.splice(index, 1);
+          this.settle(job, { content: [{ type: 'text', text: 'Request canceled.' }] });
+          this.drain();
+        };
+        options.signal.addEventListener('abort', cancel, { once: true });
+        job.removeAbortListener = () => options.signal!.removeEventListener('abort', cancel);
+      }
       this.drain();
     });
   }
@@ -362,22 +461,38 @@ export class QueryPool {
   }
 
   /**
-   * Terminate all workers and answer any outstanding calls gracefully. A worker
-   * still starting up is terminated once it has started (see
-   * WORKER_START_SETTLE_MS); outstanding calls are answered first.
+   * Terminate owned workers. Direct/stdio callers keep their early shutdown
+   * response; shared HTTP callers retain ownership until exit is confirmed.
+   * A worker still starting up waits for startup (see WORKER_START_SETTLE_MS).
    */
-  async destroy(): Promise<void> {
-    if (this.destroyed) return;
+  destroy(): Promise<void> {
+    if (this.destroyPromise) return this.destroyPromise;
     this.destroyed = true;
+    this.destroyPromise = this.destroyWorkers();
+    return this.destroyPromise;
+  }
+
+  private async destroyWorkers(): Promise<void> {
     const ws = [...this.workers];
-    this.workers.clear();
     this.pendingWorkers.clear();
     this.idle = [];
-    for (const job of [...this.inflight.values(), ...this.queue]) {
-      this.settle(job, { isError: true, content: [{ type: 'text', text: 'codegraph is shutting down; retry shortly.' }] });
+    const result: ToolResult = { isError: true, content: [{ type: 'text', text: 'codegraph is shutting down; retry shortly.' }] };
+    for (const job of this.queue.splice(0)) this.settle(job, result);
+    const cleanup: Promise<void>[] = [];
+    for (const w of ws) {
+      const job = this.inflight.get(w);
+      if (this.retirements.has(w) || (this.waitForCompletion && job)) {
+        cleanup.push(this.retireWorker(w, result));
+      } else {
+        // Preserve direct/stdio's early shutdown response contract. HTTP jobs
+        // instead remain reserved until their owned worker confirms exit.
+        if (job) this.settle(job, result);
+        this.inflight.delete(w);
+        this.workers.delete(w);
+        cleanup.push(this.terminateStarted(w));
+      }
     }
-    this.inflight.clear();
-    this.queue = [];
-    await Promise.all(ws.map((w) => this.terminateStarted(w)));
+    await Promise.all(cleanup);
+    this.exits.clear();
   }
 }

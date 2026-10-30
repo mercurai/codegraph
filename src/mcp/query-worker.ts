@@ -23,6 +23,7 @@
 
 import { parentPort, workerData } from 'worker_threads';
 import type { ToolResult } from './tools';
+import { withWorktreeProofScope } from '../sync/worktree';
 
 interface WorkerInit {
   root: string | null;
@@ -33,6 +34,7 @@ interface CallMessage {
   id: number;
   toolName: string;
   args: Record<string, unknown>;
+  context?: { strictWorktree?: boolean; releaseAfterCall?: boolean };
 }
 
 // Mirror the engine's lazy-require of the heavy CodeGraph + tools chain. This
@@ -83,18 +85,29 @@ if (parentPort) {
       });
       return;
     }
+    // Shared-service calls own their reader handles. Closing them BEFORE the
+    // result releases main-thread project admission prevents an idle worker
+    // from retaining a project the shared engine has evicted.
+    const scoped = msg.context?.releaseAfterCall ? new (loadToolHandler())(null) : handler;
+    let result: ToolResult;
     try {
       // executeReadTool already classifies NotIndexed/PathRefusal/internal errors
       // into a ToolResult and never throws — the catch is belt-and-suspenders.
-      const result: ToolResult = await handler.executeReadTool(msg.toolName, msg.args);
-      port.postMessage({ type: 'result', id: msg.id, result });
+      result = await withWorktreeProofScope(() => scoped.executeReadTool(msg.toolName, msg.args), msg.context?.strictWorktree);
     } catch (err) {
-      port.postMessage({
-        type: 'result',
-        id: msg.id,
-        result: errorResult(err instanceof Error ? err.message : String(err)),
-      });
+      result = errorResult(err instanceof Error ? err.message : String(err));
     }
+    if (scoped !== handler) {
+      try { await scoped.closeAll(); }
+      catch {
+        // A failed close may leave a SQLite handle alive. A normal result
+        // would release the main thread's project reservation too early.
+        port.postMessage({ type: 'retire', id: msg.id,
+          result: errorResult('codegraph worker could not release its project reader') });
+        return;
+      }
+    }
+    port.postMessage({ type: 'result', id: msg.id, result });
   };
 }
 

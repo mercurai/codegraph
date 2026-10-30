@@ -33,7 +33,7 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { ChildProcessWithoutNullStreams, spawn } from 'child_process';
+import { ChildProcessWithoutNullStreams, execFileSync, spawn } from 'child_process';
 import * as fs from 'fs';
 import * as net from 'net';
 import * as os from 'os';
@@ -42,8 +42,9 @@ import { CodeGraph } from '../src';
 import { getDaemonSocketPath } from '../src/mcp/daemon-paths';
 import { CodeGraphPackageVersion } from '../src/mcp/version';
 import { once } from 'events';
+import { pathToFileURL } from 'url';
 import { WASM_RUNTIME_FLAGS } from '../src/extraction/wasm-runtime-flags';
-import { recordSpawns, removeSpawnLog, settleLosingCandidates } from './daemon-candidates';
+import { recordedPids, recordSpawns, removeSpawnLog, settleLosingCandidates } from './daemon-candidates';
 
 const BIN = path.resolve(__dirname, '../dist/bin/codegraph.js');
 
@@ -95,7 +96,7 @@ function sendMessage(child: ChildProcessWithoutNullStreams, msg: unknown): void 
   try { child.stdin.write(JSON.stringify(msg) + '\n'); } catch { /* child may be gone */ }
 }
 
-function sendInitialize(child: ChildProcessWithoutNullStreams, rootUri: string, id: number): void {
+function sendInitialize(child: ChildProcessWithoutNullStreams, rootUri: string, id: number, clientName = 'test'): void {
   sendMessage(child, {
     jsonrpc: '2.0',
     id,
@@ -103,7 +104,7 @@ function sendInitialize(child: ChildProcessWithoutNullStreams, rootUri: string, 
     params: {
       protocolVersion: '2024-11-05',
       capabilities: {},
-      clientInfo: { name: 'test', version: '0.0.0' },
+      clientInfo: { name: clientName, version: '0.0.0' },
       rootUri,
     },
   });
@@ -956,3 +957,155 @@ function readWriterInfo(root: string): { pid: number; mode: string } | null {
     return typeof info.pid === 'number' && typeof info.mode === 'string' ? info : null;
   } catch { return null; }
 }
+
+describe('Strict worktree routing through real shared daemons', () => {
+  let fixture: string;
+  let main: string;
+  let linked: string;
+  const clients: SpawnedServer[] = [];
+  const launchRoots = new Set<string>();
+  const env = {
+    CODEGRAPH_STRICT_WORKTREE: '1', CODEGRAPH_NO_DAEMON: '0',
+    CODEGRAPH_DAEMON_INTERNAL: '0', CODEGRAPH_QUERY_POOL_SIZE: '1',
+    CODEGRAPH_DAEMON_IDLE_TIMEOUT_MS: '60000', CODEGRAPH_NO_UPDATE_CHECK: '1',
+    CODEGRAPH_TELEMETRY: '0', CODEGRAPH_MCP_LOG_ATTACH: '1',
+  };
+
+  function git(root: string, ...args: string[]): void {
+    execFileSync('git', args, {
+      cwd: root, stdio: ['ignore', 'pipe', 'pipe'], windowsHide: true, timeout: 10_000,
+    });
+  }
+
+  async function indexBranch(root: string, marker: string): Promise<void> {
+    fs.writeFileSync(path.join(root, 'branch.ts'),
+      `export function branchIdentity() { return '${marker}'; }\n`);
+    const graph = await CodeGraph.init(root);
+    try { await graph.indexAll(); } finally { graph.close(); }
+  }
+
+  function launch(root: string, provider: string): SpawnedServer {
+    launchRoots.add(root);
+    const client = spawnServer(root, env);
+    clients.push(client);
+    sendInitialize(client.child, pathToFileURL(root).href, 1, provider);
+    return client;
+  }
+
+  async function attachedPid(client: SpawnedServer): Promise<number> {
+    const response = await waitFor(() => findResponse(client.stdout, 1), 15000, 25, 'strict initialize');
+    expect(response.error).toBeUndefined();
+    const line = await waitFor(() => client.stderr.find((value) => value.includes('Attached to shared daemon')),
+      15000, 25, 'strict daemon attachment');
+    const match = /\(pid (\d+),/.exec(line);
+    expect(match).not.toBeNull();
+    return Number(match![1]);
+  }
+
+  async function queryBranch(client: SpawnedServer, id: number, projectPath?: string): Promise<string> {
+    sendMessage(client.child, { jsonrpc: '2.0', id, method: 'tools/call', params: {
+      name: 'codegraph_explore', arguments: { query: 'branchIdentity', ...(projectPath ? { projectPath } : {}) },
+    } });
+    const response = await waitFor(() => findResponse(client.stdout, id), 20000, 25, 'strict branch query');
+    expect(response.error).toBeUndefined();
+    expect(response.result.isError).not.toBe(true);
+    return response.result.content.map((item: { text?: string }) => item.text ?? '').join('\n');
+  }
+
+  beforeEach(async () => {
+    fixture = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'cg-strict-real-daemon-')));
+    main = path.join(fixture, 'main');
+    fs.mkdirSync(main);
+    git(main, 'init', '-q');
+    fs.writeFileSync(path.join(main, 'branch.ts'), "export function branchIdentity() { return 'MAIN_TREE_ONLY'; }\n");
+    fs.writeFileSync(path.join(main, '.gitignore'), '.codegraph/\nnested-worktree/\nunindexed-worktree/\n');
+    git(main, 'add', 'branch.ts', '.gitignore');
+    git(main, '-c', 'user.name=CodeGraph Test', '-c', 'user.email=test@codegraph.invalid',
+      '-c', 'commit.gpgsign=false', 'commit', '-q', '-m', 'strict daemon fixture');
+    linked = path.join(main, 'nested-worktree');
+    git(main, 'worktree', 'add', '--detach', '-q', linked);
+    await indexBranch(main, 'MAIN_TREE_ONLY');
+    await indexBranch(linked, 'LINKED_TREE_ONLY');
+  });
+
+  afterEach(async () => {
+    // Only directly spawned clients and recorded candidates below this fresh
+    // fixture are owned by this test. Never enumerate or stop installed daemons.
+    for (const { child } of clients) {
+      if (child.exitCode !== null || child.signalCode !== null) continue;
+      const closed = once(child, 'close');
+      child.kill('SIGKILL');
+      await closed;
+    }
+    for (const root of launchRoots) {
+      await settleLosingCandidates(root, () => readLockPid(root));
+      const pid = readLockPid(root);
+      if (pid && pid !== process.pid && isAlive(pid)) {
+        expect(recordedPids(root)).toContain(pid);
+        process.kill(pid, 'SIGTERM');
+        expect(await waitProcessExit(pid, 10000)).toBe(true);
+      }
+      removeSpawnLog(root);
+    }
+    clients.length = 0;
+    launchRoots.clear();
+    await fs.promises.rm(fixture, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
+  }, 45000);
+
+  it('two stdio clients share the indexed linked-worktree daemon and the survivor keeps querying', async () => {
+    const first = launch(linked, 'claude-code');
+    const second = launch(linked, 'codex');
+    const [firstPid, secondPid] = await Promise.all([attachedPid(first), attachedPid(second)]);
+    expect(firstPid).toBe(secondPid);
+    expect(readLockPid(linked)).toBe(firstPid);
+    expect(countListeningLines(linked)).toBe(1);
+
+    const results = await Promise.all([queryBranch(first, 2), queryBranch(second, 2)]);
+    for (const text of results) {
+      expect(text).toContain("return 'LINKED_TREE_ONLY'");
+      expect(text).not.toContain('MAIN_TREE_ONLY');
+    }
+    expect(readWriterInfo(linked)).toEqual(expect.objectContaining({ pid: firstPid, mode: 'daemon' }));
+    expect(readLockPid(main)).toBeNull();
+
+    const firstClosed = once(first.child, 'close');
+    first.child.stdin.end();
+    await firstClosed;
+    expect(first.child.exitCode).toBe(0);
+    expect(await queryBranch(second, 3)).toContain("return 'LINKED_TREE_ONLY'");
+    expect(readLockPid(linked)).toBe(firstPid);
+    expect(readWriterInfo(linked)?.pid).toBe(firstPid);
+    expect(countListeningLines(linked)).toBe(1);
+  }, 60000);
+
+  it('two indexed worktrees keep distinct writers and results while an unindexed worktree is refused', async () => {
+    const unindexed = path.join(main, 'unindexed-worktree');
+    git(main, 'worktree', 'add', '--detach', '-q', unindexed);
+    const first = launch(main, 'claude-code');
+    const second = launch(linked, 'codex');
+    const [mainPid, linkedPid] = await Promise.all([attachedPid(first), attachedPid(second)]);
+    expect(mainPid).not.toBe(linkedPid);
+    expect(readLockPid(main)).toBe(mainPid);
+    expect(readLockPid(linked)).toBe(linkedPid);
+
+    const [mainText, linkedText] = await Promise.all([queryBranch(first, 2), queryBranch(second, 2)]);
+    expect(mainText).toContain("return 'MAIN_TREE_ONLY'");
+    expect(mainText).not.toContain('LINKED_TREE_ONLY');
+    expect(linkedText).toContain("return 'LINKED_TREE_ONLY'");
+    expect(linkedText).not.toContain('MAIN_TREE_ONLY');
+    expect(readWriterInfo(main)).toEqual(expect.objectContaining({ pid: mainPid, mode: 'daemon' }));
+    expect(readWriterInfo(linked)).toEqual(expect.objectContaining({ pid: linkedPid, mode: 'daemon' }));
+
+    const refused = await queryBranch(first, 3, unindexed);
+    expect(refused).toMatch(/strict worktree routing/);
+    expect(refused).not.toContain('MAIN_TREE_ONLY');
+    expect(refused).not.toContain('LINKED_TREE_ONLY');
+    expect(readLockPid(unindexed)).toBeNull();
+    expect(readWriterInfo(unindexed)).toBeNull();
+    expect(recordedPids(unindexed)).toEqual([]);
+    expect(countListeningLines(main)).toBe(1);
+    expect(countListeningLines(linked)).toBe(1);
+    expect(readLockPid(main)).toBe(mainPid);
+    expect(readLockPid(linked)).toBe(linkedPid);
+  }, 60000);
+});

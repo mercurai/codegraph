@@ -9,6 +9,7 @@ import * as os from 'os';
 import * as path from 'path';
 import { isWslWindowsDrive } from './sync/watch-policy';
 import { loadNodeSqlite } from './db/node-sqlite';
+import { strictWorktreeIndexRefusal } from './sync/worktree';
 
 /** The default per-project data directory name. */
 export const DEFAULT_CODEGRAPH_DIR = '.codegraph';
@@ -361,6 +362,12 @@ export function isSameIndexRoot(a: string, b: string): boolean {
 }
 
 export function findNearestCodeGraphRoot(startPath: string): string | null {
+  const root = findNearestIndexRoot(startPath);
+  return root && !strictWorktreeIndexRefusal(startPath, root) ? root : null;
+}
+
+/** Unfiltered discovery, so a refused route cannot become a child-index scan. */
+function findNearestIndexRoot(startPath: string): string | null {
   let current = path.resolve(startPath);
   const root = path.parse(current).root;
 
@@ -489,12 +496,19 @@ export function resolveServerRoot(
   searchFrom: string,
   opts: { subprojectScan?: boolean } = {},
 ): ServerRootResolution {
-  const up = findNearestCodeGraphRoot(searchFrom);
-  if (up) return { root: up, viaSubScan: false, candidates: [] };
+  const up = findNearestIndexRoot(searchFrom);
+  if (up) {
+    return {
+      root: strictWorktreeIndexRefusal(searchFrom, up) ? null : up,
+      viaSubScan: false,
+      candidates: [],
+    };
+  }
   if (opts.subprojectScan === false) return { root: null, viaSubScan: false, candidates: [] };
   const base = path.resolve(searchFrom);
   if (!eligibleForSubprojectScan(base)) return { root: null, viaSubScan: false, candidates: [] };
-  const subs = findIndexedSubprojectRoots(base);
+  const subs = findIndexedSubprojectRoots(base)
+    .filter((candidate) => !strictWorktreeIndexRefusal(searchFrom, candidate));
   if (subs.length === 1) return { root: subs[0]!, viaSubScan: true, candidates: subs };
   return { root: null, viaSubScan: false, candidates: subs };
 }

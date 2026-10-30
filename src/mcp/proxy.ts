@@ -36,6 +36,9 @@ import { getTelemetry, ClientInfo } from '../telemetry';
 import { installMainThreadWatchdog, WatchdogHandle } from './liveness-watchdog';
 import type { MCPEngine } from './engine';
 import { WORKER_START_SETTLE_MS } from '../worker-teardown';
+import { findNearestCodeGraphRoot, resolveServerRoot } from '../directory';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
 
 /** Default poll cadence for the PPID watchdog (same as the direct server). */
 const DEFAULT_PPID_POLL_MS = 5000;
@@ -266,6 +269,7 @@ export async function runLocalHandshakeProxy(deps: LocalHandshakeDeps): Promise<
   let daemonSocket: net.Socket | null = null;
   let clientInitId: unknown = undefined;   // suppress the daemon's reply to the forwarded initialize
   let clientInitLine: string | undefined;  // replayed to a daemon that comes up mid-session (#2277)
+  let clientWorkspace: string | null = deps.root;
   // Telemetry attribution for the in-process fallback only — calls routed to
   // the daemon are counted by the daemon's own session (which receives the
   // forwarded initialize, clientInfo included), never double-counted here.
@@ -405,10 +409,39 @@ export async function runLocalHandshakeProxy(deps: LocalHandshakeDeps): Promise<
       stdinBuf = stdinBuf.slice(idx + 1);
       if (!line) continue;
       let msg: JsonRpc; try { msg = JSON.parse(line) as JsonRpc; } catch { routeToDaemon(line); continue; }
-      if (msg.method === 'initialize') {
+      const params = msg.params as { arguments?: { projectPath?: unknown } } | undefined;
+      const projectPath = params?.arguments?.projectPath;
+      const strictCall = msg.method === 'tools/call' && process.env.CODEGRAPH_STRICT_WORKTREE === '1';
+      let strictRoot: string | null = null;
+      let strictProjectPath: string | null = null;
+      if (strictCall) {
+        if (typeof projectPath === 'string') {
+          strictProjectPath = path.resolve(clientWorkspace ?? deps.root, projectPath);
+          strictRoot = findNearestCodeGraphRoot(strictProjectPath);
+        } else if (clientWorkspace) {
+          const resolved = resolveServerRoot(clientWorkspace);
+          strictRoot = resolved.root;
+          strictProjectPath = resolved.viaSubScan ? resolved.root : clientWorkspace;
+        }
+      }
+      if (strictCall && !strictRoot) {
+        // Enforce the launcher's policy before buffering or forwarding: a
+        // previously started daemon may still permit borrowed worktree indexes.
+        if (msg.id !== undefined) writeClient({ jsonrpc: '2.0', id: msg.id, result: {
+          content: [{ type: 'text', text: 'No CodeGraph project is indexed for this worktree under strict worktree routing. Use an index inside this worktree.' }],
+        } });
+      } else if (msg.method === 'initialize') {
         clientInitId = msg.id;
         clientInitLine = line;
-        const initParams = (msg.params ?? {}) as { clientInfo?: { name?: unknown; version?: unknown } };
+        const initParams = (msg.params ?? {}) as {
+          rootUri?: unknown; workspaceFolders?: Array<{ uri?: unknown }>;
+          clientInfo?: { name?: unknown; version?: unknown };
+        };
+        const workspaceUri = initParams.rootUri ?? initParams.workspaceFolders?.[0]?.uri;
+        if (workspaceUri !== undefined) {
+          try { clientWorkspace = typeof workspaceUri === 'string' ? fileURLToPath(workspaceUri) : null; }
+          catch { clientWorkspace = null; }
+        }
         if (initParams.clientInfo) {
           telemetryClient = {
             name: typeof initParams.clientInfo.name === 'string' ? initParams.clientInfo.name : undefined,
@@ -433,6 +466,14 @@ export async function runLocalHandshakeProxy(deps: LocalHandshakeDeps): Promise<
         // them on to `initialize`. Answer locally — forwarded, it waited on the
         // daemon connection and was lost if the client closed stdin first. (#2084)
         writeClient({ jsonrpc: '2.0', id: msg.id, error: { code: ErrorCodes.MethodNotFound, message: 'Method not found: server/discover' } });
+      } else if (strictCall && strictRoot) {
+        // Keep the requested path so the daemon can reject a nested repository
+        // absent from its ancestor's index. Only deliberate child adoption
+        // changes that intent to the selected subproject. Explicitly carrying
+        // the path also prevents an older daemon retaining its startup default.
+        routeToDaemon(JSON.stringify({ ...msg, params: {
+          ...params, arguments: { ...params?.arguments, projectPath: strictProjectPath },
+        } }));
       } else {
         routeToDaemon(line);
       }

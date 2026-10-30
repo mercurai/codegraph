@@ -31,6 +31,7 @@ import {
   nestedRepositoryBelow,
   worktreeMismatchWarning,
   worktreeMismatchNotice,
+  withWorktreeProofScope,
   type NestedRepository,
   type WorktreeIndexMismatch,
 } from '../sync/worktree';
@@ -100,6 +101,8 @@ import {
  * malfunctions.
  */
 export class NotIndexedError extends Error {}
+
+class ProjectCapacityError extends Error {}
 
 /**
  * The Windows/WSL shared-index failure (#995) phrased for the agent. It is an
@@ -2001,6 +2004,12 @@ export interface ProjectLifecycle {
   release(cg: CodeGraph): void | Promise<void>;
 }
 
+/** Trusted caller context, never read from client tool arguments. */
+export interface ToolExecutionContext {
+  strictWorktree?: boolean;
+  signal?: AbortSignal;
+}
+
 /**
  * Tool handler that executes tools against a CodeGraph instance
  *
@@ -2012,6 +2021,9 @@ export class ToolHandler {
   // CANONICAL (realpath) index root. Map insertion order doubles as LRU order:
   // a hit re-inserts, and `MAX_CACHED_PROJECTS` bounds the size (#1835).
   private projectCache: Map<string, CodeGraph> = new Map();
+  private maxOpenProjects: number | undefined;
+  /** Request reservations include projects awaiting their first open. */
+  private readonly projectCalls = new Map<string, number>();
   // When each cached root was last handed to a call, and the one timer that
   // releases the oldest once it has been idle long enough (#2087).
   private projectUsedAt: Map<string, number> = new Map();
@@ -2067,6 +2079,46 @@ export class ToolHandler {
   private queryPool: QueryPool | null = null;
 
   constructor(private cg: CodeGraph | null) {}
+
+  /** Optional hard admission bound; the legacy cache remains soft by default. */
+  setMaxOpenProjects(limit: number): void {
+    if (!Number.isSafeInteger(limit) || limit < 1) throw new Error('maxOpenProjects must be a positive integer');
+    this.maxOpenProjects = limit;
+  }
+
+  private async admitProject(projectPath: string): Promise<string | null> {
+    if (this.maxOpenProjects === undefined) return null;
+    const resolved = findNearestCodeGraphRoot(projectPath);
+    if (!resolved) return null; // getCodeGraph returns the existing not-indexed guidance.
+    const root = canonicalPath(resolved);
+    if (!this.projectCalls.has(root) && !this.projectCache.has(root)) {
+      if (this.projectSlots() >= this.maxOpenProjects) {
+        const idle = [...this.projectCache].find(([key, graph]) =>
+          !this.projectCalls.has(key) && !this.projectGates.has(graph) && !graph.isIndexing());
+        if (idle) await this.releaseCachedProject(idle[0], idle[1]);
+      }
+      if (this.projectSlots() >= this.maxOpenProjects) {
+        throw new ProjectCapacityError('CodeGraph project capacity is busy; retry this call after another project finishes.');
+      }
+    }
+    if (this.closing) throw new ProjectCapacityError('CodeGraph is closing; retry with a connected service.');
+    this.projectCalls.set(root, (this.projectCalls.get(root) ?? 0) + 1);
+    return root;
+  }
+
+  private projectSlots(): number {
+    return new Set([...this.projectCache.keys(), ...this.projectCalls.keys()]).size + this.pendingCloses;
+  }
+
+  private async releaseCachedProject(root: string, graph: CodeGraph): Promise<void> {
+    this.projectCache.delete(root);
+    this.projectUsedAt.delete(root);
+    this.pendingCloses++;
+    try {
+      if (this.projectLifecycle) await this.projectLifecycle.release(graph);
+      else graph.close();
+    } finally { this.pendingCloses--; this.trimProjects(); }
+  }
 
   /**
    * Engine-only: attach (or detach with null) the worker-thread query pool. The
@@ -2899,9 +2951,21 @@ export class ToolHandler {
     toolName: string,
     args: Record<string, unknown>,
     sessionState?: ExploreSessionState,
+    context?: ToolExecutionContext,
+  ): Promise<ToolResult> {
+    return withWorktreeProofScope(() => this.executeInWorktreeScope(toolName, args, sessionState, context), context?.strictWorktree);
+  }
+
+  private async executeInWorktreeScope(
+    toolName: string,
+    args: Record<string, unknown>,
+    sessionState?: ExploreSessionState,
+    context?: ToolExecutionContext,
   ): Promise<ToolResult> {
     if (this.closing) return this.textResult('This MCP session is closing; retry with a connected session.');
+    if (context?.signal?.aborted) return this.textResult('Request canceled.');
     this.activeCalls++;
+    let admittedRoot: string | null = null;
     try {
       // Block the first tool call on the engine's post-open reconcile so we
       // never serve rows for files deleted/edited while no MCP server was
@@ -2933,8 +2997,10 @@ export class ToolHandler {
       // serve it. Resolved on the main thread so the watcher lives here even
       // when dispatch is off-loaded to a worker.
       if (typeof pathCheck === 'string') {
+        admittedRoot = await this.admitProject(pathCheck);
         await this.awaitProjectGate(pathCheck);
       }
+      if (context?.signal?.aborted) return this.textResult('Request canceled.');
       // The `path` and `pattern` properties used by codegraph_files are
       // also path-shaped — apply the same cap.
       if (args.path !== undefined) {
@@ -2948,6 +3014,7 @@ export class ToolHandler {
 
       const project = await this.getCodeGraph(args.projectPath as string | undefined);
       await this.awaitIndexRecovery(project);
+      if (context?.signal?.aborted) return this.textResult('Request canceled.');
       // Recover a watcher disabled by prolonged lock contention on the next call.
       // The stale banner remains until the watcher finishes its full scan;
       // frequent calls cannot bypass its cooldown (#1959).
@@ -2992,8 +3059,13 @@ export class ToolHandler {
       const projectPath = pooled ? args.projectPath ?? this.cg?.getProjectRoot() : undefined;
       const wasDegraded = project.isWatcherDegraded?.();
       const raw = (pooled && projectPath)
-        ? await this.queryPool!.run(toolName, { ...dispatchArgs, projectPath })
+        ? await this.queryPool!.run(toolName, { ...dispatchArgs, projectPath }, {
+          signal: context?.signal, strictWorktree: context?.strictWorktree, releaseAfterCall: context?.strictWorktree,
+        })
         : await this.executeReadTool(toolName, dispatchArgs);
+      // The actual job has finished (or was removed before dispatch). Its
+      // canceled result must not become a conversation's exploration history.
+      if (context?.signal?.aborted) return this.textResult('Request canceled.');
       const answeredFrom = raw._cgAnswerFiles;
       delete raw._cgAnswerFiles;
       if (!raw.isError && answeredFrom && (wasDegraded || project.isWatcherDegraded?.())) {
@@ -3020,6 +3092,7 @@ export class ToolHandler {
       // Record + STRIP before anything else touches the result: the emission is
       // internal bookkeeping and must never reach the client, whether or not a
       // caller passed session state.
+      if (context?.signal?.aborted) return this.textResult('Request canceled.');
       const result = this.takeExploreEmission(raw, sessionState);
       const withWorktree = this.withWorktreeNotice(result, args.projectPath as string | undefined);
       return this.withStalenessNotice(withWorktree, args.projectPath as string | undefined);
@@ -3030,7 +3103,7 @@ export class ToolHandler {
       // A running `codegraph index` rebuild is the same kind of expected,
       // temporary condition (#1325). Matched by name: tools.ts stays free of
       // the writer-lock module on the MCP startup path.
-      if (err instanceof NotIndexedError || (err as Error | null)?.name === 'RebuildInProgressError') {
+      if (err instanceof NotIndexedError || err instanceof ProjectCapacityError || (err as Error | null)?.name === 'RebuildInProgressError') {
         return this.textResult((err as Error).message);
       }
       // Windows and WSL sharing one index (#995): the user's fix, not a malfunction.
@@ -3051,6 +3124,11 @@ export class ToolHandler {
         'continue without codegraph for this task.'
       );
     } finally {
+      if (admittedRoot) {
+        const remaining = (this.projectCalls.get(admittedRoot) ?? 1) - 1;
+        if (remaining) this.projectCalls.set(admittedRoot, remaining);
+        else this.projectCalls.delete(admittedRoot);
+      }
       this.activeCalls--;
       this.trimProjects();
     }

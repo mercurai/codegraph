@@ -71,6 +71,7 @@ calls; a grep/read exploration is dozens.
 
 ## Limitations
 
+- With \`CODEGRAPH_STRICT_WORKTREE=1\`, a linked worktree cannot borrow another worktree's index. Git must verify its routing; an unavailable Git identity is refused. Use that worktree's own index or your built-in tools. The default remains compatible with parent-index discovery.
 - If a tool reports a project isn't indexed (no \`.codegraph/\`), stop calling codegraph tools for that project for the rest of the session and use your built-in tools there instead. Indexing is the user's decision — mention they can run \`codegraph init\` if it comes up, but don't run it yourself.
 - Index lags file writes by ~1 second.
 - Cross-file resolution is best-effort name matching; ambiguous calls may return multiple candidates.
@@ -104,6 +105,8 @@ default project — but the tools are available and work **per project**:
   \`codegraph_explore\` (and any other codegraph tool). Codegraph resolves the
   nearest \`.codegraph/\` at or above that path and answers from it — for as many
   projects as you like in one session.
+- With \`CODEGRAPH_STRICT_WORKTREE=1\`, linked worktrees need their own index;
+  borrowing another worktree's index or failing to verify Git identity is refused.
 - For a project with no \`.codegraph/\`, use your built-in tools (Read/Grep/Glob)
   for that project. Indexing is the user's decision — don't run it yourself, but
   if it comes up they can run \`codegraph init\` in a project to enable codegraph

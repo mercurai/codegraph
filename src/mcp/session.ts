@@ -13,6 +13,7 @@
  */
 
 import * as path from 'path';
+import * as fs from 'fs';
 import { JsonRpcRequest, JsonRpcNotification, JsonRpcTransport, ErrorCodes } from './transport';
 import { MCPEngine } from './engine';
 import { tools } from './tools';
@@ -91,7 +92,27 @@ function firstRootPath(result: unknown): string | null {
   return fileUriToPath(first.uri);
 }
 
+/** Compare existing workspace identities, refusing relative or missing paths. */
+function sameWorkspace(candidate: unknown, workspace: string): boolean {
+  if (typeof candidate !== 'string' || !path.isAbsolute(candidate)) return false;
+  try { return fs.realpathSync(candidate) === fs.realpathSync(workspace); } catch { return false; }
+}
+
+/** Trusted, request-local context resolved outside the MCP payload's root hints. */
+export interface TrustedMCPCallScope {
+  workspace: string;
+  exploreSession: ExploreSessionState;
+  signal?: AbortSignal;
+}
+
 export interface MCPSessionOptions {
+  /** HTTP launch scope; each tools/call independently resolves its logical conversation. */
+  trustedScope?: {
+    workspace: string;
+    resolveCall(request: JsonRpcRequest): Promise<TrustedMCPCallScope | null>;
+  };
+  /** HTTP and stdio negotiate from their own supported protocol versions. */
+  protocolVersion?: '2024-11-05' | '2025-06-18';
   /**
    * Explicit project path from the `--path` CLI flag. When set, the session
    * will not bother asking the client for `roots/list` — we already know
@@ -120,12 +141,19 @@ export class MCPSession {
    * the session — a reconnecting client starts clean.
    */
   private readonly exploreSession = new ExploreSessionState();
+  private readonly trustedScope: MCPSessionOptions['trustedScope'];
+  private readonly protocolVersion: string;
 
   constructor(
     private transport: JsonRpcTransport,
     private engine: MCPEngine,
     opts: MCPSessionOptions = {},
   ) {
+    if (opts.trustedScope && !engine.isExplicitProjectsOnly()) {
+      throw new Error('Trusted HTTP sessions require an explicit-project-only engine');
+    }
+    this.trustedScope = opts.trustedScope;
+    this.protocolVersion = opts.protocolVersion ?? PROTOCOL_VERSION;
     this.explicitProjectPath = opts.explicitProjectPath ?? null;
   }
 
@@ -166,6 +194,7 @@ export class MCPSession {
         if (isRequest) await this.handleInitialize(message as JsonRpcRequest);
         break;
       case 'initialized':
+      case 'notifications/initialized':
         // Notification that client has finished initialization — no action needed.
         break;
       case 'tools/list':
@@ -209,6 +238,14 @@ export class MCPSession {
       clientInfo?: { name?: unknown; version?: unknown };
     } | undefined;
 
+    if (this.trustedScope) {
+      const roots = [params?.rootUri, ...(params?.workspaceFolders?.map((folder) => folder.uri) ?? [])];
+      if (roots.some((uri) => uri !== undefined && (typeof uri !== 'string' || !sameWorkspace(fileUriToPath(uri), this.trustedScope!.workspace)))) {
+        this.transport.sendError(request.id, ErrorCodes.InvalidParams, 'Workspace roots conflict with authenticated launch scope');
+        return;
+      }
+    }
+
     this.clientSupportsRoots = !!params?.capabilities?.roots;
     if (params?.clientInfo) {
       this.clientInfo = {
@@ -222,7 +259,9 @@ export class MCPSession {
     // with. cwd is NOT used here — we defer it so a roots/list answer can
     // win over it. See issue #196.
     let explicitPath: string | null = null;
-    if (params?.rootUri) {
+    if (this.trustedScope) {
+      explicitPath = this.trustedScope.workspace;
+    } else if (params?.rootUri) {
       explicitPath = fileUriToPath(params.rootUri);
     } else if (params?.workspaceFolders?.[0]?.uri) {
       explicitPath = fileUriToPath(params.workspaceFolders[0].uri);
@@ -246,17 +285,19 @@ export class MCPSession {
     // sub-projects indexed) and never surfaced the tools after a mid-session
     // `codegraph init`. When no explicit path is known yet (roots/list dance
     // pending), cwd is the best predictor of where the default will resolve.
-    const indexed = resolveServerRoot(explicitPath ?? process.cwd()).root !== null;
+    const indexed = this.trustedScope
+      ? fs.existsSync(path.join(this.trustedScope.workspace, '.codegraph'))
+      : resolveServerRoot(explicitPath ?? process.cwd()).root !== null;
 
     // Respond to the handshake BEFORE doing any heavy init — see issue #172.
     this.transport.sendResult(request.id, {
-      protocolVersion: PROTOCOL_VERSION,
+      protocolVersion: this.protocolVersion,
       capabilities: { tools: {} },
       serverInfo: SERVER_INFO,
       instructions: initializeInstructions(indexed ? SERVER_INSTRUCTIONS : SERVER_INSTRUCTIONS_NO_ROOT_INDEX),
     });
 
-    if (explicitPath) {
+    if (explicitPath && !this.trustedScope) {
       // Kick off engine init in the background. If another session in the
       // same daemon already opened the project, `ensureInitialized` is a
       // ~free no-op — N concurrent clients pay exactly one open.
@@ -294,7 +335,25 @@ export class MCPSession {
     }
 
     const toolName = params.name;
-    const toolArgs = params.arguments || {};
+    let toolArgs = params.arguments || {};
+    let exploreSession = this.exploreSession;
+    let signal: AbortSignal | undefined;
+
+    if (this.trustedScope) {
+      const scope = await this.trustedScope.resolveCall(request);
+      if (!scope || !sameWorkspace(scope.workspace, this.trustedScope.workspace)) {
+        this.transport.sendError(request.id, ErrorCodes.InvalidParams, 'Missing or invalid trusted call identity');
+        return;
+      }
+      if (typeof toolArgs !== 'object' || Array.isArray(toolArgs)
+        || ('projectPath' in toolArgs && !sameWorkspace(toolArgs.projectPath, scope.workspace))) {
+        this.transport.sendError(request.id, ErrorCodes.InvalidParams, 'projectPath conflicts with authenticated workspace');
+        return;
+      }
+      toolArgs = { ...toolArgs, projectPath: scope.workspace };
+      exploreSession = scope.exploreSession;
+      signal = scope.signal;
+    }
 
     const tool = tools.find((t) => t.name === toolName);
     if (!tool) {
@@ -310,7 +369,8 @@ export class MCPSession {
     await this.retryInitIfNeeded();
 
     if (process.env.CODEGRAPH_MCP_DEBUG) process.stderr.write(`[mcp-debug] toolsCall ${toolName} id=${String(request.id)} dispatch\n`);
-    const result = await this.engine.getToolHandler().execute(toolName, toolArgs, this.exploreSession);
+    const result = await this.engine.getToolHandler().execute(toolName, toolArgs, exploreSession,
+      this.trustedScope ? { strictWorktree: true, signal } : undefined);
     if (process.env.CODEGRAPH_MCP_DEBUG) process.stderr.write(`[mcp-debug] toolsCall ${toolName} id=${String(request.id)} done\n`);
     this.transport.sendResult(request.id, result);
     // After the reply is on the wire — telemetry must never delay a tool
@@ -327,6 +387,7 @@ export class MCPSession {
    *      that were `codegraph init`'d *after* the server started.
    */
   private async retryInitIfNeeded(): Promise<void> {
+    if (this.trustedScope) return;
     if (this.resolvePromise) {
       try { await this.resolvePromise; } catch { /* fall through to retry */ }
       this.resolvePromise = null;

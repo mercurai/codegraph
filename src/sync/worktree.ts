@@ -20,6 +20,48 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { execFileSync } from 'child_process';
+import { AsyncLocalStorage } from 'async_hooks';
+
+interface GitProof { tree: string; common: string }
+interface GitProofScope { active: boolean; proofs: Map<string, GitProof | null> }
+const gitProofScope = new AsyncLocalStorage<GitProofScope>();
+
+/** One tool request owns its proofs, including across awaits. Never share
+ * them with another request or keep them for inherited background work. */
+export async function withWorktreeProofScope<T>(run: () => Promise<T>, strict = false): Promise<T> {
+  if (!strict && process.env.CODEGRAPH_STRICT_WORKTREE !== '1') return run();
+  const scope: GitProofScope = { active: true, proofs: new Map() };
+  return gitProofScope.run(scope, async () => {
+    try { return await run(); }
+    finally { scope.active = false; scope.proofs.clear(); }
+  });
+}
+
+function activeGitProofScope(): GitProofScope | undefined {
+  const scope = gitProofScope.getStore();
+  return scope?.active ? scope : undefined;
+}
+
+function physicalGitProof(cwd: string): GitProof | null {
+  const key = nativeRealpath(cwd);
+  const cache = activeGitProofScope()?.proofs;
+  if (cache?.has(key)) return cache.get(key)!;
+  // A hook's inherited Git variables must not redirect physical discovery.
+  const env = Object.fromEntries(Object.entries(process.env).filter(([name]) => !/^GIT_/i.test(name)));
+  let proof: GitProof | null = null;
+  try {
+    const lines = execFileSync('git', ['rev-parse', '--show-toplevel', '--git-common-dir'], {
+      cwd: key, env, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+      windowsHide: true, timeout: 5000,
+    }).trim().split(/\r?\n/);
+    if (lines.length === 2 && lines[0] && lines[1]) {
+      proof = { tree: nativeRealpath(lines[0]), common: nativeRealpath(path.resolve(key, lines[1])) };
+    }
+  } catch { /* An unproved identity is refused by strict routing. */ }
+  cache?.set(key, proof);
+  if (proof) cache?.set(proof.tree, proof);
+  return proof;
+}
 
 /**
  * Absolute, symlink-resolved toplevel of the git working tree that `dir`
@@ -30,6 +72,7 @@ import { execFileSync } from 'child_process';
  * is exactly the distinction this module relies on.
  */
 export function gitWorktreeRoot(dir: string): string | null {
+  if (activeGitProofScope()) return physicalGitProof(dir)?.tree ?? null;
   try {
     const out = execFileSync('git', ['rev-parse', '--show-toplevel'], {
       cwd: dir,
@@ -56,6 +99,7 @@ export function gitWorktreeRoot(dir: string): string | null {
  * from a nested repo the parent index already covers. Null when not a repo.
  */
 export function gitCommonDir(dir: string): string | null {
+  if (activeGitProofScope()) return physicalGitProof(dir)?.common ?? null;
   try {
     const out = execFileSync('git', ['rev-parse', '--git-common-dir'], {
       cwd: dir,
@@ -77,6 +121,48 @@ export interface WorktreeIndexMismatch {
   worktreeRoot: string;
   /** The (different) working tree whose `.codegraph` index is being used. */
   indexRoot: string;
+}
+
+/**
+ * Opt-in routing refusal, unlike the best-effort warning below. A Git failure
+ * cannot establish that borrowing an ancestor index is safe. Plain non-Git
+ * projects keep working; separate nested repositories retain their existing
+ * parent-index behavior only when Git proves they are different repositories.
+ */
+export function strictWorktreeIndexRefusal(startPath: string, indexRoot: string): string | null {
+  if (process.env.CODEGRAPH_STRICT_WORKTREE !== '1' && !activeGitProofScope()) return null;
+  const refused = 'Strict worktree routing could not establish an index for this worktree; ' +
+    'use an index inside this worktree instead of borrowing another worktree\'s graph.';
+  let dir = path.resolve(startPath);
+  while (!isDirectory(dir)) {
+    const parent = path.dirname(dir);
+    if (parent === dir) return refused;
+    dir = parent;
+  }
+  dir = nativeRealpath(dir);
+  let gitBoundary: string | null = null;
+  for (let candidate = dir; ;) {
+    try {
+      fs.lstatSync(path.join(candidate, '.git'));
+      gitBoundary = candidate;
+      break;
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== 'ENOENT') return refused;
+    }
+    const parent = path.dirname(candidate);
+    if (parent === candidate) break;
+    candidate = parent;
+  }
+  if (!gitBoundary) return null;
+
+  const requested = physicalGitProof(gitBoundary);
+  if (!requested || requested.tree !== nativeRealpath(gitBoundary)) return refused;
+  // No duplicate Git process when the requested path and index are the same
+  // root. This reuse lives only for this resolution, never across requests.
+  const indexed = nativeRealpath(indexRoot) === requested.tree ? requested : physicalGitProof(indexRoot);
+  if (!indexed) return refused;
+  if (requested.tree === indexed.tree || requested.common !== indexed.common) return null;
+  return refused;
 }
 
 /**
