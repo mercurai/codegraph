@@ -1,0 +1,3198 @@
+[
+  {
+    "number": 351,
+    "title": "fix: include symbol references in file dependents",
+    "url": "https://github.com/colbymchenry/codegraph/pull/351",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T14:08:22Z",
+    "updatedAt": "2026-10-28T00:45:51Z",
+    "closedAt": "2026-10-28T00:45:51Z",
+    "author": {
+      "login": "bohe76"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-affected-semantic-dependents",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "70fb1aeef5aeb6e8e9f9b9fa92552c4af298b6fa",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 353,
+    "title": "docs: add token-cost budget to grep-verification guidance",
+    "url": "https://github.com/colbymchenry/codegraph/pull/353",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T14:14:34Z",
+    "updatedAt": "2026-10-30T16:38:44Z",
+    "closedAt": "2026-10-30T16:38:44Z",
+    "author": {
+      "login": "ckforce"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "d2fb5efb39110c1f4da5e38b1dde3d493f8468e6",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 355,
+    "title": "fix: include class instantiations in callers",
+    "url": "https://github.com/colbymchenry/codegraph/pull/355",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T15:02:14Z",
+    "updatedAt": "2026-10-28T00:45:53Z",
+    "closedAt": "2026-10-28T00:45:53Z",
+    "author": {
+      "login": "bohe76"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-class-instantiation-callers",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "af2236b96e41b069acbee016417281ef57f82348",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 356,
+    "title": "fix: reduce generic context entry noise",
+    "url": "https://github.com/colbymchenry/codegraph/pull/356",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T15:12:16Z",
+    "updatedAt": "2026-10-30T17:12:45Z",
+    "closedAt": "2026-10-30T17:12:45Z",
+    "author": {
+      "login": "bohe76"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-context-generic-term-noise",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "3c449cf9d14aa397d11b18341fa87bcaf97cabb5",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 357,
+    "title": "fix: count file-level tracked YAML/Twig files as indexed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/357",
+    "state": "MERGED",
+    "createdAt": "2026-05-23T16:39:54Z",
+    "updatedAt": "2026-05-29T03:43:50Z",
+    "closedAt": "2026-05-29T03:43:50Z",
+    "author": {
+      "login": "luojiyin1987"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-29T03:43:50Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/issue-317-file-level-index-count",
+    "baseRefOid": "f366222dbd6b7e43047072a9417289b1b02ae457",
+    "headRefOid": "5737fabba9c47da1b44e890643c18cc349a55b52",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "839cf63dcb958b775c38caf1cad6c8aa5b9e1cac"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 358,
+    "title": "fix: improve affected, callers, and context precision",
+    "url": "https://github.com/colbymchenry/codegraph/pull/358",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T16:48:53Z",
+    "updatedAt": "2026-10-28T00:45:56Z",
+    "closedAt": "2026-10-28T00:45:56Z",
+    "author": {
+      "login": "bohe76"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "verify-combined-codegraph-improvements",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "f18ddb81b167c9d530484359d9fd80f3bb9cf4d6",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 360,
+    "title": "feat: support .codegraphignore for excluding files from index",
+    "url": "https://github.com/colbymchenry/codegraph/pull/360",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T17:12:35Z",
+    "updatedAt": "2026-10-30T16:38:48Z",
+    "closedAt": "2026-10-30T16:38:48Z",
+    "author": {
+      "login": "Krislu1221"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/add-codegraphignore-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "98d4d463b8b5e50bd6de49e93bc8fd5c0a46cade",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 361,
+    "title": "feat(markdown): index documentation graph links",
+    "url": "https://github.com/colbymchenry/codegraph/pull/361",
+    "state": "CLOSED",
+    "createdAt": "2026-05-23T19:53:10Z",
+    "updatedAt": "2026-10-30T16:38:52Z",
+    "closedAt": "2026-10-30T16:38:52Z",
+    "author": {
+      "login": "QingNagi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 13
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/md-index-graph-links",
+    "baseRefOid": "f1ca9919435b401b20d7e9afa4297061997b0f99",
+    "headRefOid": "3a73fedae28c3ba00c1036465cf3b7d765e9e458",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 363,
+    "title": "feat(installer): add Antigravity IDE support as a native plugin",
+    "url": "https://github.com/colbymchenry/codegraph/pull/363",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T02:44:38Z",
+    "updatedAt": "2026-10-28T02:00:27Z",
+    "closedAt": "2026-10-28T02:00:27Z",
+    "author": {
+      "login": "miguelarcjr"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/antigravity-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "986e9c6670d648d97c878b10242ffcee0ec8e11d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 364,
+    "title": "Add Godot language and scene graph support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/364",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T07:54:43Z",
+    "updatedAt": "2026-10-30T16:33:03Z",
+    "closedAt": "2026-10-30T16:33:03Z",
+    "author": {
+      "login": "KirisamaMarisa"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "codex/godot-language-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "4e89228a3b3021b658a4950aa53a450724fcdee2",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 365,
+    "title": "Release 0.9.4: framework-aware routing + dynamic-dispatch coverage + retrieval improvements",
+    "url": "https://github.com/colbymchenry/codegraph/pull/365",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T08:57:14Z",
+    "updatedAt": "2026-10-10T06:15:00Z",
+    "closedAt": "2026-05-24T09:41:04Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T09:41:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "architectural-improvements",
+    "baseRefOid": "f366222dbd6b7e43047072a9417289b1b02ae457",
+    "headRefOid": "932f4cbf1b16afe583fc9d7a6d5a7be2bd574315",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "025ebc88d6d708edd3732f5cb68516148719a061"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 367,
+    "title": "docs(readme): answer directly with codegraph, not via an Explore agent",
+    "url": "https://github.com/colbymchenry/codegraph/pull/367",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T09:52:38Z",
+    "updatedAt": "2026-05-24T09:52:46Z",
+    "closedAt": "2026-05-24T09:52:45Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T09:52:45Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/answer-directly-readme",
+    "baseRefOid": "025ebc88d6d708edd3732f5cb68516148719a061",
+    "headRefOid": "77e184536db2575abf7602b9fba10b4d3e0c541a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1f3625a3e94441b5e9e72f2b03f3a4f42d5e860e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 370,
+    "title": "feat: Add HLSL / Shader language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/370",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T14:25:03Z",
+    "updatedAt": "2026-10-30T16:38:56Z",
+    "closedAt": "2026-10-30T16:38:56Z",
+    "author": {
+      "login": "colinchen1984"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/hlsl-shader-support",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "fae8f4ee710172b8afdf0e2d95bbe4bd9668de6d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 371,
+    "title": "add github CI",
+    "url": "https://github.com/colbymchenry/codegraph/pull/371",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T14:58:30Z",
+    "updatedAt": "2026-07-04T11:34:32Z",
+    "closedAt": "2026-07-04T11:34:32Z",
+    "author": {
+      "login": "kongdd"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "CI",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "9d38f5d03b60e58691464d80d83c3f2dd3cca66a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 372,
+    "title": "feat(extraction): add Terraform / HCL support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/372",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T15:14:02Z",
+    "updatedAt": "2026-07-14T01:53:06Z",
+    "closedAt": "2026-07-14T01:53:06Z",
+    "author": {
+      "login": "derekclair"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/terraform-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "0ff9aec676cd1b6653ad31e29af0b262ee796f23",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 373,
+    "title": "Add Julia language support and CI tests",
+    "url": "https://github.com/colbymchenry/codegraph/pull/373",
+    "state": "CLOSED",
+    "createdAt": "2026-05-24T16:32:58Z",
+    "updatedAt": "2026-10-30T16:33:08Z",
+    "closedAt": "2026-10-30T16:33:08Z",
+    "author": {
+      "login": "kongdd"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "julia",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "feae11c98de5e6120aa760a24f6efed5e5b26161",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 375,
+    "title": "Add landing page + Starlight docs site",
+    "url": "https://github.com/colbymchenry/codegraph/pull/375",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T18:20:54Z",
+    "updatedAt": "2026-05-24T18:24:35Z",
+    "closedAt": "2026-05-24T18:21:25Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-24T18:21:25Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/docs-site",
+    "baseRefOid": "1f3625a3e94441b5e9e72f2b03f3a4f42d5e860e",
+    "headRefOid": "2e1a40772c0c368610dbb715450be5fcafa13f46",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "4509b45dd5cb8158324ca544c88ea322ffea7bee"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 376,
+    "title": "docs: link to the website & docs site from the README",
+    "url": "https://github.com/colbymchenry/codegraph/pull/376",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T18:25:15Z",
+    "updatedAt": "2026-05-24T18:25:26Z",
+    "closedAt": "2026-05-24T18:25:24Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T18:25:24Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/readme-website-link",
+    "baseRefOid": "4509b45dd5cb8158324ca544c88ea322ffea7bee",
+    "headRefOid": "177b90fb1d3ccb512bc450905f2774ccceeaa2f1",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "7f30c4f5c8705413b4c4641120cb947d97763795"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 377,
+    "title": "feat: docs-header nav links (Docs · Languages) to match the landing",
+    "url": "https://github.com/colbymchenry/codegraph/pull/377",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T18:27:43Z",
+    "updatedAt": "2026-05-24T18:27:47Z",
+    "closedAt": "2026-05-24T18:27:45Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T18:27:45Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/docs-header-nav-links",
+    "baseRefOid": "7f30c4f5c8705413b4c4641120cb947d97763795",
+    "headRefOid": "11be28ce40abe33acabb608546a4761d3c43e87b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "6a2098b19953396521389bc29526592ee87634bb"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 378,
+    "title": "fix: center docs content on wide screens",
+    "url": "https://github.com/colbymchenry/codegraph/pull/378",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T18:38:31Z",
+    "updatedAt": "2026-05-24T18:38:35Z",
+    "closedAt": "2026-05-24T18:38:33Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T18:38:33Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/docs-content-centering",
+    "baseRefOid": "6a2098b19953396521389bc29526592ee87634bb",
+    "headRefOid": "2e4500677bf73567bc443388966a97085c875140",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "18a99f5f0f94f35cc6679742dd2653a385fb7dba"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 379,
+    "title": "fix: large left-aligned feature icons on the landing",
+    "url": "https://github.com/colbymchenry/codegraph/pull/379",
+    "state": "MERGED",
+    "createdAt": "2026-05-24T18:47:01Z",
+    "updatedAt": "2026-05-24T18:47:06Z",
+    "closedAt": "2026-05-24T18:47:04Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-24T18:47:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/landing-feature-icons",
+    "baseRefOid": "18a99f5f0f94f35cc6679742dd2653a385fb7dba",
+    "headRefOid": "8c83f8a75df40e979cdd2ceda193d923ae6b455a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1be8e7830f7ca37e42a378186b0274e684b1d4d8"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 384,
+    "title": "fix(security): unify path validation to use realpath, removing dead isPathWithinRootReal",
+    "url": "https://github.com/colbymchenry/codegraph/pull/384",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T00:16:24Z",
+    "updatedAt": "2026-06-08T05:11:24Z",
+    "closedAt": "2026-06-08T05:11:24Z",
+    "author": {
+      "login": "matrix9neonebuchadnezzar2199-sketch"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/path-validation-unify",
+    "baseRefOid": "1be8e7830f7ca37e42a378186b0274e684b1d4d8",
+    "headRefOid": "7c8619cd59eb955e92c721e24deadfce847b5a9a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 386,
+    "title": "docs(readme): replace heading with SVG logo and add trendshift badge",
+    "url": "https://github.com/colbymchenry/codegraph/pull/386",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T01:54:54Z",
+    "updatedAt": "2026-06-03T08:41:12Z",
+    "closedAt": "2026-06-03T08:41:12Z",
+    "author": {
+      "login": "ymstar"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/readme-enhance",
+    "baseRefOid": "8629f7ab4cf09c7542a86166a9ca9e22ac52acb7",
+    "headRefOid": "c662ab1a0c23614d6e47d4ce41f556ebd7e777b3",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 394,
+    "title": "fix(extraction): index .mts and .cts files",
+    "url": "https://github.com/colbymchenry/codegraph/pull/394",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T10:16:25Z",
+    "updatedAt": "2026-06-12T09:58:49Z",
+    "closedAt": "2026-06-12T09:58:49Z",
+    "author": {
+      "login": "balloon72"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "codex/fix-mts-cts-indexing",
+    "baseRefOid": "8629f7ab4cf09c7542a86166a9ca9e22ac52acb7",
+    "headRefOid": "7a4c44930b45ce4a3afc8e99f7311bbe6b0600f1",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 395,
+    "title": "feat(haskell): add Haskell support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/395",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T10:21:46Z",
+    "updatedAt": "2026-08-07T08:28:27Z",
+    "closedAt": "2026-07-19T02:02:05Z",
+    "author": {
+      "login": "ichxorya"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "haskell-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "4abb846845cb2d7bd834fe1214ff8b2bd75c195b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 400,
+    "title": "fix(cli): resolve visual disconnect on Windows modern terminals",
+    "url": "https://github.com/colbymchenry/codegraph/pull/400",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T14:31:13Z",
+    "updatedAt": "2026-07-17T11:18:13Z",
+    "closedAt": "2026-07-17T11:18:13Z",
+    "author": {
+      "login": "fyuo863"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/cli-vertical-lines",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "3bd6b771ae3137234e4819950462be61d303a8ca",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 402,
+    "title": "feat(verilog): index Verilog/SystemVerilog with module-instantiation edges",
+    "url": "https://github.com/colbymchenry/codegraph/pull/402",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T15:26:48Z",
+    "updatedAt": "2026-09-19T08:30:43Z",
+    "closedAt": "2026-09-18T14:52:13Z",
+    "author": {
+      "login": "FHYQ-Dong"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 6
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/verilog-systemverilog-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "26610932a9900d98df8802363581274b62b67262",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 404,
+    "title": "feat: add ArkTS (.ets) language extraction support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/404",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T15:51:55Z",
+    "updatedAt": "2026-05-26T09:32:40Z",
+    "closedAt": "2026-05-26T09:32:39Z",
+    "author": {
+      "login": "FurryWolfX"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "1be8e7830f7ca37e42a378186b0274e684b1d4d8",
+    "headRefOid": "399a3a160636268699f76328fd9f397dd4869794",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 405,
+    "title": "feat: add --exclude/--include path flags and --io-batch-size to codegraph index (closes #320)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/405",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T16:08:12Z",
+    "updatedAt": "2026-10-30T16:39:01Z",
+    "closedAt": "2026-10-30T16:39:01Z",
+    "author": {
+      "login": "mvanhorn"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/320-codegraph-index-exclude-include-flags",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "af50cddbf9069f0d2269e9597e6b81cb2fd0a148",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 406,
+    "title": "feat(installer): add Zed editor support to agent installer",
+    "url": "https://github.com/colbymchenry/codegraph/pull/406",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T16:54:37Z",
+    "updatedAt": "2026-10-30T16:39:05Z",
+    "closedAt": "2026-10-30T16:39:05Z",
+    "author": {
+      "login": "SEPURI-SAI-KRISHNA"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/add-zed-editor-support-to-installer",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "d003b8bd05bdc37a948efcd3ea75dbae5e61e35b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 408,
+    "title": "fix(csharp): emit references edges for parameter and return types (#381)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/408",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T17:00:39Z",
+    "updatedAt": "2026-10-27T17:52:49Z",
+    "closedAt": "2026-10-27T17:52:49Z",
+    "author": {
+      "login": "omapache"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/csharp-type-references",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "4388047e80c5632b97078fce49fb24f478ab146c",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 409,
+    "title": "feat(csharp): extract attributes as decorates edges + resolve .NET Attribute suffix",
+    "url": "https://github.com/colbymchenry/codegraph/pull/409",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T17:18:46Z",
+    "updatedAt": "2026-10-30T16:33:12Z",
+    "closedAt": "2026-10-30T16:33:12Z",
+    "author": {
+      "login": "omapache"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/csharp-attributes",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "98be61cff853b9acd59e5bd0e7db3c6a4016c44b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 412,
+    "title": "feat(jvm): resolve Java/Kotlin imports by fully-qualified name",
+    "url": "https://github.com/colbymchenry/codegraph/pull/412",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T21:51:32Z",
+    "updatedAt": "2026-05-27T03:06:53Z",
+    "closedAt": "2026-05-27T03:06:53Z",
+    "author": {
+      "login": "arttttt"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": "2026-05-27T03:06:53Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/kotlin-java-package-imports",
+    "baseRefOid": "3808b4d0a864e2cb24f66d0259cfa3d293622d77",
+    "headRefOid": "168de30020c64117eb8f58806c1004444ec31668",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "34240eb297065b38ab26bc24fb7e34d92c33ab1e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 413,
+    "title": "fix(cli): include resolution + synthesizer edges in indexAll report",
+    "url": "https://github.com/colbymchenry/codegraph/pull/413",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T22:22:13Z",
+    "updatedAt": "2026-05-27T02:09:00Z",
+    "closedAt": "2026-05-27T02:09:00Z",
+    "author": {
+      "login": "arttttt"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-27T02:09:00Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/cli-undercount-resolution-edges",
+    "baseRefOid": "625e5663c439ca9c4dba4df95c5050d1dfc1a2c6",
+    "headRefOid": "7f3a35bb0e7a5f373970a5a36060ad0ede52fc9c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "3808b4d0a864e2cb24f66d0259cfa3d293622d77"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 414,
+    "title": "fix(sync): filesystem-based change detection (catch git pull & non-git edits)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/414",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T22:35:57Z",
+    "updatedAt": "2026-05-25T22:36:12Z",
+    "closedAt": "2026-05-25T22:36:10Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-25T22:36:10Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/filesystem-based-sync",
+    "baseRefOid": "1be8e7830f7ca37e42a378186b0274e684b1d4d8",
+    "headRefOid": "c1bfad3d614dfc30e833422b41d822e49603e2f3",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "4a94696e444e49bdf24ca8421b45bcf844c5e6b5"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 415,
+    "title": "fix: accept files under Windows drive-root projects (Z:\\, C:\\)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/415",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T22:35:57Z",
+    "updatedAt": "2026-10-27T17:47:43Z",
+    "closedAt": "2026-10-27T17:47:43Z",
+    "author": {
+      "login": "Kamilslaoui93"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/windows-drive-root-path-validation",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "e1309c2ab813e135d4d4b7c0ed4d9b6a8228dac1",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 416,
+    "title": "feat(dagger): bridge @Provides / @Binds interface→impl bindings",
+    "url": "https://github.com/colbymchenry/codegraph/pull/416",
+    "state": "CLOSED",
+    "createdAt": "2026-05-25T22:47:38Z",
+    "updatedAt": "2026-05-25T22:49:57Z",
+    "closedAt": "2026-05-25T22:49:54Z",
+    "author": {
+      "login": "arttttt"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/dagger2-bindings",
+    "baseRefOid": "4a94696e444e49bdf24ca8421b45bcf844c5e6b5",
+    "headRefOid": "fde43bf88f22e7e6d2afaaed877e7bf0c13f885e",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 417,
+    "title": "feat(index): default-ignore dependency/build/cache dirs (#407)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/417",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T23:15:36Z",
+    "updatedAt": "2026-05-25T23:15:45Z",
+    "closedAt": "2026-05-25T23:15:43Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-25T23:15:43Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/default-ignore-dirs",
+    "baseRefOid": "4a94696e444e49bdf24ca8421b45bcf844c5e6b5",
+    "headRefOid": "53113f10ea565b904fc33cb8f9c086d84824d2f5",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "832f9063b1f03bad7587948b2a41c3c8e8bf9308"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 418,
+    "title": "docs: clarify zero-config + built-in default-ignores",
+    "url": "https://github.com/colbymchenry/codegraph/pull/418",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T23:28:52Z",
+    "updatedAt": "2026-05-25T23:29:19Z",
+    "closedAt": "2026-05-25T23:29:17Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-25T23:29:17Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/zero-config-cleanup",
+    "baseRefOid": "832f9063b1f03bad7587948b2a41c3c8e8bf9308",
+    "headRefOid": "26440f00c397bdf5c8de19095354f2531f9959ed",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "2721165604d6843ce8f60093cb921bc29be3e7b4"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 419,
+    "title": "feat(mcp): share one serve --mcp per project across MCP clients (#411)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/419",
+    "state": "MERGED",
+    "createdAt": "2026-05-25T23:47:31Z",
+    "updatedAt": "2026-05-26T01:28:24Z",
+    "closedAt": "2026-05-26T00:54:57Z",
+    "author": {
+      "login": "mattmorganpdx"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-26T00:54:57Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/shared-mcp-daemon-411",
+    "baseRefOid": "2721165604d6843ce8f60093cb921bc29be3e7b4",
+    "headRefOid": "55798b405ca3cbcd1ac963610975f9fa79426a4c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "995da54430b46c739639b23a67d5de5e658f953f"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 420,
+    "title": "feat(resolution): add Flutter framework support for Dart projects",
+    "url": "https://github.com/colbymchenry/codegraph/pull/420",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T01:10:17Z",
+    "updatedAt": "2026-10-30T16:33:16Z",
+    "closedAt": "2026-10-30T16:33:16Z",
+    "author": {
+      "login": "wolfofalgstreet"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/flutter-framework-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "4959bddc5b253537edbc52d93a9a7ce4e562c5ff",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 421,
+    "title": "fix: include anonymous callback and file-read dependents",
+    "url": "https://github.com/colbymchenry/codegraph/pull/421",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T01:22:56Z",
+    "updatedAt": "2026-10-30T17:12:49Z",
+    "closedAt": "2026-10-30T17:12:49Z",
+    "author": {
+      "login": "bohe76"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-anonymous-callback-file-read-dependents",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "3cf05d45a02763d11627bd1669fa28690f81285d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 424,
+    "title": "feat: add Objective-C language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/424",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T02:54:02Z",
+    "updatedAt": "2026-05-26T05:23:06Z",
+    "closedAt": "2026-05-26T05:23:06Z",
+    "author": {
+      "login": "aaaron7"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/objc-support",
+    "baseRefOid": "4a4a37d1351d4573242c0670506ae6ca7c279eaa",
+    "headRefOid": "0995c74c4c192e002c37ad17ca8648da129e929d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 428,
+    "title": "feat(mcp): per-file staleness banner + tunable watcher debounce (#403)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/428",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T04:47:44Z",
+    "updatedAt": "2026-05-26T04:48:14Z",
+    "closedAt": "2026-05-26T04:48:11Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T04:48:11Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/auto-flush-pending-on-query",
+    "baseRefOid": "4a4a37d1351d4573242c0670506ae6ca7c279eaa",
+    "headRefOid": "ef950cea7c989bf09a90b35fb78de3e0f5ffd063",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "b48170e69fd619aaf44709e52aa6df445c683ef7"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 429,
+    "title": "docs(changelog): add Objective-C indexing entry (#165)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/429",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T05:35:30Z",
+    "updatedAt": "2026-10-10T06:15:07Z",
+    "closedAt": "2026-05-26T05:35:36Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T05:35:36Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/changelog-objc",
+    "baseRefOid": "61153f96eebb6c49f36b546031873598b16b71a0",
+    "headRefOid": "487ac4a71a944a5cf30f34bd74ecb1af6af597bb",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1821038e4babf0fa6e7d61d2394551eeaab9397b"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 430,
+    "title": "design: Swift+ObjC and React Native cross-language bridging",
+    "url": "https://github.com/colbymchenry/codegraph/pull/430",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T05:40:01Z",
+    "updatedAt": "2026-10-10T06:15:06Z",
+    "closedAt": "2026-05-26T07:14:01Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T07:14:01Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "design/mixed-ios-and-react-native-bridging",
+    "baseRefOid": "1821038e4babf0fa6e7d61d2394551eeaab9397b",
+    "headRefOid": "6f5ea57a90f93a552ab19f1a2dede875a07c6915",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "4d1a2b3c4d2416c110ab65ee3efc67cee55ec0a7"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 432,
+    "title": "fix(extraction): extract type refs from TS interface property and method signatures",
+    "url": "https://github.com/colbymchenry/codegraph/pull/432",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T07:29:53Z",
+    "updatedAt": "2026-05-26T22:01:46Z",
+    "closedAt": "2026-05-26T22:01:45Z",
+    "author": {
+      "login": "TheKenS"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T22:01:45Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix_type_annotation",
+    "baseRefOid": "4d1a2b3c4d2416c110ab65ee3efc67cee55ec0a7",
+    "headRefOid": "c08759fb720ca39f6a939462f5013f5357cd423d",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "7e0d9b9ec0d1b839ae1f7861d973274964556330"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 433,
+    "title": "fix(installer): preserve symlinks when writing agent config files",
+    "url": "https://github.com/colbymchenry/codegraph/pull/433",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T07:34:59Z",
+    "updatedAt": "2026-08-23T00:38:28Z",
+    "closedAt": "2026-08-23T00:38:28Z",
+    "author": {
+      "login": "0x1306a94"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/symlink-preservation-in-installer",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "378ce5f544e22913d27da65333d642e576758922",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 434,
+    "title": "test: eliminate chokidar/FSEvents race in watcher + staleness-banner tests",
+    "url": "https://github.com/colbymchenry/codegraph/pull/434",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T07:36:58Z",
+    "updatedAt": "2026-10-10T06:15:16Z",
+    "closedAt": "2026-05-26T07:38:09Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T07:38:09Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/flaky-watcher-tests",
+    "baseRefOid": "4d1a2b3c4d2416c110ab65ee3efc67cee55ec0a7",
+    "headRefOid": "207621e60ed5afccab21328bffa54bacbed93b56",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "22bc542d3406e4807379fe34273c61738b623374"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 435,
+    "title": "docs(changelog): move 0.9.5 features from [Unreleased] into [0.9.5]",
+    "url": "https://github.com/colbymchenry/codegraph/pull/435",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T08:15:19Z",
+    "updatedAt": "2026-10-10T06:15:07Z",
+    "closedAt": "2026-05-26T08:15:28Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T08:15:28Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/changelog-0.9.5-content",
+    "baseRefOid": "318cda18d10266d58aaf14c54cf55fca1d39e6ed",
+    "headRefOid": "0aa6e750a3c1701e654aa1082a7e3ddec0f68d59",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "5a4fcd56b7181bd280ed05be9611029e01496a76"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 436,
+    "title": "feat(release): auto-promote [Unreleased] into [<version>] on workflow run",
+    "url": "https://github.com/colbymchenry/codegraph/pull/436",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T08:20:59Z",
+    "updatedAt": "2026-05-26T08:21:07Z",
+    "closedAt": "2026-05-26T08:21:07Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T08:21:07Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "release/auto-promote-unreleased",
+    "baseRefOid": "5a4fcd56b7181bd280ed05be9611029e01496a76",
+    "headRefOid": "db141eff75ab1059355c6e06060be8be33d1ee9a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "b77af782c583f41e0255bca0c9692f8e02335636"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 437,
+    "title": "docs(claude): rewrite release section for auto-promote workflow + add link-ref to promote script",
+    "url": "https://github.com/colbymchenry/codegraph/pull/437",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T08:24:58Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-05-26T08:25:07Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T08:25:07Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/release-flow-clarification",
+    "baseRefOid": "b77af782c583f41e0255bca0c9692f8e02335636",
+    "headRefOid": "d81736a7f2d5819f12620b5afe45a9c2128f73e6",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f6fabe9b5a97a7d397f24ef6400ae43206bd9f20"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 439,
+    "title": "feat(release): auto-sync package-lock.json on version drift; CLAUDE.md doesn't bump version unless asked",
+    "url": "https://github.com/colbymchenry/codegraph/pull/439",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T08:28:43Z",
+    "updatedAt": "2026-05-26T08:28:55Z",
+    "closedAt": "2026-05-26T08:28:55Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T08:28:55Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "release/lockfile-autosync-and-claude-docs",
+    "baseRefOid": "f6fabe9b5a97a7d397f24ef6400ae43206bd9f20",
+    "headRefOid": "9111c6d7cc91ffdcf8d7708367f5434307ccda8d",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "9eb73ac675b904b01e57e247af69a9c124fb1288"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 440,
+    "title": "chore: sync package-lock.json to 0.9.5",
+    "url": "https://github.com/colbymchenry/codegraph/pull/440",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T08:30:55Z",
+    "updatedAt": "2026-10-10T06:15:01Z",
+    "closedAt": "2026-05-26T08:31:06Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T08:31:06Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "chore/sync-lockfile-0.9.5",
+    "baseRefOid": "9eb73ac675b904b01e57e247af69a9c124fb1288",
+    "headRefOid": "8b35b258db17fde231ca546c4fc947f3fa70e80b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c972102726b6c635ee2c4030134aed040f929c98"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 442,
+    "title": "feat: pi agent target support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/442",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T08:45:38Z",
+    "updatedAt": "2026-10-10T07:59:18Z",
+    "closedAt": "2026-10-10T07:59:18Z",
+    "author": {
+      "login": "peachest"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 9
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/pi-agent-target",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "19541176a1f2c4f52b7d088e023196560063b857",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 444,
+    "title": "fix(sync): cross-check tracked files exist on disk after git fast path",
+    "url": "https://github.com/colbymchenry/codegraph/pull/444",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T09:01:45Z",
+    "updatedAt": "2026-05-26T09:18:20Z",
+    "closedAt": "2026-05-26T09:17:02Z",
+    "author": {
+      "login": "FurryWolfX"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/sync",
+    "baseRefOid": "c972102726b6c635ee2c4030134aed040f929c98",
+    "headRefOid": "3c6199e5958ffa34d3e5dadb85e95e67fc14640b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 446,
+    "title": "feat: add ArkTS (.ets) language extraction support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/446",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T09:31:32Z",
+    "updatedAt": "2026-05-27T02:43:42Z",
+    "closedAt": "2026-05-27T02:43:42Z",
+    "author": {
+      "login": "FurryWolfX"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/arkts",
+    "baseRefOid": "c972102726b6c635ee2c4030134aed040f929c98",
+    "headRefOid": "797029c81d8e2f12a5191e58c71f7c071af33e2b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 447,
+    "title": "Feat/kimi code support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/447",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T09:35:19Z",
+    "updatedAt": "2026-10-30T16:41:25Z",
+    "closedAt": "2026-10-30T16:41:25Z",
+    "author": {
+      "login": "neuralmanacle"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/kimi-code-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "a7c0b342b1d46546d46cdc2a143350a69ee96cb6",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 450,
+    "title": "fix(watcher): retain pending files on zero-result sync",
+    "url": "https://github.com/colbymchenry/codegraph/pull/450",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T11:32:01Z",
+    "updatedAt": "2026-05-26T19:18:15Z",
+    "closedAt": "2026-05-26T18:47:04Z",
+    "author": {
+      "login": "thismilktea"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T18:47:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/watcher-zero-result-pending-v2",
+    "baseRefOid": "6015e4fdd213126613b2de31983c833a7fda4a39",
+    "headRefOid": "a710ad3438b730f4b8358bc1d43ced8266547652",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "72c08c2bef1b009d8dafebfde662466bfe7c7eba"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 451,
+    "title": "Improve context lookup for code-like source strings",
+    "url": "https://github.com/colbymchenry/codegraph/pull/451",
+    "state": "CLOSED",
+    "createdAt": "2026-05-26T11:40:35Z",
+    "updatedAt": "2026-10-30T17:12:54Z",
+    "closedAt": "2026-10-30T17:12:54Z",
+    "author": {
+      "login": "Lee-take"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "codex/source-text-context-fallback",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "767676b8c14fc1f519773b58ad010d07faebeac1",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 453,
+    "title": "feat(resolution): add C/C++ include path resolution",
+    "url": "https://github.com/colbymchenry/codegraph/pull/453",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T13:23:40Z",
+    "updatedAt": "2026-05-27T00:56:26Z",
+    "closedAt": "2026-05-27T00:56:26Z",
+    "author": {
+      "login": "g122622"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-27T00:56:26Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/cpp-include-resolution",
+    "baseRefOid": "893256b88e721d1583b637aa8c22a662656048fc",
+    "headRefOid": "5f6830ffd42c3ed2956894b61f946ac31a3ea940",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "48eebe1e3ed71c6d68f7915e696495b7d203da6f"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 454,
+    "title": "fix(cpp): resolve callers for typed pointer method calls",
+    "url": "https://github.com/colbymchenry/codegraph/pull/454",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T13:30:39Z",
+    "updatedAt": "2026-05-26T20:17:08Z",
+    "closedAt": "2026-05-26T20:17:08Z",
+    "author": {
+      "login": "thismilktea"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-26T20:17:08Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/cpp-pointer-callers-clean",
+    "baseRefOid": "72c08c2bef1b009d8dafebfde662466bfe7c7eba",
+    "headRefOid": "ff5c85fecf551043f162459c8abc5e10be5416b2",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c0cf9c1e7d80475e32e03c298f9e5807b59033e9"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 457,
+    "title": "docs: explain auto-syncing in site guide + README collapsible",
+    "url": "https://github.com/colbymchenry/codegraph/pull/457",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T15:16:58Z",
+    "updatedAt": "2026-10-10T06:15:07Z",
+    "closedAt": "2026-05-26T15:17:04Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T15:17:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/auto-sync-explained",
+    "baseRefOid": "c972102726b6c635ee2c4030134aed040f929c98",
+    "headRefOid": "473c803e367867da721c55259c390a2deb69260c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "7479c5e82b7dc86d39c085ee1320b084174e8e0a"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 458,
+    "title": "feat(installer): add Gemini CLI + Antigravity IDE targets (#399)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/458",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T16:09:38Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-05-26T16:29:19Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T16:29:19Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/installer-gemini-antigravity",
+    "baseRefOid": "7479c5e82b7dc86d39c085ee1320b084174e8e0a",
+    "headRefOid": "82d513e30de958b91cb0b712cdede82f10fd947b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "180ba785ce583f4c68eea74b81c650e1c99689b1"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 460,
+    "title": "fix(nestjs): propagate RouterModule.register prefixes to controller routes",
+    "url": "https://github.com/colbymchenry/codegraph/pull/460",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T16:55:11Z",
+    "updatedAt": "2026-10-10T06:15:14Z",
+    "closedAt": "2026-05-26T16:55:18Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T16:55:18Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/nestjs-router-module",
+    "baseRefOid": "180ba785ce583f4c68eea74b81c650e1c99689b1",
+    "headRefOid": "d5872e0624d03ce92ccbf3b136fb3a3a208e9c59",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "8876defbc1f1bd2e0a6c65ff42a2216719d845ca"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 461,
+    "title": "fix(hermes): preserve YAML list-at-same-indent style on install (#456)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/461",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T17:20:53Z",
+    "updatedAt": "2026-05-26T17:21:02Z",
+    "closedAt": "2026-05-26T17:20:59Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T17:20:59Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/456-hermes-yaml-list-indent",
+    "baseRefOid": "8876defbc1f1bd2e0a6c65ff42a2216719d845ca",
+    "headRefOid": "83e73187aa9dc876d24fde930e8fe3467fce9889",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "e76cc547b0291eba6b34c4416f5d17814b033cbc"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 462,
+    "title": "fix(db): skip orphaned edges during batch insert",
+    "url": "https://github.com/colbymchenry/codegraph/pull/462",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T17:46:20Z",
+    "updatedAt": "2026-05-26T18:21:18Z",
+    "closedAt": "2026-05-26T18:09:11Z",
+    "author": {
+      "login": "msnandhis"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-26T18:09:11Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/455-skip-orphaned-edges",
+    "baseRefOid": "e76cc547b0291eba6b34c4416f5d17814b033cbc",
+    "headRefOid": "9ae645ba860d3b9dfb8a299beeb81360edd518b4",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "572b1ede180f37980c76484b0d3ab3d1b65e37f1"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 463,
+    "title": "fix(resolution): filter stale-target edges so watch sync survives FK violations (#455)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/463",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T18:03:23Z",
+    "updatedAt": "2026-10-10T06:15:17Z",
+    "closedAt": "2026-05-26T18:03:33Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-26T18:03:32Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/watch-sync-fk-regression-455",
+    "baseRefOid": "e76cc547b0291eba6b34c4416f5d17814b033cbc",
+    "headRefOid": "276e7ab05417d65edb674c384470fc7ab315bdca",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1dfaf30a8ba66a9d72b8b67c04b4eeb0866ec674"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 464,
+    "title": "docs(changelog): add Unreleased entry for #455 / #462 FK fix",
+    "url": "https://github.com/colbymchenry/codegraph/pull/464",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T18:10:08Z",
+    "updatedAt": "2026-10-10T06:15:07Z",
+    "closedAt": "2026-05-26T18:10:17Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T18:10:17Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/changelog-455",
+    "baseRefOid": "572b1ede180f37980c76484b0d3ab3d1b65e37f1",
+    "headRefOid": "28c4621ce8ca279f9f195f9abceb7c50fbbbfcb6",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "6015e4fdd213126613b2de31983c833a7fda4a39"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 465,
+    "title": "fix(extraction): capture Vue script call references",
+    "url": "https://github.com/colbymchenry/codegraph/pull/465",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T18:51:33Z",
+    "updatedAt": "2026-05-27T00:15:33Z",
+    "closedAt": "2026-05-27T00:15:33Z",
+    "author": {
+      "login": "msnandhis"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-27T00:15:33Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/425-vue-script-call-refs",
+    "baseRefOid": "72c08c2bef1b009d8dafebfde662466bfe7c7eba",
+    "headRefOid": "6329c53bcecf16edc5b946d4bf4da3f58f6d7c88",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "893256b88e721d1583b637aa8c22a662656048fc"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 466,
+    "title": "fix(mcp): normalize root-ish path filters in codegraph_files (#426)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/466",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T20:39:36Z",
+    "updatedAt": "2026-05-26T20:39:51Z",
+    "closedAt": "2026-05-26T20:39:48Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T20:39:48Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/issue-426-codegraph-files-path-normalization",
+    "baseRefOid": "c0cf9c1e7d80475e32e03c298f9e5807b59033e9",
+    "headRefOid": "0fd60295605605842dda2e2335b72241dbfae395",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "e1eb13cf9b1be8d7d986d160f66459c17eb29426"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 468,
+    "title": "feat(java): trace Spring/MyBatis enterprise flow end-to-end (#389)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/468",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T21:34:23Z",
+    "updatedAt": "2026-05-26T21:34:33Z",
+    "closedAt": "2026-05-26T21:34:31Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T21:34:30Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/spring-mybatis-389",
+    "baseRefOid": "55839edd8ff131ad5bb3034cf70e172eff4d4a80",
+    "headRefOid": "e4fd2c32eec80031e471e20d2894e83ded96521c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "2543ae565aba75bd4b1efc6b2bcaf3a5ab50c7c3"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 469,
+    "title": "fix(resolution): Go cross-package qualified calls resolve via go.mod (#388)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/469",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T22:14:23Z",
+    "updatedAt": "2026-10-10T06:15:14Z",
+    "closedAt": "2026-05-26T22:14:36Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T22:14:36Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/388-go-cross-pkg-callers",
+    "baseRefOid": "7e0d9b9ec0d1b839ae1f7861d973274964556330",
+    "headRefOid": "c289a4373b58e82ed5897bd718b1caa7a692c04c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f1b79eeae115347db5698391502872c652b9cfac"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 470,
+    "title": "fix(extraction): C# produces references edges for type annotations (#381)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/470",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T22:23:05Z",
+    "updatedAt": "2026-10-10T06:15:14Z",
+    "closedAt": "2026-05-26T22:23:18Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T22:23:18Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/381-csharp-references",
+    "baseRefOid": "f1b79eeae115347db5698391502872c652b9cfac",
+    "headRefOid": "272d0e99a6efe0c162c270e531b873611d163de2",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "046e03a05f82368a052adaf487c0d2c7d512cc3f"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 471,
+    "title": "fix(extraction): TS type-alias object members are first-class nodes (#359)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/471",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T22:35:14Z",
+    "updatedAt": "2026-10-10T06:15:13Z",
+    "closedAt": "2026-05-26T22:35:26Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T22:35:26Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/359-ts-type-alias-method-resolution",
+    "baseRefOid": "046e03a05f82368a052adaf487c0d2c7d512cc3f",
+    "headRefOid": "2adab0fa08e2cf18a8fe176d1655bf38fc746fee",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "186632fa88e14d0e02d5bdfe79dfc7aa3d4246bd"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 472,
+    "title": "fix(resolution): Java/Kotlin imports disambiguate same-name classes (#314)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/472",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T22:42:03Z",
+    "updatedAt": "2026-10-10T06:15:13Z",
+    "closedAt": "2026-05-26T22:42:15Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T22:42:15Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/314-java-import-resolver",
+    "baseRefOid": "186632fa88e14d0e02d5bdfe79dfc7aa3d4246bd",
+    "headRefOid": "ef29de4fd229479938ae2f96f2ca5e2f99eb9fb8",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "8c6900128996780b36ee39ff82c5191f8b56c257"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 473,
+    "title": "feat(installer): add Kiro CLI/IDE target (#385)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/473",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T23:01:43Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-05-26T23:09:52Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T23:09:52Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/kiro-installer",
+    "baseRefOid": "8c6900128996780b36ee39ff82c5191f8b56c257",
+    "headRefOid": "e12b8a04983dd02fce3cf9eb2ddc58dfae4ff5a0",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "6558b585edda3768b203f44bbaebc96e5affcb77"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 474,
+    "title": "docs: add Kiro to README + site docs",
+    "url": "https://github.com/colbymchenry/codegraph/pull/474",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T23:14:12Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-05-26T23:14:18Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T23:14:18Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/readme-kiro",
+    "baseRefOid": "6558b585edda3768b203f44bbaebc96e5affcb77",
+    "headRefOid": "47d3aa3f21f1bb9e49f0c8d42f1c016bee3f8a20",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "b9dc4a0fa51dd5dd556a9788ed763ac7f8a931c3"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 475,
+    "title": "fix(installer): tell Kiro IDE users to enable MCP in Settings",
+    "url": "https://github.com/colbymchenry/codegraph/pull/475",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T23:26:30Z",
+    "updatedAt": "2026-10-10T06:15:13Z",
+    "closedAt": "2026-05-26T23:26:36Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T23:26:36Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/kiro-installer-notes-enable-mcp",
+    "baseRefOid": "b9dc4a0fa51dd5dd556a9788ed763ac7f8a931c3",
+    "headRefOid": "7c7f81d494395a6c98bf1cb6621ab9d8e5cc73e6",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "110e24fea7b48021f915e7d55b317b6d570d891e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 476,
+    "title": "Update README.md",
+    "url": "https://github.com/colbymchenry/codegraph/pull/476",
+    "state": "MERGED",
+    "createdAt": "2026-05-26T23:36:51Z",
+    "updatedAt": "2026-10-10T06:15:06Z",
+    "closedAt": "2026-05-26T23:36:59Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-26T23:36:59Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "colbymchenry-patch-2",
+    "baseRefOid": "b9ede1bc66a3858ddd83e0cf86717c3dd78a5e02",
+    "headRefOid": "9a6bde8705ffea44a49dc1e3aa2aa6ad0f4b848d",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "ee80d38d2bc1d8ed2253e2c79c868ed0d7364321"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 477,
+    "title": "docs(claude): correct Node engines floor to match package.json (>=20)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/477",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T00:42:42Z",
+    "updatedAt": "2026-10-23T16:26:35Z",
+    "closedAt": "2026-10-23T16:26:35Z",
+    "author": {
+      "login": "eddieran"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/claude-md-node-engines-drift",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "f7d8a39c6450e8cd242efc45798fbc84311c7a96",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 479,
+    "title": "test(vitest): unblock subprocess MCP tests on Node >= 25 dev machines (#478)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/479",
+    "state": "MERGED",
+    "createdAt": "2026-05-27T00:46:55Z",
+    "updatedAt": "2026-05-27T04:38:29Z",
+    "closedAt": "2026-05-27T04:38:29Z",
+    "author": {
+      "login": "eddieran"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-27T04:38:29Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/tests-pass-on-node-25-plus",
+    "baseRefOid": "893256b88e721d1583b637aa8c22a662656048fc",
+    "headRefOid": "0cfcc08a5974996b4d8015a0ea68cf264820748b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "02935d777a848e067778ad792c636b4c6e63082d"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 480,
+    "title": "feat(cli): surface codegraphVersion + lastIndexedAt in `status --json` (#329)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/480",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T00:54:09Z",
+    "updatedAt": "2026-06-02T22:51:45Z",
+    "closedAt": "2026-06-02T22:51:45Z",
+    "author": {
+      "login": "eddieran"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/status-json-version-and-last-indexed",
+    "baseRefOid": "02935d777a848e067778ad792c636b4c6e63082d",
+    "headRefOid": "9c08e4525a637e27e7f9271142a0515319e6f2cd",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 481,
+    "title": "feat(cli): add --max-file-size flag to index/sync/init (#369)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/481",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T01:01:50Z",
+    "updatedAt": "2026-10-23T16:26:40Z",
+    "closedAt": "2026-10-23T16:26:40Z",
+    "author": {
+      "login": "eddieran"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/index-max-file-size-flag",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "ba51d58b8b1d98940556c48e5f6c9ffe9e319181",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 482,
+    "title": "fix(release): use RELEASE_PAT for git pushes so promote+sync land on main",
+    "url": "https://github.com/colbymchenry/codegraph/pull/482",
+    "state": "MERGED",
+    "createdAt": "2026-05-27T01:10:45Z",
+    "updatedAt": "2026-10-10T06:15:10Z",
+    "closedAt": "2026-05-27T01:16:12Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-05-27T01:16:12Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-release-workflow-pat",
+    "baseRefOid": "48eebe1e3ed71c6d68f7915e696495b7d203da6f",
+    "headRefOid": "d4932688763f208db3fc95ffa5d51701ac89be26",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "978ddba4ef339bcb2944011826a2728b454ee7b9"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 488,
+    "title": "Support 42 new AI agent targets for auto-installer",
+    "url": "https://github.com/colbymchenry/codegraph/pull/488",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T03:30:50Z",
+    "updatedAt": "2026-10-30T23:49:27Z",
+    "closedAt": "2026-10-30T16:39:09Z",
+    "author": {
+      "login": "coder11v"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "22141a2504d9efe0c200f84ba79f3f205179d035",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 494,
+    "title": "feat(mcp): multi-module Go trace-quality + small-repo retrieval tuning",
+    "url": "https://github.com/colbymchenry/codegraph/pull/494",
+    "state": "MERGED",
+    "createdAt": "2026-05-27T07:28:58Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-05-28T17:38:04Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-05-28T17:38:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/go-multi-module-trace-quality",
+    "baseRefOid": "02935d777a848e067778ad792c636b4c6e63082d",
+    "headRefOid": "10a4f0c72594b994e0bf198216baaab99a2be73a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "71935e37c24bddeb18886006faa4262af06ac89e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 497,
+    "title": "feat(installer): add Reasonix as an install target",
+    "url": "https://github.com/colbymchenry/codegraph/pull/497",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T08:25:58Z",
+    "updatedAt": "2026-10-30T06:17:52Z",
+    "closedAt": "2026-10-30T06:17:52Z",
+    "author": {
+      "login": "xiebaiyuan"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "68684a36683d573cd6eed1600b8142d42b500c74",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 498,
+    "title": "fix(windows): suppress console popup on child_process calls",
+    "url": "https://github.com/colbymchenry/codegraph/pull/498",
+    "state": "MERGED",
+    "createdAt": "2026-05-27T08:31:44Z",
+    "updatedAt": "2026-05-28T18:59:49Z",
+    "closedAt": "2026-05-28T18:12:55Z",
+    "author": {
+      "login": "csw-chen"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": "2026-05-28T18:12:55Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-windows-popup",
+    "baseRefOid": "71935e37c24bddeb18886006faa4262af06ac89e",
+    "headRefOid": "5530c2cd1b2157de4e9da8bbcda59cae5896b4d4",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "cea78ceb1b989f7f1bf5b4c20b50d67601cc29f3"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 502,
+    "title": "feat: support custom installer command paths",
+    "url": "https://github.com/colbymchenry/codegraph/pull/502",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T12:33:06Z",
+    "updatedAt": "2026-10-30T16:33:20Z",
+    "closedAt": "2026-10-30T16:33:20Z",
+    "author": {
+      "login": "design1890"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "custom-install-command-path",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "58c21e2e54eb57ae80c562674733a8827fc346ba",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 504,
+    "title": "fix(lock): harden FileLock ownership semantics and lock diagnostics",
+    "url": "https://github.com/colbymchenry/codegraph/pull/504",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T13:59:19Z",
+    "updatedAt": "2026-06-01T14:29:11Z",
+    "closedAt": "2026-06-01T14:29:11Z",
+    "author": {
+      "login": "thismilktea"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/filelock-owner-metadata",
+    "baseRefOid": "02935d777a848e067778ad792c636b4c6e63082d",
+    "headRefOid": "3691eb50f4065d43bdead7b6e58df1c27c7439d3",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 505,
+    "title": "fix(windows): hide console window for git child processes",
+    "url": "https://github.com/colbymchenry/codegraph/pull/505",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T15:33:14Z",
+    "updatedAt": "2026-05-28T18:13:11Z",
+    "closedAt": "2026-05-28T18:13:11Z",
+    "author": {
+      "login": "ry4nyu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/windows-hide-git-spawn",
+    "baseRefOid": "02935d777a848e067778ad792c636b4c6e63082d",
+    "headRefOid": "a2cf134287cd89e0753fd36e47fff42ca652cf9a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 508,
+    "title": "feat(installer): add Rovo Dev as an installer target",
+    "url": "https://github.com/colbymchenry/codegraph/pull/508",
+    "state": "CLOSED",
+    "createdAt": "2026-05-27T20:17:52Z",
+    "updatedAt": "2026-10-30T16:33:24Z",
+    "closedAt": "2026-10-30T16:33:24Z",
+    "author": {
+      "login": "dhan-atlassian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/rovodev-target",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "2de1b0c974214ca9a2f6950cd61ebbdccba4705a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 516,
+    "title": "fix(context): extract non-ASCII (CJK/Hangul) keywords so context works for Korean queries",
+    "url": "https://github.com/colbymchenry/codegraph/pull/516",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T07:55:23Z",
+    "updatedAt": "2026-10-30T05:51:30Z",
+    "closedAt": "2026-10-30T05:51:30Z",
+    "author": {
+      "login": "andy-sg"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/context-non-ascii-keyword-extraction",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "49a484314d3fc9520761fade2a91f7ff0ec135ce",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 517,
+    "title": "fix(watcher): ignore .git and CodeGraph data dirs at any depth",
+    "url": "https://github.com/colbymchenry/codegraph/pull/517",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T08:18:58Z",
+    "updatedAt": "2026-10-27T16:47:24Z",
+    "closedAt": "2026-10-27T16:47:24Z",
+    "author": {
+      "login": "vyductan"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/watcher-nested-git-leak",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "118dcf8083cd0589864e5b9d8aa9f6d3ac4b1bac",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 520,
+    "title": "fix(hermes): detect sibling list-item indent when creating new cli block",
+    "url": "https://github.com/colbymchenry/codegraph/pull/520",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T09:25:23Z",
+    "updatedAt": "2026-10-27T15:47:31Z",
+    "closedAt": "2026-10-27T15:47:31Z",
+    "author": {
+      "login": "JirA44"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/hermes-toolset-indent",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "1d30806f3e8721412098dee729df8335cf23054d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 521,
+    "title": "fix(wasm): add windowsHide to spawnSync re-exec to suppress terminal popup on Windows",
+    "url": "https://github.com/colbymchenry/codegraph/pull/521",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T09:34:50Z",
+    "updatedAt": "2026-05-28T18:13:15Z",
+    "closedAt": "2026-05-28T18:13:15Z",
+    "author": {
+      "login": "JirA44"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/windows-terminal-popup",
+    "baseRefOid": "02935d777a848e067778ad792c636b4c6e63082d",
+    "headRefOid": "0c8927aa5022f541e5a3be72ce0f80f22afa71bc",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 522,
+    "title": "docs(template): add concrete-anchor guidance for codegraph_context queries",
+    "url": "https://github.com/colbymchenry/codegraph/pull/522",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T09:35:03Z",
+    "updatedAt": "2026-10-30T12:23:52Z",
+    "closedAt": "2026-10-30T12:23:52Z",
+    "author": {
+      "login": "JirA44"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/context-query-guidance",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "13f9900f6ddc4d3402368c12f7202865f890567b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 526,
+    "title": "feat(framework): add Angular support — modules, selectors, templates, routes, control-flow blocks",
+    "url": "https://github.com/colbymchenry/codegraph/pull/526",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T10:14:49Z",
+    "updatedAt": "2026-10-29T16:21:38Z",
+    "closedAt": "2026-10-29T16:21:38Z",
+    "author": {
+      "login": "rj-majian3"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/angular-support",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "5fbbd957e4b00b2088860a7636eefbcf6f3f5da7",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 531,
+    "title": "recover-codegraphignore",
+    "url": "https://github.com/colbymchenry/codegraph/pull/531",
+    "state": "CLOSED",
+    "createdAt": "2026-05-28T14:03:24Z",
+    "updatedAt": "2026-10-30T17:12:58Z",
+    "closedAt": "2026-10-30T17:12:58Z",
+    "author": {
+      "login": "arkrolin"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "recover-codegraphignore",
+    "baseRefOid": "ec0c62522d2036c968dedda4ca5d8ec4ab6de743",
+    "headRefOid": "aa8671daadec2de67fa326b3e5f27848b719b695",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  }
+]

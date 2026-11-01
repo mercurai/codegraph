@@ -1,0 +1,1902 @@
+[
+  {
+    "number": 1,
+    "title": "How do you use this across multiple projects",
+    "url": "https://github.com/colbymchenry/codegraph/issues/1",
+    "state": "CLOSED",
+    "createdAt": "2026-01-27T15:09:33Z",
+    "updatedAt": "2026-02-10T07:19:32Z",
+    "closedAt": "2026-02-10T07:19:32Z",
+    "author": {
+      "login": "menacher"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 2,
+    "title": "git-hook potential issue when codegraph is not installed globally",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2",
+    "state": "CLOSED",
+    "createdAt": "2026-01-28T14:08:31Z",
+    "updatedAt": "2026-02-10T07:14:33Z",
+    "closedAt": "2026-02-10T06:55:27Z",
+    "author": {
+      "login": "gillesdandrea"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3,
+    "title": "Svelte 5",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3",
+    "state": "CLOSED",
+    "createdAt": "2026-01-28T14:19:43Z",
+    "updatedAt": "2026-02-10T07:37:30Z",
+    "closedAt": "2026-02-10T07:37:30Z",
+    "author": {
+      "login": "yodacom"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 4,
+    "title": "windows 11 didn't install, won't start...",
+    "url": "https://github.com/colbymchenry/codegraph/issues/4",
+    "state": "CLOSED",
+    "createdAt": "2026-01-28T17:47:58Z",
+    "updatedAt": "2026-02-10T07:21:17Z",
+    "closedAt": "2026-02-10T07:20:47Z",
+    "author": {
+      "login": "dts350z"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 5,
+    "title": "Codegraphe does not work under Node v24.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/5",
+    "state": "CLOSED",
+    "createdAt": "2026-01-30T02:58:15Z",
+    "updatedAt": "2026-02-10T06:53:14Z",
+    "closedAt": "2026-02-10T06:53:14Z",
+    "author": {
+      "login": "rknlhrqy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 6,
+    "title": "Support for copilot",
+    "url": "https://github.com/colbymchenry/codegraph/issues/6",
+    "state": "CLOSED",
+    "createdAt": "2026-01-30T13:34:25Z",
+    "updatedAt": "2026-05-25T08:47:02Z",
+    "closedAt": "2026-02-10T07:45:04Z",
+    "author": {
+      "login": "dsolteszopyn"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 7,
+    "title": "macOS installation trouble",
+    "url": "https://github.com/colbymchenry/codegraph/issues/7",
+    "state": "CLOSED",
+    "createdAt": "2026-01-30T13:38:57Z",
+    "updatedAt": "2026-02-01T00:57:43Z",
+    "closedAt": "2026-02-01T00:57:43Z",
+    "author": {
+      "login": "footcow"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 10,
+    "title": "not installing codegraph binary in linux ubuntu (mint 22)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/10",
+    "state": "CLOSED",
+    "createdAt": "2026-01-31T18:11:20Z",
+    "updatedAt": "2026-02-10T06:50:39Z",
+    "closedAt": "2026-02-10T06:50:39Z",
+    "author": {
+      "login": "this1-it"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 8
+    }
+  },
+  {
+    "number": 11,
+    "title": "UNIQUE constraint failed: nodes.id during indexing on React/JSX codebase",
+    "url": "https://github.com/colbymchenry/codegraph/issues/11",
+    "state": "CLOSED",
+    "createdAt": "2026-01-31T19:52:27Z",
+    "updatedAt": "2026-02-10T06:45:22Z",
+    "closedAt": "2026-02-10T06:45:22Z",
+    "author": {
+      "login": "ronniehyslop"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 12,
+    "title": "Installation failed: UNIQUE constraint failed: nodes.id for large C/C++ project with same file names in different folders",
+    "url": "https://github.com/colbymchenry/codegraph/issues/12",
+    "state": "CLOSED",
+    "createdAt": "2026-02-02T06:10:10Z",
+    "updatedAt": "2026-02-10T06:46:59Z",
+    "closedAt": "2026-02-10T06:46:59Z",
+    "author": {
+      "login": "ofergr"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 14,
+    "title": "Fails to load on Win 11 PC.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/14",
+    "state": "CLOSED",
+    "createdAt": "2026-02-05T16:13:55Z",
+    "updatedAt": "2026-02-10T06:48:51Z",
+    "closedAt": "2026-02-10T06:48:51Z",
+    "author": {
+      "login": "ZellW"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 17,
+    "title": "Doesn't work on Mac",
+    "url": "https://github.com/colbymchenry/codegraph/issues/17",
+    "state": "CLOSED",
+    "createdAt": "2026-02-09T06:26:21Z",
+    "updatedAt": "2026-02-10T07:38:16Z",
+    "closedAt": "2026-02-10T07:38:16Z",
+    "author": {
+      "login": "thryf"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 28,
+    "title": "Failed to index: FOREIGN KEY constraint failed (tensorflow)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/28",
+    "state": "CLOSED",
+    "createdAt": "2026-02-10T13:25:32Z",
+    "updatedAt": "2026-02-10T22:46:30Z",
+    "closedAt": "2026-02-10T22:46:30Z",
+    "author": {
+      "login": "dts350z"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 36,
+    "title": "Clarity on differences",
+    "url": "https://github.com/colbymchenry/codegraph/issues/36",
+    "state": "CLOSED",
+    "createdAt": "2026-02-12T18:26:55Z",
+    "updatedAt": "2026-02-14T07:05:52Z",
+    "closedAt": "2026-02-14T07:05:52Z",
+    "author": {
+      "login": "cerupcat"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 37,
+    "title": "Not installing on macOS",
+    "url": "https://github.com/colbymchenry/codegraph/issues/37",
+    "state": "CLOSED",
+    "createdAt": "2026-02-12T20:07:05Z",
+    "updatedAt": "2026-02-19T21:58:53Z",
+    "closedAt": "2026-02-19T21:58:53Z",
+    "author": {
+      "login": "tunecrew"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 38,
+    "title": "Linux - Seems to install, but \"command not found\" on any subsequent invocations",
+    "url": "https://github.com/colbymchenry/codegraph/issues/38",
+    "state": "CLOSED",
+    "createdAt": "2026-02-13T16:39:44Z",
+    "updatedAt": "2026-02-20T17:27:10Z",
+    "closedAt": "2026-02-20T17:27:10Z",
+    "author": {
+      "login": "lh1022"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 6
+    }
+  },
+  {
+    "number": 42,
+    "title": "CodeGraph v0.6.2: FOREIGN KEY constraint failed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/42",
+    "state": "CLOSED",
+    "createdAt": "2026-02-18T09:46:12Z",
+    "updatedAt": "2026-03-18T19:36:19Z",
+    "closedAt": "2026-03-18T19:36:19Z",
+    "author": {
+      "login": "RediBill"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 43,
+    "title": "serve command writes startup banner to stdout, breaking MCP stdio protocol",
+    "url": "https://github.com/colbymchenry/codegraph/issues/43",
+    "state": "CLOSED",
+    "createdAt": "2026-02-18T17:42:00Z",
+    "updatedAt": "2026-02-23T12:36:31Z",
+    "closedAt": "2026-02-20T17:27:21Z",
+    "author": {
+      "login": "michelemarri"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 44,
+    "title": "tree-sitter grammar loading is broken for most languages.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/44",
+    "state": "CLOSED",
+    "createdAt": "2026-02-19T11:11:16Z",
+    "updatedAt": "2026-02-19T21:04:21Z",
+    "closedAt": "2026-02-19T21:04:21Z",
+    "author": {
+      "login": "StefanP67"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 47,
+    "title": "Error: Tool execution failed: CodeGraph not initialized for this project. Run 'codegraph init' first.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/47",
+    "state": "CLOSED",
+    "createdAt": "2026-02-22T16:11:12Z",
+    "updatedAt": "2026-05-10T01:18:14Z",
+    "closedAt": "2026-03-18T19:53:00Z",
+    "author": {
+      "login": "tunecrew"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 48,
+    "title": "Tree-sitter grammar loading fails with mismatched external scanner errors",
+    "url": "https://github.com/colbymchenry/codegraph/issues/48",
+    "state": "CLOSED",
+    "createdAt": "2026-02-24T18:32:17Z",
+    "updatedAt": "2026-03-18T19:44:13Z",
+    "closedAt": "2026-03-18T19:44:13Z",
+    "author": {
+      "login": "ariellemelinda"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 50,
+    "title": "Curious to see whats your take on expanding this to extract meaningful business features out of the system",
+    "url": "https://github.com/colbymchenry/codegraph/issues/50",
+    "state": "CLOSED",
+    "createdAt": "2026-02-26T20:02:59Z",
+    "updatedAt": "2026-03-19T03:57:15Z",
+    "closedAt": "2026-03-19T03:57:15Z",
+    "author": {
+      "login": "gowrav28"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 51,
+    "title": "Support for Vue",
+    "url": "https://github.com/colbymchenry/codegraph/issues/51",
+    "state": "CLOSED",
+    "createdAt": "2026-02-28T11:23:20Z",
+    "updatedAt": "2026-05-08T03:13:21Z",
+    "closedAt": "2026-05-08T03:13:21Z",
+    "author": {
+      "login": "atlasdevxie"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 53,
+    "title": "Failed to index: FOREIGN KEY constraint failed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/53",
+    "state": "CLOSED",
+    "createdAt": "2026-03-07T08:37:37Z",
+    "updatedAt": "2026-03-18T19:44:45Z",
+    "closedAt": "2026-03-18T19:44:45Z",
+    "author": {
+      "login": "singh0021"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 54,
+    "title": "Failed to initialize: Appears to be out of memory?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/54",
+    "state": "CLOSED",
+    "createdAt": "2026-03-09T18:57:24Z",
+    "updatedAt": "2026-05-08T13:55:06Z",
+    "closedAt": "2026-03-18T19:36:06Z",
+    "author": {
+      "login": "ptdecker"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 7
+    }
+  },
+  {
+    "number": 55,
+    "title": "Cookbook to add another language support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/55",
+    "state": "CLOSED",
+    "createdAt": "2026-03-11T08:43:32Z",
+    "updatedAt": "2026-06-20T05:44:04Z",
+    "closedAt": "2026-06-20T05:44:04Z",
+    "author": {
+      "login": "cfournel"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 56,
+    "title": "please add About description field in GitHub.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/56",
+    "state": "CLOSED",
+    "createdAt": "2026-03-11T16:37:06Z",
+    "updatedAt": "2026-03-18T19:28:17Z",
+    "closedAt": "2026-03-18T19:28:17Z",
+    "author": {
+      "login": "markhu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 59,
+    "title": "Does this work with multiple git worktree?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/59",
+    "state": "CLOSED",
+    "createdAt": "2026-03-15T02:41:17Z",
+    "updatedAt": "2026-05-05T15:45:16Z",
+    "closedAt": "2026-04-12T15:37:11Z",
+    "author": {
+      "login": "jbalatero"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 60,
+    "title": "Is there any way to read .h files not as C, but as C++?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/60",
+    "state": "CLOSED",
+    "createdAt": "2026-03-17T03:34:26Z",
+    "updatedAt": "2026-03-18T05:55:34Z",
+    "closedAt": "2026-03-18T05:55:16Z",
+    "author": {
+      "login": "WillTer"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 64,
+    "title": "Don't index platformIO libs",
+    "url": "https://github.com/colbymchenry/codegraph/issues/64",
+    "state": "CLOSED",
+    "createdAt": "2026-03-18T23:49:52Z",
+    "updatedAt": "2026-03-19T03:56:13Z",
+    "closedAt": "2026-03-19T03:56:13Z",
+    "author": {
+      "login": "markhu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 65,
+    "title": "Does it support other AI assistants besides Claude",
+    "url": "https://github.com/colbymchenry/codegraph/issues/65",
+    "state": "CLOSED",
+    "createdAt": "2026-03-24T10:03:38Z",
+    "updatedAt": "2026-05-27T03:32:20Z",
+    "closedAt": "2026-05-26T23:36:45Z",
+    "author": {
+      "login": "chendapeng1984"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 11
+    }
+  },
+  {
+    "number": 67,
+    "title": "Python: cross-module function call resolution creates false cross-boundary edges",
+    "url": "https://github.com/colbymchenry/codegraph/issues/67",
+    "state": "CLOSED",
+    "createdAt": "2026-03-26T21:13:13Z",
+    "updatedAt": "2026-04-01T19:30:23Z",
+    "closedAt": "2026-04-01T19:30:23Z",
+    "author": {
+      "login": "Maxli53"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 68,
+    "title": "Undisclosed Sentry telemetry in sentry.ts",
+    "url": "https://github.com/colbymchenry/codegraph/issues/68",
+    "state": "CLOSED",
+    "createdAt": "2026-03-29T18:45:33Z",
+    "updatedAt": "2026-04-01T19:15:10Z",
+    "closedAt": "2026-04-01T19:15:10Z",
+    "author": {
+      "login": "BenRoe"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 69,
+    "title": "Silent global npm install during npx run is not disclosed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/69",
+    "state": "CLOSED",
+    "createdAt": "2026-03-29T18:51:25Z",
+    "updatedAt": "2026-04-01T19:09:13Z",
+    "closedAt": "2026-04-01T19:09:13Z",
+    "author": {
+      "login": "BenRoe"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 79,
+    "title": "Does codegraph is compatible with other harness tools like opencode? If yes then README.md has no instructions for this.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/79",
+    "state": "CLOSED",
+    "createdAt": "2026-04-06T07:09:14Z",
+    "updatedAt": "2026-05-18T01:37:58Z",
+    "closedAt": "2026-05-18T01:25:13Z",
+    "author": {
+      "login": "HarshalRathore"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 81,
+    "title": "indexing fails with 'Fatal process out of memory: Zone'",
+    "url": "https://github.com/colbymchenry/codegraph/issues/81",
+    "state": "CLOSED",
+    "createdAt": "2026-04-07T09:05:15Z",
+    "updatedAt": "2026-05-08T13:55:03Z",
+    "closedAt": "2026-04-12T15:36:57Z",
+    "author": {
+      "login": "romanr"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 82,
+    "title": "R Support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/82",
+    "state": "CLOSED",
+    "createdAt": "2026-04-09T22:13:04Z",
+    "updatedAt": "2026-06-02T16:44:19Z",
+    "closedAt": "2026-06-02T16:44:19Z",
+    "author": {
+      "login": "robbienukes"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 83,
+    "title": "Feature Request: HCL / Terraform (.tf) language support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/83",
+    "state": "CLOSED",
+    "createdAt": "2026-04-14T09:58:34Z",
+    "updatedAt": "2026-06-02T16:44:02Z",
+    "closedAt": "2026-06-02T16:44:02Z",
+    "author": {
+      "login": "sachajw"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 85,
+    "title": "Support for SQL",
+    "url": "https://github.com/colbymchenry/codegraph/issues/85",
+    "state": "CLOSED",
+    "createdAt": "2026-04-16T09:16:39Z",
+    "updatedAt": "2026-06-02T16:44:16Z",
+    "closedAt": "2026-06-02T16:44:16Z",
+    "author": {
+      "login": "migdur"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 86,
+    "title": "Submodules scan",
+    "url": "https://github.com/colbymchenry/codegraph/issues/86",
+    "state": "CLOSED",
+    "createdAt": "2026-04-16T16:55:24Z",
+    "updatedAt": "2026-06-02T20:36:38Z",
+    "closedAt": "2026-06-02T20:36:38Z",
+    "author": {
+      "login": "Mishok7889"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 87,
+    "title": "vector search",
+    "url": "https://github.com/colbymchenry/codegraph/issues/87",
+    "state": "CLOSED",
+    "createdAt": "2026-04-17T06:19:53Z",
+    "updatedAt": "2026-05-11T03:25:25Z",
+    "closedAt": "2026-05-11T03:25:25Z",
+    "author": {
+      "login": "zzqq131"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 88,
+    "title": "Support for dbt (Databricks adapter)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/88",
+    "state": "CLOSED",
+    "createdAt": "2026-04-18T20:25:48Z",
+    "updatedAt": "2026-06-02T16:44:14Z",
+    "closedAt": "2026-06-02T16:44:14Z",
+    "author": {
+      "login": "oberalppaolof"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 90,
+    "title": "Scala Support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/90",
+    "state": "CLOSED",
+    "createdAt": "2026-04-24T17:48:56Z",
+    "updatedAt": "2026-05-08T03:15:36Z",
+    "closedAt": "2026-05-08T03:15:36Z",
+    "author": {
+      "login": "firehooper"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 120,
+    "title": "Merge-order guide for the open PR backlog (4 refactor PRs unblock the rest)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/120",
+    "state": "CLOSED",
+    "createdAt": "2026-04-27T21:15:58Z",
+    "updatedAt": "2026-05-29T03:59:51Z",
+    "closedAt": "2026-05-29T03:59:51Z",
+    "author": {
+      "login": "andreinknv"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 6
+    }
+  },
+  {
+    "number": 137,
+    "title": "Codex / Cursor support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/137",
+    "state": "CLOSED",
+    "createdAt": "2026-05-01T04:49:26Z",
+    "updatedAt": "2026-05-18T01:37:23Z",
+    "closedAt": "2026-05-18T00:26:10Z",
+    "author": {
+      "login": "atrofimov-sc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 138,
+    "title": "Uses wasm instead of sql lite on MacOs",
+    "url": "https://github.com/colbymchenry/codegraph/issues/138",
+    "state": "CLOSED",
+    "createdAt": "2026-05-01T04:49:59Z",
+    "updatedAt": "2026-05-20T04:05:37Z",
+    "closedAt": "2026-05-08T13:27:55Z",
+    "author": {
+      "login": "atrofimov-sc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 139,
+    "title": "starting mcp server locks the db preventing reads.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/139",
+    "state": "CLOSED",
+    "createdAt": "2026-05-01T04:54:15Z",
+    "updatedAt": "2026-05-08T13:28:30Z",
+    "closedAt": "2026-05-08T13:28:30Z",
+    "author": {
+      "login": "atrofimov-sc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 140,
+    "title": "# Fatal process out of memory: Zone",
+    "url": "https://github.com/colbymchenry/codegraph/issues/140",
+    "state": "CLOSED",
+    "createdAt": "2026-05-06T16:47:03Z",
+    "updatedAt": "2026-05-18T06:42:47Z",
+    "closedAt": "2026-05-08T13:54:34Z",
+    "author": {
+      "login": "MontySharkly"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 141,
+    "title": "Support for multiple team members/main branch vs feature branch tracking",
+    "url": "https://github.com/colbymchenry/codegraph/issues/141",
+    "state": "CLOSED",
+    "createdAt": "2026-05-07T00:09:45Z",
+    "updatedAt": "2026-06-23T20:14:07Z",
+    "closedAt": "2026-06-23T20:14:07Z",
+    "author": {
+      "login": "codinronan"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 147,
+    "title": "git ls-files does not recurse into submodules, causing zero files indexed in monorepos using git submodules",
+    "url": "https://github.com/colbymchenry/codegraph/issues/147",
+    "state": "CLOSED",
+    "createdAt": "2026-05-08T10:17:08Z",
+    "updatedAt": "2026-05-08T14:06:00Z",
+    "closedAt": "2026-05-08T14:05:45Z",
+    "author": {
+      "login": "giovannidoni"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 154,
+    "title": "Consider optional vector search via external embedding APIs",
+    "url": "https://github.com/colbymchenry/codegraph/issues/154",
+    "state": "CLOSED",
+    "createdAt": "2026-05-16T06:11:39Z",
+    "updatedAt": "2026-05-19T08:37:43Z",
+    "closedAt": "2026-05-19T08:37:43Z",
+    "author": {
+      "login": "stupidloud"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 155,
+    "title": "Support for Git Worktree: Share or auto-inherit .codegraph across worktrees",
+    "url": "https://github.com/colbymchenry/codegraph/issues/155",
+    "state": "CLOSED",
+    "createdAt": "2026-05-16T13:41:45Z",
+    "updatedAt": "2026-05-26T02:01:10Z",
+    "closedAt": "2026-05-26T01:57:21Z",
+    "author": {
+      "login": "JonasGao"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 157,
+    "title": "Code quality scan: 22 findings (A-, 85/100)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/157",
+    "state": "CLOSED",
+    "createdAt": "2026-05-16T19:36:45Z",
+    "updatedAt": "2026-05-18T00:39:08Z",
+    "closedAt": "2026-05-18T00:39:08Z",
+    "author": {
+      "login": "repobilitycom"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 161,
+    "title": "Code quality scan: 22 findings (A-, 85/100)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/161",
+    "state": "CLOSED",
+    "createdAt": "2026-05-17T19:53:58Z",
+    "updatedAt": "2026-05-18T00:39:06Z",
+    "closedAt": "2026-05-18T00:39:06Z",
+    "author": {
+      "login": "repobilitycom"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 164,
+    "title": "Can we add support for CodeBuddy?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/164",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T01:45:02Z",
+    "updatedAt": "2026-06-02T16:45:04Z",
+    "closedAt": "2026-06-02T16:45:04Z",
+    "author": {
+      "login": "suiwenhao"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 168,
+    "title": "Terminal output garbled/mojibake on Windows (PowerShell) during codegraph index",
+    "url": "https://github.com/colbymchenry/codegraph/issues/168",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T09:15:09Z",
+    "updatedAt": "2026-05-19T15:45:46Z",
+    "closedAt": "2026-05-19T15:45:22Z",
+    "author": {
+      "login": "starkleek"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 169,
+    "title": "Add support for Groovy language",
+    "url": "https://github.com/colbymchenry/codegraph/issues/169",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T14:44:42Z",
+    "updatedAt": "2026-07-28T19:26:21Z",
+    "closedAt": "2026-06-02T16:44:12Z",
+    "author": {
+      "login": "nicolask1992"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 170,
+    "title": "Visual Basic support would be incredible =)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/170",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T17:26:53Z",
+    "updatedAt": "2026-07-03T17:03:10Z",
+    "closedAt": "2026-06-02T16:43:34Z",
+    "author": {
+      "login": "angelsmth"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 171,
+    "title": "Add Wicked.today verdict badge to README?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/171",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T19:36:57Z",
+    "updatedAt": "2026-05-19T15:48:34Z",
+    "closedAt": "2026-05-19T15:48:34Z",
+    "author": {
+      "login": "Oililyuk"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 172,
+    "title": "MCP server fails to connect with Claude Code: Content-Length framing vs newline-delimited JSON transport mismatch",
+    "url": "https://github.com/colbymchenry/codegraph/issues/172",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T20:30:04Z",
+    "updatedAt": "2026-05-21T15:50:08Z",
+    "closedAt": "2026-05-19T15:20:04Z",
+    "author": {
+      "login": "sashanclrp"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 6
+    }
+  },
+  {
+    "number": 173,
+    "title": "Module-qualified symbol lookup (e.g., `stage_apply::run`) returns 'not found' even when symbol is indexed; bare-name lookup silently picks a random collision",
+    "url": "https://github.com/colbymchenry/codegraph/issues/173",
+    "state": "CLOSED",
+    "createdAt": "2026-05-18T20:49:56Z",
+    "updatedAt": "2026-05-19T16:02:47Z",
+    "closedAt": "2026-05-19T16:02:29Z",
+    "author": {
+      "login": "joselhurtado"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 175,
+    "title": "[QUESTION] difference between codegraph and code-review-graph",
+    "url": "https://github.com/colbymchenry/codegraph/issues/175",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T11:21:46Z",
+    "updatedAt": "2026-05-19T18:02:15Z",
+    "closedAt": "2026-05-19T18:02:15Z",
+    "author": {
+      "login": "woss"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 176,
+    "title": "[QUESTION] Codegraph grap visualization",
+    "url": "https://github.com/colbymchenry/codegraph/issues/176",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T11:44:47Z",
+    "updatedAt": "2026-05-29T04:07:45Z",
+    "closedAt": "2026-05-29T04:07:45Z",
+    "author": {
+      "login": "kleysonr"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 183,
+    "title": "Support Node.js version: 26.1.0",
+    "url": "https://github.com/colbymchenry/codegraph/issues/183",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T19:30:54Z",
+    "updatedAt": "2026-05-22T20:25:26Z",
+    "closedAt": "2026-05-21T21:18:52Z",
+    "author": {
+      "login": "corrm"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 184,
+    "title": "Add `pi` and `omp` as code agents to the installer",
+    "url": "https://github.com/colbymchenry/codegraph/issues/184",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T19:32:56Z",
+    "updatedAt": "2026-06-02T16:44:56Z",
+    "closedAt": "2026-06-02T16:44:56Z",
+    "author": {
+      "login": "corrm"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 185,
+    "title": "I'm missing something? ",
+    "url": "https://github.com/colbymchenry/codegraph/issues/185",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T20:18:33Z",
+    "updatedAt": "2026-05-20T03:21:18Z",
+    "closedAt": "2026-05-19T21:23:11Z",
+    "author": {
+      "login": "essopsp"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 186,
+    "title": "Wrong OpenCode init",
+    "url": "https://github.com/colbymchenry/codegraph/issues/186",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T20:50:12Z",
+    "updatedAt": "2026-05-29T04:36:15Z",
+    "closedAt": "2026-05-29T04:36:15Z",
+    "author": {
+      "login": "PVLPM"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 189,
+    "title": "Comparing codegraph quality vs agent explore tooling?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/189",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T21:50:59Z",
+    "updatedAt": "2026-05-29T04:36:07Z",
+    "closedAt": "2026-05-29T04:36:07Z",
+    "author": {
+      "login": "leblancdaniel"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 190,
+    "title": "npm warn deprecated prebuild-install@7.1.3",
+    "url": "https://github.com/colbymchenry/codegraph/issues/190",
+    "state": "CLOSED",
+    "createdAt": "2026-05-19T23:42:46Z",
+    "updatedAt": "2026-05-20T17:21:05Z",
+    "closedAt": "2026-05-20T17:21:05Z",
+    "author": {
+      "login": "coldhell7"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 193,
+    "title": "`codegraph init -i` does not detect source files when run from a top-level CMake workspace containing multiple nested repos",
+    "url": "https://github.com/colbymchenry/codegraph/issues/193",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T03:31:20Z",
+    "updatedAt": "2026-05-21T03:27:55Z",
+    "closedAt": "2026-05-20T17:03:45Z",
+    "author": {
+      "login": "timxx"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 194,
+    "title": "cross-project search issue",
+    "url": "https://github.com/colbymchenry/codegraph/issues/194",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T03:40:43Z",
+    "updatedAt": "2026-05-20T17:18:47Z",
+    "closedAt": "2026-05-20T17:18:47Z",
+    "author": {
+      "login": "goesWellHH"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 195,
+    "title": "考虑支持 antigravity 吗",
+    "url": "https://github.com/colbymchenry/codegraph/issues/195",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T03:45:24Z",
+    "updatedAt": "2026-05-23T05:46:52Z",
+    "closedAt": "2026-05-23T05:46:52Z",
+    "author": {
+      "login": "serendippers"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 196,
+    "title": "CodeGraph MCP tools fail with \"CodeGraph not initialized\" when projectPath is omitted, even though index exists",
+    "url": "https://github.com/colbymchenry/codegraph/issues/196",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T04:15:48Z",
+    "updatedAt": "2026-05-20T16:35:25Z",
+    "closedAt": "2026-05-20T16:35:16Z",
+    "author": {
+      "login": "zhangyu1197"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 198,
+    "title": "Stable context-export format for downstream tools",
+    "url": "https://github.com/colbymchenry/codegraph/issues/198",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T07:16:12Z",
+    "updatedAt": "2026-06-23T20:14:06Z",
+    "closedAt": "2026-06-23T20:14:06Z",
+    "author": {
+      "login": "googlarz"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 199,
+    "title": "MCP server hangs on startup in WSL2 + NTFS due to fs.watch",
+    "url": "https://github.com/colbymchenry/codegraph/issues/199",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T07:36:46Z",
+    "updatedAt": "2026-05-20T15:32:34Z",
+    "closedAt": "2026-05-20T15:32:10Z",
+    "author": {
+      "login": "mangxy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 200,
+    "title": "Fortran support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/200",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T08:09:29Z",
+    "updatedAt": "2026-06-02T16:44:09Z",
+    "closedAt": "2026-06-02T16:44:09Z",
+    "author": {
+      "login": "lmseidler"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 203,
+    "title": "Cannot resolve WASM SQLite fallback active (better-sqlite3 unavailable)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/203",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T09:35:05Z",
+    "updatedAt": "2026-05-20T16:54:58Z",
+    "closedAt": "2026-05-20T16:54:21Z",
+    "author": {
+      "login": "Finndersen"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 206,
+    "title": "codegraph status still reports untracked files as pending after sync",
+    "url": "https://github.com/colbymchenry/codegraph/issues/206",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T12:39:34Z",
+    "updatedAt": "2026-05-20T17:16:13Z",
+    "closedAt": "2026-05-20T17:15:56Z",
+    "author": {
+      "login": "hajimilaowu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 207,
+    "title": "Claude code current project only mcp json file",
+    "url": "https://github.com/colbymchenry/codegraph/issues/207",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T13:36:47Z",
+    "updatedAt": "2026-05-20T14:47:17Z",
+    "closedAt": "2026-05-20T14:47:05Z",
+    "author": {
+      "login": "Jhsmit"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 208,
+    "title": "Indexing hangs at ~385 files on Windows NTFS (fs.watch issue)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/208",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T14:45:39Z",
+    "updatedAt": "2026-06-23T20:14:11Z",
+    "closedAt": "2026-06-23T20:14:11Z",
+    "author": {
+      "login": "DanielHo01"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 211,
+    "title": "Feature Request: Add Support for Devin for Terminal",
+    "url": "https://github.com/colbymchenry/codegraph/issues/211",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T15:36:05Z",
+    "updatedAt": "2026-06-02T16:44:59Z",
+    "closedAt": "2026-06-02T16:44:59Z",
+    "author": {
+      "login": "dabit3"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 212,
+    "title": "support for trae ？",
+    "url": "https://github.com/colbymchenry/codegraph/issues/212",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T15:37:40Z",
+    "updatedAt": "2026-06-02T16:45:01Z",
+    "closedAt": "2026-06-02T16:45:01Z",
+    "author": {
+      "login": "ArbifyFun"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 215,
+    "title": "Wrong file for claude code?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/215",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T16:40:43Z",
+    "updatedAt": "2026-05-20T17:17:58Z",
+    "closedAt": "2026-05-20T17:17:58Z",
+    "author": {
+      "login": "martin-ger"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 220,
+    "title": "Nestjs",
+    "url": "https://github.com/colbymchenry/codegraph/issues/220",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T18:56:20Z",
+    "updatedAt": "2026-05-20T22:10:10Z",
+    "closedAt": "2026-05-20T22:09:56Z",
+    "author": {
+      "login": "Igorgro"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 223,
+    "title": "Readme Misleading Metrics",
+    "url": "https://github.com/colbymchenry/codegraph/issues/223",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T20:52:13Z",
+    "updatedAt": "2026-06-22T14:27:17Z",
+    "closedAt": "2026-05-20T21:41:59Z",
+    "author": {
+      "login": "nicoszerman"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 227,
+    "title": "npm install shows deprecated prebuild-install warning via better-sqlite3",
+    "url": "https://github.com/colbymchenry/codegraph/issues/227",
+    "state": "CLOSED",
+    "createdAt": "2026-05-20T22:44:50Z",
+    "updatedAt": "2026-05-20T23:18:51Z",
+    "closedAt": "2026-05-20T23:18:51Z",
+    "author": {
+      "login": "mirusser"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 229,
+    "title": "Support for Julia",
+    "url": "https://github.com/colbymchenry/codegraph/issues/229",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T00:47:00Z",
+    "updatedAt": "2026-06-02T16:44:07Z",
+    "closedAt": "2026-06-02T16:44:07Z",
+    "author": {
+      "login": "kongdd"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 231,
+    "title": "support nodejs 26",
+    "url": "https://github.com/colbymchenry/codegraph/issues/231",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T00:53:08Z",
+    "updatedAt": "2026-05-21T06:13:22Z",
+    "closedAt": "2026-05-21T06:13:22Z",
+    "author": {
+      "login": "mozhuanzuojing"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 232,
+    "title": "Feat: Lua support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/232",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T01:24:53Z",
+    "updatedAt": "2026-05-21T14:28:15Z",
+    "closedAt": "2026-05-21T14:28:15Z",
+    "author": {
+      "login": "coderdylanbates"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 235,
+    "title": "what's the key difference between codegraph and serena？",
+    "url": "https://github.com/colbymchenry/codegraph/issues/235",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T03:42:02Z",
+    "updatedAt": "2026-06-16T09:25:42Z",
+    "closedAt": "2026-05-29T04:36:03Z",
+    "author": {
+      "login": "unknowone"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 237,
+    "title": "C# classes using primary constructor syntax are sometimes not indexed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/237",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T04:41:12Z",
+    "updatedAt": "2026-06-07T14:50:34Z",
+    "closedAt": "2026-06-07T14:50:16Z",
+    "author": {
+      "login": "d3ara1n"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 238,
+    "title": "SQLite \"database is locked\" error on concurrent MCP tool calls",
+    "url": "https://github.com/colbymchenry/codegraph/issues/238",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T04:41:15Z",
+    "updatedAt": "2026-05-23T17:32:42Z",
+    "closedAt": "2026-05-21T20:48:06Z",
+    "author": {
+      "login": "d3ara1n"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 239,
+    "title": "Feat: support shell as bash or powershell",
+    "url": "https://github.com/colbymchenry/codegraph/issues/239",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T06:21:13Z",
+    "updatedAt": "2026-06-20T05:44:05Z",
+    "closedAt": "2026-06-20T05:44:05Z",
+    "author": {
+      "login": "venscn"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 243,
+    "title": "Claude Code installer writes personal config to team-shared files; add --personal flag for gitignored variants",
+    "url": "https://github.com/colbymchenry/codegraph/issues/243",
+    "state": "OPEN",
+    "createdAt": "2026-05-21T08:38:01Z",
+    "updatedAt": "2026-05-21T10:17:34Z",
+    "closedAt": null,
+    "author": {
+      "login": "steven-pribilinskiy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 262,
+    "title": "Support for Verilog/SystemVerilog",
+    "url": "https://github.com/colbymchenry/codegraph/issues/262",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T10:48:24Z",
+    "updatedAt": "2026-06-02T16:44:05Z",
+    "closedAt": "2026-06-02T16:44:05Z",
+    "author": {
+      "login": "oooki-art"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 268,
+    "title": "Feat: Framework support for Drupal",
+    "url": "https://github.com/colbymchenry/codegraph/issues/268",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T12:44:41Z",
+    "updatedAt": "2026-05-22T11:58:10Z",
+    "closedAt": "2026-05-21T22:11:22Z",
+    "author": {
+      "login": "marcelovani"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 269,
+    "title": "Crash on init",
+    "url": "https://github.com/colbymchenry/codegraph/issues/269",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T13:18:01Z",
+    "updatedAt": "2026-05-22T10:48:55Z",
+    "closedAt": "2026-05-22T10:48:55Z",
+    "author": {
+      "login": "stevenselcuk"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 270,
+    "title": "Config file not updated when new include/exclude patterns are added in a new release",
+    "url": "https://github.com/colbymchenry/codegraph/issues/270",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T13:47:34Z",
+    "updatedAt": "2026-05-22T07:23:54Z",
+    "closedAt": "2026-05-22T07:21:56Z",
+    "author": {
+      "login": "marcelovani"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 275,
+    "title": "spawn ENOENT on Windows when auto-opening browser — visualize crashes after server starts",
+    "url": "https://github.com/colbymchenry/codegraph/issues/275",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T16:09:22Z",
+    "updatedAt": "2026-05-29T04:07:48Z",
+    "closedAt": "2026-05-29T04:07:48Z",
+    "author": {
+      "login": "glavas-blc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 276,
+    "title": "fs.watch(root, {recursive: true}) registers inotify watch per directory with no exclude — exhausts kernel budget on large repos",
+    "url": "https://github.com/colbymchenry/codegraph/issues/276",
+    "state": "CLOSED",
+    "createdAt": "2026-05-21T16:18:20Z",
+    "updatedAt": "2026-05-26T01:12:46Z",
+    "closedAt": "2026-05-26T01:12:46Z",
+    "author": {
+      "login": "mattmorganpdx"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  }
+]

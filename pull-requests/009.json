@@ -1,0 +1,3194 @@
+[
+  {
+    "number": 1363,
+    "title": "docs(kernel): §7a.8 cFnPtr calibration — strip rewrite killed by measurement, fuse-then-link is step 1",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1363",
+    "state": "MERGED",
+    "createdAt": "2026-07-18T22:15:13Z",
+    "updatedAt": "2026-10-10T06:15:00Z",
+    "closedAt": "2026-07-18T22:15:16Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-18T22:15:16Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "cfnptr-calibration",
+    "baseRefOid": "971a5a04838aed7885710e220b7394929e91013d",
+    "headRefOid": "19b6069b6ee9ef92258f1e82ac698ad27522a966",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "b877db617ccd17f1ece6961235e368ec46c55b46"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1364,
+    "title": "perf(resolution): cFnPtr fuse-then-link — one extraction sweep + filtered verbatim linking, pass −22% at kernel scale",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1364",
+    "state": "MERGED",
+    "createdAt": "2026-07-19T16:42:57Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-19T16:43:06Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-19T16:43:06Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/cfnptr-fuse-then-link",
+    "baseRefOid": "b877db617ccd17f1ece6961235e368ec46c55b46",
+    "headRefOid": "21d4efa12d19afd1ea965958ec69c36bc48b45b2",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c6850d737b80a330cf45271342ebcb728064b8f9"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1365,
+    "title": "perf(kernel): cFnPtr native extraction sweep — step 2, pass 230→151s across the arc",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1365",
+    "state": "MERGED",
+    "createdAt": "2026-07-19T22:48:20Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-19T22:48:27Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-19T22:48:27Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/cfnptr-native-sweep",
+    "baseRefOid": "c6850d737b80a330cf45271342ebcb728064b8f9",
+    "headRefOid": "f640880be60aaaa9e6f82b3bff5a5bb3700f7027",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "69ea438bac1c5b75a83a8d46bc1950448b10d3b4"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1366,
+    "title": "docs(kernel): §7a.11 continuous-shallow WAL probe — killed by measurement",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1366",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T00:00:54Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-07-20T00:01:11Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T00:01:11Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/wal-nudge-probe",
+    "baseRefOid": "69ea438bac1c5b75a83a8d46bc1950448b10d3b4",
+    "headRefOid": "2a1eaf3981a563b312c040bc15ffc2c53bdaa0ff",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "9647771659a453d08afda0d40fe243a50b29ca6f"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1368,
+    "title": "perf(store): parse-lane index deferral — dubbo fresh init −19%, kernel-scale envelope best-ever 14.2min",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1368",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T04:02:44Z",
+    "updatedAt": "2026-10-10T06:15:20Z",
+    "closedAt": "2026-07-20T04:02:54Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T04:02:54Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/parse-index-deferral",
+    "baseRefOid": "9647771659a453d08afda0d40fe243a50b29ca6f",
+    "headRefOid": "bcbaf783c444627948be311babfbbe369a6391ac",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f6d8e8fdab2f3f80cddac0f333886ca9dec5ca2e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1369,
+    "title": "perf(store): resolution ref-index window — kernel-scale resolution 423→276s, 8c envelope ≈11min",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1369",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T04:24:12Z",
+    "updatedAt": "2026-10-10T06:15:21Z",
+    "closedAt": "2026-07-20T04:24:15Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T04:24:14Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/resolution-ref-index-window",
+    "baseRefOid": "f6d8e8fdab2f3f80cddac0f333886ca9dec5ca2e",
+    "headRefOid": "4f1a5d65f4b8e67101318f29b35ad20d324b9693",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "ce0ae30e09b8f495219893e716ae3974eacd2bd4"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1370,
+    "title": "fix(installer): preserve trailing TOML array tables",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1370",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T05:07:28Z",
+    "updatedAt": "2026-07-22T20:19:17Z",
+    "closedAt": "2026-07-22T20:19:16Z",
+    "author": {
+      "login": "KtzeAbyss"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-22T20:19:16Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/codex-toml-array-table-preservation",
+    "baseRefOid": "ce0ae30e09b8f495219893e716ae3974eacd2bd4",
+    "headRefOid": "090dda5fbabad8e789ae0b29f5b46fcf9ed64c80",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "572d22bfbe82602080e457bec655f72e3314f9ef"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1371,
+    "title": "feat(kernel): R7b Rust walker — rustlang module, tree-sitter-rust 0.24.2 bump, rust default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1371",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T05:08:02Z",
+    "updatedAt": "2026-10-10T06:15:22Z",
+    "closedAt": "2026-07-20T05:08:10Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T05:08:10Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "r7b-rust-kernel-port",
+    "baseRefOid": "ce0ae30e09b8f495219893e716ae3974eacd2bd4",
+    "headRefOid": "4b74299f0660f62da378bff0d3e7539c7671eec5",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f1ca9919435b401b20d7e9afa4297061997b0f99"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1374,
+    "title": "fix(mcp): replace misleading 'Budget: make at most N' with 'NO call limit'",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1374",
+    "state": "CLOSED",
+    "createdAt": "2026-07-20T13:01:36Z",
+    "updatedAt": "2026-08-03T13:06:52Z",
+    "closedAt": "2026-08-03T13:06:52Z",
+    "author": {
+      "login": "jaepo01"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/budget-wording-no-call-limit",
+    "baseRefOid": "f1ca9919435b401b20d7e9afa4297061997b0f99",
+    "headRefOid": "67e50ccb07cd0c6b0addef4852266e7349fce5ab",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1375,
+    "title": "fix(index): stop verified daemon before recreating database",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1375",
+    "state": "CLOSED",
+    "createdAt": "2026-07-20T13:07:30Z",
+    "updatedAt": "2026-09-27T15:26:55Z",
+    "closedAt": "2026-09-27T15:26:55Z",
+    "author": {
+      "login": "hbui290"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "agent/fix-stop-daemon-before-index",
+    "baseRefOid": "f1ca9919435b401b20d7e9afa4297061997b0f99",
+    "headRefOid": "4192519cfabda92739a023ad36be8ac813d9e0e3",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1377,
+    "title": "fix(explore): find files by exact Chinese filenames",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1377",
+    "state": "CLOSED",
+    "createdAt": "2026-07-20T17:12:37Z",
+    "updatedAt": "2026-09-27T13:03:31Z",
+    "closedAt": "2026-09-27T13:03:31Z",
+    "author": {
+      "login": "Syh1906"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "agent/fix-chinese-filename-explore",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "2f6007d66ef48cca45e03e1487dc9a9562f93ff2",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 1378,
+    "title": "feat(kernel): R7b C# walker — csharp module, tree-sitter-c-sharp 0.23.5 pin, csharp default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1378",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T18:46:06Z",
+    "updatedAt": "2026-10-10T06:15:18Z",
+    "closedAt": "2026-07-20T18:46:13Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T18:46:13Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r7b-csharp",
+    "baseRefOid": "f1ca9919435b401b20d7e9afa4297061997b0f99",
+    "headRefOid": "30570da1c096705656932ddc7616243be9d77c68",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "286e9ccc2dad45336d4fd67052930322054d64b5"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1379,
+    "title": "feat(kernel): R7b Ruby walker — ruby module, tree-sitter-ruby 0.23.1 bump, ref-flag wire slot, ruby default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1379",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T20:44:11Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-20T20:44:14Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T20:44:14Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r7b-ruby",
+    "baseRefOid": "286e9ccc2dad45336d4fd67052930322054d64b5",
+    "headRefOid": "f83fdb91c319759425b6cb47f70dd3aa9a7d7b42",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "19099312385b0b169963040df34a97747e72df18"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1380,
+    "title": "feat(kernel): R7b PHP walker — php module, tree-sitter-php 0.24.2 bump, php default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1380",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T21:08:20Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-20T21:08:23Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T21:08:23Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r7b-php",
+    "baseRefOid": "19099312385b0b169963040df34a97747e72df18",
+    "headRefOid": "57c976cf6135e17ff76e4c44a420ff3ddf3f2c1f",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "a6c62d77dff4b9e7ad79bc8436ea7c1b31a9f5ce"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1381,
+    "title": "feat(kernel): R7b Swift walker — swift module, tree-sitter-swift 0.7.3 bump, swift default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1381",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T22:09:09Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-20T22:09:13Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T22:09:13Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r7b-swift",
+    "baseRefOid": "a6c62d77dff4b9e7ad79bc8436ea7c1b31a9f5ce",
+    "headRefOid": "8ccf16de806f7c7805b0a4efed29f283150bae15",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "09e301bbfae5728c3f4bee1cd6a992b81a52a33e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1382,
+    "title": "feat(kernel): R7b Kotlin walker — kotlin module, vendored-grammar-C build, kotlin default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1382",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T22:33:15Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-20T22:33:19Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T22:33:19Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r7b-kotlin",
+    "baseRefOid": "09e301bbfae5728c3f4bee1cd6a992b81a52a33e",
+    "headRefOid": "1f1a987a73fec60008d2c56de20d717ff1b1f10b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "45a53eb5b5a977189381baf3751af33a913a6393"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1383,
+    "title": "feat(kernel): R7b R walker — rlang module, tree-sitter-r 1.2.0 crate pin, r default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1383",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T23:28:20Z",
+    "updatedAt": "2026-10-10T06:15:18Z",
+    "closedAt": "2026-07-20T23:28:28Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T23:28:28Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-r-walker",
+    "baseRefOid": "45a53eb5b5a977189381baf3751af33a913a6393",
+    "headRefOid": "0de10c556fb844404e0d28de5c447c55092d29b6",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "b2f9ab1800d15477ee08ddbd6a3d8a26caf34410"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1384,
+    "title": "feat(kernel): R7b Lua+Luau walker — one lua module, vendored-grammar-C lua v0.4.1, tree-sitter-luau 1.2.0 pin, both default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1384",
+    "state": "MERGED",
+    "createdAt": "2026-07-20T23:42:11Z",
+    "updatedAt": "2026-10-10T06:15:18Z",
+    "closedAt": "2026-07-20T23:42:14Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-20T23:42:14Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-lua-walker",
+    "baseRefOid": "b2f9ab1800d15477ee08ddbd6a3d8a26caf34410",
+    "headRefOid": "47dfdf305c228ff42dacb991ae816be1b8e7f130",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "e32135171e34b94ec6e11e1ea1fd6ad1605732d2"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1385,
+    "title": "feat(kernel): R7b Scala walker — scala module, vendored-grammar-C master@0aca5d0a6f, scala default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1385",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T00:02:49Z",
+    "updatedAt": "2026-10-10T06:15:20Z",
+    "closedAt": "2026-07-21T00:02:52Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T00:02:52Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-scala-walker",
+    "baseRefOid": "e32135171e34b94ec6e11e1ea1fd6ad1605732d2",
+    "headRefOid": "f45f223eacf14fb7cd5ad9f7315462e2244f6d52",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "bdd687b49f97a06972638ba61bd63c5f1514a828"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1386,
+    "title": "feat(kernel): R7b Dart walker — dart module, vendored-grammar-C d4d8f3e + wasm byte-copy vendor, dart default-routed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1386",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T00:55:46Z",
+    "updatedAt": "2026-10-10T06:15:18Z",
+    "closedAt": "2026-07-21T00:55:49Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T00:55:49Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "kernel-dart-walker",
+    "baseRefOid": "bdd687b49f97a06972638ba61bd63c5f1514a828",
+    "headRefOid": "a42cfbe92e84becaffaa169010bde8a837d10664",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "d1b75a1a277cbcf5e4e7730be1c24fa483ce66ee"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1387,
+    "title": "docs(kernel): mark R7b complete — 20 languages default-routed, Linux leg validated",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1387",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T01:02:21Z",
+    "updatedAt": "2026-10-10T06:15:22Z",
+    "closedAt": "2026-07-21T01:02:23Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T01:02:23Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "r7b-complete-docs",
+    "baseRefOid": "d1b75a1a277cbcf5e4e7730be1c24fa483ce66ee",
+    "headRefOid": "203fa29fe56b119ce88dfa329220300725f6269d",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "3c1f30ab482030f61620cafb17856bf2e763222b"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1388,
+    "title": "perf(resolution): darwin-honest memory budget — vm_stat availability unstrangles the resolver pool on macOS",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1388",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T01:11:29Z",
+    "updatedAt": "2026-10-10T06:15:06Z",
+    "closedAt": "2026-07-21T01:11:31Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T01:11:31Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "darwin-memory-budget",
+    "baseRefOid": "3c1f30ab482030f61620cafb17856bf2e763222b",
+    "headRefOid": "ad125029efcb9b68ccc9f02597511c3bf3e65ccd",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "27c3c55436907d549109e9d87b476bc5b4895f41"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1389,
+    "title": "perf(synthesis): provably-empty pass gates + prefilters — synthesis barrier 784→435ms on dubbo, byte-identical",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1389",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T02:15:51Z",
+    "updatedAt": "2026-10-10T06:15:21Z",
+    "closedAt": "2026-07-21T02:15:58Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T02:15:58Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/synthesis-pass-gates",
+    "baseRefOid": "27c3c55436907d549109e9d87b476bc5b4895f41",
+    "headRefOid": "c7dfd84246089624df7dc1ee6b3ed25b8353e653",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "082ea65f3a72cb0fb93516943814d33a2f5bc669"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1390,
+    "title": "perf(resolution): adaptive resolver-pool engagement — tokio fresh index −23%, byte-identical",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1390",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T04:20:21Z",
+    "updatedAt": "2026-10-10T06:15:18Z",
+    "closedAt": "2026-07-21T04:20:29Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T04:20:29Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/adaptive-pool-engagement",
+    "baseRefOid": "082ea65f3a72cb0fb93516943814d33a2f5bc669",
+    "headRefOid": "58c2db371502051c955e6aeea51ef2567c2e2567",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1aa4de6eaa0db4a7d7bd0cc7c1a7ac96d3a840ef"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1391,
+    "title": "perf(resolution): Lua/Luau require resolution via per-context basename index — kong −16%, byte-identical",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1391",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T05:01:50Z",
+    "updatedAt": "2026-10-10T06:15:20Z",
+    "closedAt": "2026-07-21T05:02:02Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T05:02:02Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/lua-require-index",
+    "baseRefOid": "1aa4de6eaa0db4a7d7bd0cc7c1a7ac96d3a840ef",
+    "headRefOid": "b8bfa1a58d235dd057dd5d4fc78fb046c20dadc7",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "abb0a916f7da5175774f1a15d3bb478ed018985f"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1392,
+    "title": "perf(resolution): receiver-inference incremental scan memo — kong −8% more, byte-identical",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1392",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T05:19:48Z",
+    "updatedAt": "2026-10-10T06:15:20Z",
+    "closedAt": "2026-07-21T05:20:04Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T05:20:04Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/receiver-inference-memo",
+    "baseRefOid": "abb0a916f7da5175774f1a15d3bb478ed018985f",
+    "headRefOid": "2a8287bdebe9c0b15d0b3f6e4a04b4cb27043e30",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "974e6c8b957054ecba6053726546ea5ef4c1d9d0"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1394,
+    "title": "[WIP] feat: plugin system for framework routes detections",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1394",
+    "state": "CLOSED",
+    "createdAt": "2026-07-21T13:16:41Z",
+    "updatedAt": "2026-07-21T13:17:39Z",
+    "closedAt": "2026-07-21T13:16:50Z",
+    "author": {
+      "login": "antoineFrau"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/in-repo-framework-plugins",
+    "baseRefOid": "974e6c8b957054ecba6053726546ea5ef4c1d9d0",
+    "headRefOid": "63de8318dd5dbdc845b032920eb0a64838343d23",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1395,
+    "title": "perf(resolution): generation-tagged supertype memo — Swift compiler fresh index 185→98s, byte-identical",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1395",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T15:56:24Z",
+    "updatedAt": "2026-10-10T06:15:21Z",
+    "closedAt": "2026-07-21T15:56:41Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T15:56:41Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/supertype-conformance-memo",
+    "baseRefOid": "974e6c8b957054ecba6053726546ea5ef4c1d9d0",
+    "headRefOid": "fa25f209173e6e8825bc46797bd2ac1ea9b2863a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "157c8e735dc9c14764b0362d216b6b9693cd5cf3"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1396,
+    "title": "feat(installer): add Grok Build target",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1396",
+    "state": "CLOSED",
+    "createdAt": "2026-07-21T16:36:21Z",
+    "updatedAt": "2026-10-30T16:42:06Z",
+    "closedAt": "2026-10-30T16:42:06Z",
+    "author": {
+      "login": "Inference1"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 7
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/issue-1347-grok-build-support",
+    "baseRefOid": "157c8e735dc9c14764b0362d216b6b9693cd5cf3",
+    "headRefOid": "d9a591e4a991112719d0675a9388d9a75d4d77dd",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1397,
+    "title": "perf(sync): adaptive quick-fire debounce + scoped watcher sync — sub-second save-to-graph at any scale",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1397",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T17:09:29Z",
+    "updatedAt": "2026-10-10T06:15:19Z",
+    "closedAt": "2026-07-21T17:09:32Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T17:09:32Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/instant-sync",
+    "baseRefOid": "157c8e735dc9c14764b0362d216b6b9693cd5cf3",
+    "headRefOid": "3dc1002d23b7ddf72d4addef75c3161471c20c9c",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c74e8b05e058bef71782767f92d445746ea6ddf2"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1398,
+    "title": "chore: gitignore target-linux/ cross-build cache",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1398",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T17:09:52Z",
+    "updatedAt": "2026-10-10T06:15:00Z",
+    "closedAt": "2026-07-21T17:09:55Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T17:09:55Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "chore/gitignore-target-linux",
+    "baseRefOid": "c74e8b05e058bef71782767f92d445746ea6ddf2",
+    "headRefOid": "83f6804873a4b5b3c21669b5a3ca0917b1a473b9",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f8e6f0066c18d477aaec0d3b340add280ecf8e99"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1399,
+    "title": "docs: Opus 4.8 benchmark re-validation + release headline",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1399",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T18:47:07Z",
+    "updatedAt": "2026-10-10T06:15:08Z",
+    "closedAt": "2026-07-21T18:47:10Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T18:47:10Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "docs/release-prep-benchmarks",
+    "baseRefOid": "f8e6f0066c18d477aaec0d3b340add280ecf8e99",
+    "headRefOid": "d950fdaf33872a9fdd958fbde1fd5132a303e6d1",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "0f1096e23893b77f3c5004c6552ee89e7c505586"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1400,
+    "title": "docs(release): README polish + version 1.5.0",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1400",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T18:57:53Z",
+    "updatedAt": "2026-07-21T18:57:56Z",
+    "closedAt": "2026-07-21T18:57:56Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T18:57:56Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "release/1.5.0-prep",
+    "baseRefOid": "0f1096e23893b77f3c5004c6552ee89e7c505586",
+    "headRefOid": "2ab32012733a1b2e082b753c785370c028a6c6f5",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "7d4a3d0f2d93b1fcf3587d42e865a50bfcceacca"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1401,
+    "title": "ci(release): kernel builds required + full walker-parity gate for 1.5.0",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1401",
+    "state": "MERGED",
+    "createdAt": "2026-07-21T19:02:38Z",
+    "updatedAt": "2026-10-10T06:15:01Z",
+    "closedAt": "2026-07-21T19:02:41Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-21T19:02:41Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "ci/release-kernel-required",
+    "baseRefOid": "7d4a3d0f2d93b1fcf3587d42e865a50bfcceacca",
+    "headRefOid": "109cf11cc823b08119ab6866f8f36c6d661ce4d8",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "a6682c6a073367afc9fe9e2af0a972b2637c34cc"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1404,
+    "title": "feat(ruby): isStatic, attr_accessor synthesis, brace-block calls Prism dispatcher fan-out",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1404",
+    "state": "CLOSED",
+    "createdAt": "2026-07-22T07:15:46Z",
+    "updatedAt": "2026-10-30T16:35:09Z",
+    "closedAt": "2026-10-30T16:35:09Z",
+    "author": {
+      "login": "sadfuzzy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix_ruby_parser",
+    "baseRefOid": "ea72e1b190921232aa7bd02e96bef5bbe4fe0ab6",
+    "headRefOid": "4a078c63002d51231cad28b650bc592a4b80aeaa",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1405,
+    "title": "Add QML",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1405",
+    "state": "CLOSED",
+    "createdAt": "2026-07-22T09:06:35Z",
+    "updatedAt": "2026-07-22T09:07:33Z",
+    "closedAt": "2026-07-22T09:07:32Z",
+    "author": {
+      "login": "hospitaler17"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "ea72e1b190921232aa7bd02e96bef5bbe4fe0ab6",
+    "headRefOid": "31b668167440cadda9430298c0e49f7a0e3f90bb",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1406,
+    "title": "fix(resolution): allow dot-prefixed path alias targets",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1406",
+    "state": "CLOSED",
+    "createdAt": "2026-07-22T12:11:38Z",
+    "updatedAt": "2026-10-29T21:17:34Z",
+    "closedAt": "2026-10-29T21:17:34Z",
+    "author": {
+      "login": "amplifierplus"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/dot-prefixed-path-alias",
+    "baseRefOid": "ea72e1b190921232aa7bd02e96bef5bbe4fe0ab6",
+    "headRefOid": "2443946198af037955a539ec7c0a9514952a279b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1435,
+    "title": "feat: add HTTP MCP transport",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1435",
+    "state": "CLOSED",
+    "createdAt": "2026-07-23T07:30:22Z",
+    "updatedAt": "2026-07-23T08:05:47Z",
+    "closedAt": "2026-07-23T08:05:47Z",
+    "author": {
+      "login": "BillMilk"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "658dc533bb18df23a672afe64e6d130288a27b9e",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1436,
+    "title": "Extend MCP to support HTTP-based access.",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1436",
+    "state": "CLOSED",
+    "createdAt": "2026-07-23T09:31:07Z",
+    "updatedAt": "2026-10-30T16:35:14Z",
+    "closedAt": "2026-10-30T16:35:14Z",
+    "author": {
+      "login": "BillMilk"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "a7db24d0c08cbedcd1b0aff100bc0079f666ee14",
+    "headRefOid": "f8c76d2062e2039c4b34b10bddb39efe3232f2b2",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1438,
+    "title": "Julia language support (updates & tests, carries #373)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1438",
+    "state": "CLOSED",
+    "createdAt": "2026-07-23T11:41:17Z",
+    "updatedAt": "2026-10-30T16:35:18Z",
+    "closedAt": "2026-10-30T16:35:18Z",
+    "author": {
+      "login": "aquaresima"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "14b80b0e596a2be57854dc5ff6770f4bddb812a4",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1440,
+    "title": "feat(installer): GitHub Copilot targets — VS Code, Copilot CLI, JetBrains",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1440",
+    "state": "MERGED",
+    "createdAt": "2026-07-23T22:29:54Z",
+    "updatedAt": "2026-08-07T18:50:36Z",
+    "closedAt": "2026-08-07T18:50:34Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-08-07T18:50:34Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/copilot-installer-targets",
+    "baseRefOid": "c84ce5585537310216c2973d3b902471492fade8",
+    "headRefOid": "493d4210f1a8992737aea5ccf573306e472a64b1",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "222f82b9a57780e4eaf28e46bbbad9cbda2d6666"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1444,
+    "title": "fix(installer): resolve Antigravity codegraph command out of fnm's ephemeral per-shell dir",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1444",
+    "state": "CLOSED",
+    "createdAt": "2026-07-24T02:31:07Z",
+    "updatedAt": "2026-09-27T13:06:58Z",
+    "closedAt": "2026-09-27T13:06:58Z",
+    "author": {
+      "login": "kevocodes"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/antigravity-fnm-ephemeral-command-path",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "8d37eb29e8842ba2d7aefb048ebe7ee17030a705",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1446,
+    "title": "feat: add repository knowledge atlas",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1446",
+    "state": "CLOSED",
+    "createdAt": "2026-07-24T03:39:06Z",
+    "updatedAt": "2026-10-30T16:40:16Z",
+    "closedAt": "2026-10-30T16:40:16Z",
+    "author": {
+      "login": "lsjfy-open-com"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/repository-knowledge-atlas",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "053940080d8b9dbe235093dc864cd089ad0a0fbc",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1453,
+    "title": "fix(resolution): resolve Python module members through aliased imports",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1453",
+    "state": "CLOSED",
+    "createdAt": "2026-07-25T10:40:50Z",
+    "updatedAt": "2026-10-28T00:32:53Z",
+    "closedAt": "2026-10-28T00:32:53Z",
+    "author": {
+      "login": "br41nlet"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/python-aliased-module-member-resolution",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "6ba5918c8035834b7e97ab580504dd86a8e577b6",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1458,
+    "title": "feat(crystal) Add Crystal language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1458",
+    "state": "CLOSED",
+    "createdAt": "2026-07-27T01:43:45Z",
+    "updatedAt": "2026-10-30T16:35:22Z",
+    "closedAt": "2026-10-30T16:35:22Z",
+    "author": {
+      "login": "n-rodriguez"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/crystal-language-support",
+    "baseRefOid": "69af19ace270f2e940444d514de6dde971df12df",
+    "headRefOid": "babfd285c0bf6ad36019182c4c53b7da362a9341",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1459,
+    "title": "feat(installer): user-defined custom targets — codegraph targets add, spec-driven families",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1459",
+    "state": "CLOSED",
+    "createdAt": "2026-07-27T05:05:28Z",
+    "updatedAt": "2026-10-31T12:11:40Z",
+    "closedAt": "2026-10-30T16:35:27Z",
+    "author": {
+      "login": "quickbeard"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 11
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/custom-installer-targets",
+    "baseRefOid": "969ea1ec371dc62d056cbeb3920fa79036128842",
+    "headRefOid": "b657797a6daee40ed33522197b724cc686e0b37f",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1460,
+    "title": "feat(extraction): add Clojure language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1460",
+    "state": "CLOSED",
+    "createdAt": "2026-07-27T13:48:06Z",
+    "updatedAt": "2026-10-30T16:35:31Z",
+    "closedAt": "2026-10-30T16:35:31Z",
+    "author": {
+      "login": "pkoz"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/clojure-support",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "acb859b48c3d42c5893014806926a85f3694e2e9",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1462,
+    "title": "feat(search): discount the exact-name bonus by corpus frequency (#982)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1462",
+    "state": "CLOSED",
+    "createdAt": "2026-07-27T15:19:57Z",
+    "updatedAt": "2026-10-12T07:46:41Z",
+    "closedAt": "2026-10-12T07:46:41Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "fix/982-idf-name-match",
+    "baseRefOid": "44e1812d3b1c88cf8193732608345a5cf6941e30",
+    "headRefOid": "74cdf6768fe5b90eb710315473a2a5e10180311a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1463,
+    "title": "feat(config): add codegraph.json \"deprioritize\" for ranking-only path down-weighting (#982)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1463",
+    "state": "MERGED",
+    "createdAt": "2026-07-27T15:41:44Z",
+    "updatedAt": "2026-08-22T17:04:31Z",
+    "closedAt": "2026-08-22T16:55:15Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": "2026-08-22T16:55:14Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/982-deprioritize-paths",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "8de1034af23759b3164e34a588d8a43a941c9e99",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1d9de88ef194bf7574de538f600afa11666ff712"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1467,
+    "title": "Add codegraph visual file-level graph export",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1467",
+    "state": "CLOSED",
+    "createdAt": "2026-07-28T12:31:02Z",
+    "updatedAt": "2026-09-23T14:36:24Z",
+    "closedAt": "2026-09-23T14:36:24Z",
+    "author": {
+      "login": "amyrsaalehi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/codegraph-visual",
+    "baseRefOid": "f2a5df34de99c46c70a889fc6c8852c886133134",
+    "headRefOid": "1cd2be4bc1b89711cf73862b284bc604e2d4a1c9",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1471,
+    "title": "feat: framework-level route & reference extraction",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1471",
+    "state": "CLOSED",
+    "createdAt": "2026-07-28T14:43:36Z",
+    "updatedAt": "2026-07-28T23:15:44Z",
+    "closedAt": "2026-07-28T23:15:37Z",
+    "author": {
+      "login": "yohi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "feat/framework-extract-wiring",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "8ed2c3005066540e90498aa26d26aec344566f40",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1472,
+    "title": "Fix Windows watcher false edits from NTFS atime",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1472",
+    "state": "CLOSED",
+    "createdAt": "2026-07-28T17:36:15Z",
+    "updatedAt": "2026-09-27T15:10:52Z",
+    "closedAt": "2026-09-27T15:10:52Z",
+    "author": {
+      "login": "JJordan0C"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/windows-ntfs-atime-events",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "2977f063639c1f268175887c11db638d28fb51d8",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1476,
+    "title": "fix: upgrade picomatch to 4.0.4, 3.0.2, 2.3.2 (CVE-2026-33671)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1476",
+    "state": "CLOSED",
+    "createdAt": "2026-07-29T12:00:46Z",
+    "updatedAt": "2026-10-28T01:56:00Z",
+    "closedAt": "2026-10-28T01:56:00Z",
+    "author": {
+      "login": "anupamme"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-repo-codegraph-cve-2026-33671-picomatch",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "f38789646dcac15496bd0359de7b21e54735fab1",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1477,
+    "title": "fix: upgrade postcss to 8.5.18 (GHSA-r28c-9q8g-f849)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1477",
+    "state": "CLOSED",
+    "createdAt": "2026-07-29T12:44:22Z",
+    "updatedAt": "2026-10-30T07:13:47Z",
+    "closedAt": "2026-10-30T07:13:47Z",
+    "author": {
+      "login": "anupamme"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-repo-codegraph-ghsa-r28c-9q8g-f849-postcss",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "88cb96d1d1d6d6d3b3e221b001894c254283d658",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1479,
+    "title": "Private/issue 307 hono subrouter route detection",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1479",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T06:09:26Z",
+    "updatedAt": "2026-10-30T17:13:55Z",
+    "closedAt": "2026-10-30T17:13:55Z",
+    "author": {
+      "login": "ljluestc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "private/issue-307-hono-subrouter-route-detection",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "91bd045a1fbd46f9c74d6d60030597e3423b371a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1480,
+    "title": "feat(installer): add jcode target with token-efficient AGENTS.md and SKILL.md",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1480",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T08:06:22Z",
+    "updatedAt": "2026-10-30T16:35:36Z",
+    "closedAt": "2026-10-30T16:35:36Z",
+    "author": {
+      "login": "robin20250704"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/jcode-target",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "8b51d05e2f610d2a997fbe5a424172a3099e0781",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1481,
+    "title": "fix: stop callers/callees/impact from silently substituting fuzzy hits (#1473)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1481",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T08:54:53Z",
+    "updatedAt": "2026-09-09T00:40:19Z",
+    "closedAt": "2026-09-09T00:40:17Z",
+    "author": {
+      "login": "uvmplus"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/1473-no-silent-fuzzy-symbol-substitution",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "247c5b1d80c66e795138a5bc2529d33cfc50ae44",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1483,
+    "title": "Added GitHub Copilot CLI as a target",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1483",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T12:39:51Z",
+    "updatedAt": "2026-08-07T19:43:41Z",
+    "closedAt": "2026-08-07T18:50:58Z",
+    "author": {
+      "login": "davideconsonni"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "c65d56ceba6628e192aba2875ff36329b7a0af76",
+    "headRefOid": "339c8ced8952e7aa23ba54bd87fd5d20fe467c14",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1484,
+    "title": "fix(resolution): resolve `.js` import specifiers to their TS source",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1484",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T13:46:03Z",
+    "updatedAt": "2026-10-27T19:06:46Z",
+    "closedAt": "2026-10-27T19:06:46Z",
+    "author": {
+      "login": "valkyriweb"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/js-specifier-ts-resolution",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "5b20640e4ed9d87632ba142680dc2abcd9a96078",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1485,
+    "title": "fix(resolution): follow alias bindings to the function they name",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1485",
+    "state": "CLOSED",
+    "createdAt": "2026-07-30T13:46:14Z",
+    "updatedAt": "2026-09-09T00:18:59Z",
+    "closedAt": "2026-09-09T00:18:59Z",
+    "author": {
+      "login": "valkyriweb"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/alias-binding-resolution",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "cc791cfc51b100097571421b4ab7c53b96ceb202",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1486,
+    "title": "fix: recover watcher and serialize database writers",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1486",
+    "state": "CLOSED",
+    "createdAt": "2026-07-31T03:18:34Z",
+    "updatedAt": "2026-10-27T16:47:49Z",
+    "closedAt": "2026-10-27T16:47:49Z",
+    "author": {
+      "login": "stsoul"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "agent/fix-watcher-lock-recovery",
+    "baseRefOid": "49c11fc2e0c02170742be8411e66a31af611f4b7",
+    "headRefOid": "373f1f38a67c3ceb16ddae43420897a9a52389c5",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1487,
+    "title": "feat: add Hermes graph query skill",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1487",
+    "state": "CLOSED",
+    "createdAt": "2026-07-31T15:40:59Z",
+    "updatedAt": "2026-10-30T16:40:21Z",
+    "closedAt": "2026-10-30T16:40:21Z",
+    "author": {
+      "login": "hao-lucy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/hermes-graph-query-skill",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "7aa7940ecb43715fce2121e7eef36cf73404c524",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1488,
+    "title": "feat: add PostgreSQL indexing support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1488",
+    "state": "CLOSED",
+    "createdAt": "2026-07-31T17:10:47Z",
+    "updatedAt": "2026-10-09T18:34:28Z",
+    "closedAt": "2026-10-09T18:34:28Z",
+    "author": {
+      "login": "dhritcu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "codex/postgres-support",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "c74844dc5be87675ec6bdf741714be24fec0430a",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1489,
+    "title": "fix(installer): write the Claude prompt hook as codegraph.cmd on Windows",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1489",
+    "state": "MERGED",
+    "createdAt": "2026-07-31T22:00:40Z",
+    "updatedAt": "2026-07-31T22:12:31Z",
+    "closedAt": "2026-07-31T22:12:29Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-07-31T22:12:29Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/prompt-hook-windows-cmd",
+    "baseRefOid": "572d22bfbe82602080e457bec655f72e3314f9ef",
+    "headRefOid": "8680c3d5078bcdae3059145d25f098a421d84ba7",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "0682137a429b25a8a547c37fb1d4874f9f79befa"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1490,
+    "title": "fix: stop watchdog-killed sessions from leaking the SQLite WAL without bound (#1431)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1490",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T02:38:18Z",
+    "updatedAt": "2026-08-01T02:38:41Z",
+    "closedAt": "2026-08-01T02:38:39Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-01T02:38:38Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "issue/1431",
+    "baseRefOid": "0682137a429b25a8a547c37fb1d4874f9f79befa",
+    "headRefOid": "afe1e399f7bb18f5617c0bafab26858dfc027e50",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "02c0e2c935c0b4cd35537a71643b31ffe26215c7"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1492,
+    "title": "fix(mcp): never serve a mis-sliced symbol body from a file that drifted from its index (#1474)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1492",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T06:11:57Z",
+    "updatedAt": "2026-08-01T06:12:55Z",
+    "closedAt": "2026-08-01T06:12:53Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-01T06:12:53Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "issue/1474-stale-slice",
+    "baseRefOid": "02c0e2c935c0b4cd35537a71643b31ffe26215c7",
+    "headRefOid": "b3e5f2a279e52ccd33428614229ab90736599f81",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f2a5df34de99c46c70a889fc6c8852c886133134"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1493,
+    "title": "fix(python): bare class references produce references edges to classes",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1493",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T06:35:42Z",
+    "updatedAt": "2026-08-01T06:36:09Z",
+    "closedAt": "2026-08-01T06:36:07Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-01T06:36:07Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "issue/1478-python-class-refs",
+    "baseRefOid": "f2a5df34de99c46c70a889fc6c8852c886133134",
+    "headRefOid": "2e912fab31b4883ffb64bea09fb3ff8aed90f956",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "38580e0b04150ce21d7863a1352879e5a82d929e"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1494,
+    "title": "fix(mcp): blast radius follows caller chains before claiming no test coverage",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1494",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T06:50:02Z",
+    "updatedAt": "2026-08-01T06:50:46Z",
+    "closedAt": "2026-08-01T06:50:44Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-01T06:50:44Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "issue/1475",
+    "baseRefOid": "38580e0b04150ce21d7863a1352879e5a82d929e",
+    "headRefOid": "708ff23158c7992dbdcc9765cd0894989ad41b7d",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f6ac7b36e6b998b5304878b15e032796ab3a0d01"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1497,
+    "title": "Self-hosted telemetry on Cloudflare D1 + password-gated admin dashboard (CG-7)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1497",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T21:11:58Z",
+    "updatedAt": "2026-10-10T06:15:10Z",
+    "closedAt": "2026-08-01T21:17:11Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-01T21:17:11Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/CG-7",
+    "baseRefOid": "f6ac7b36e6b998b5304878b15e032796ab3a0d01",
+    "headRefOid": "537a8a0110f9034fc9beb18cee66fddf76f73e27",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "49c11fc2e0c02170742be8411e66a31af611f4b7"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1498,
+    "title": "fix(telemetry-dashboard): accept Origin: null on login — no-referrer policy locked Chromium out (CG-16)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1498",
+    "state": "MERGED",
+    "createdAt": "2026-08-01T21:48:48Z",
+    "updatedAt": "2026-08-07T18:38:10Z",
+    "closedAt": "2026-08-07T18:38:08Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-07T18:38:08Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "bugfix/CG-16",
+    "baseRefOid": "49c11fc2e0c02170742be8411e66a31af611f4b7",
+    "headRefOid": "3cb774a5cdd89a47117423cfd9030b4b0742795a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "1b36132a89c2dae1d33e9047896787c073254893"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1499,
+    "title": "feat: add GDScript language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1499",
+    "state": "CLOSED",
+    "createdAt": "2026-08-02T11:39:39Z",
+    "updatedAt": "2026-10-30T16:35:41Z",
+    "closedAt": "2026-10-30T16:35:41Z",
+    "author": {
+      "login": "cosmicnag"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "gdscript-support",
+    "baseRefOid": "ba3c21e50d9129d2f5f3843ec3728868ae6d47a1",
+    "headRefOid": "6215936f995edeb9c86dd0dbeba7de7b29505a55",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 1503,
+    "title": "fix(installer): stop swapping symlinked config files for detached copies (shared AGENTS.md setups)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1503",
+    "state": "CLOSED",
+    "createdAt": "2026-08-03T12:15:18Z",
+    "updatedAt": "2026-10-27T15:47:46Z",
+    "closedAt": "2026-10-27T15:47:46Z",
+    "author": {
+      "login": "meganemura"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/installer-stop-swapping-symlinked-configs",
+    "baseRefOid": "44e1812d3b1c88cf8193732608345a5cf6941e30",
+    "headRefOid": "adcd60baadae7f11b05f927f82175e748d40b427",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1508,
+    "title": "feat: add SystemVerilog/Verilog, Tcl, and VHDL language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1508",
+    "state": "CLOSED",
+    "createdAt": "2026-08-05T12:34:18Z",
+    "updatedAt": "2026-10-20T08:07:27Z",
+    "closedAt": "2026-10-20T08:07:26Z",
+    "author": {
+      "login": "3brahimi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/hdl-languages-verilog-tcl-vhdl",
+    "baseRefOid": "8f1f842b5b828175992d2ce2cdf673b955b2cce9",
+    "headRefOid": "14ab7279764c21d745f2ba1dcb1b0ae174227f36",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 1511,
+    "title": "Walk declaration initializers scoped to the declared symbol — Kotlin, Java, TS/JS, Scala, Rust, Python (#693 for the other six languages)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1511",
+    "state": "CLOSED",
+    "createdAt": "2026-08-05T21:02:29Z",
+    "updatedAt": "2026-09-08T22:32:44Z",
+    "closedAt": "2026-09-08T22:32:44Z",
+    "author": {
+      "login": "danusha2345"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 15
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/kotlin-property-initializer-walk",
+    "baseRefOid": "71d049cd2804e9be06e365d562ae192cf6a5c54c",
+    "headRefOid": "d282f9e8a9e18bc8dddee96eb2c7ece81affc743",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1514,
+    "title": "fix(rust): index unit structs — bodiless is a definition, not a forward declaration (#1513)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1514",
+    "state": "CLOSED",
+    "createdAt": "2026-08-06T05:48:34Z",
+    "updatedAt": "2026-09-08T21:52:21Z",
+    "closedAt": "2026-09-08T21:52:21Z",
+    "author": {
+      "login": "ctype-lab"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/rust-unit-struct-not-indexed",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "c69a0d1c3b7685d7c3d21f9179daf5d57bb14b37",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1516,
+    "title": "fix(c,cpp,objc,rust): index union declarations",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1516",
+    "state": "MERGED",
+    "createdAt": "2026-08-06T07:23:45Z",
+    "updatedAt": "2026-08-08T02:56:06Z",
+    "closedAt": "2026-08-08T02:56:05Z",
+    "author": {
+      "login": "ctype-lab"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": "2026-08-08T02:56:05Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/union-declarations-not-indexed",
+    "baseRefOid": "222f82b9a57780e4eaf28e46bbbad9cbda2d6666",
+    "headRefOid": "d289bf84d38e07001b132ecc20837466029395d9",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1517,
+    "title": "fix(resolution): resolve line-wrapped Python parenthesized import lists",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1517",
+    "state": "CLOSED",
+    "createdAt": "2026-08-06T08:29:15Z",
+    "updatedAt": "2026-10-20T18:07:10Z",
+    "closedAt": "2026-10-20T18:07:09Z",
+    "author": {
+      "login": "JacquesBLR"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-multiline-python-imports",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "01964068698492fd1ea42d34169681f7f5ab3678",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1518,
+    "title": "fix(resolution): resolve direct calls through aliased Python function imports",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1518",
+    "state": "CLOSED",
+    "createdAt": "2026-08-06T08:31:20Z",
+    "updatedAt": "2026-10-28T00:32:56Z",
+    "closedAt": "2026-10-28T00:32:56Z",
+    "author": {
+      "login": "JacquesBLR"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix-aliased-function-import-calls",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "98af828f160e8e94cdab9b207128bd0cafaeb94b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1521,
+    "title": "fix(go): resolve cross-module calls in multi-module layouts",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1521",
+    "state": "CLOSED",
+    "createdAt": "2026-08-06T11:11:11Z",
+    "updatedAt": "2026-10-30T06:01:34Z",
+    "closedAt": "2026-10-30T06:01:34Z",
+    "author": {
+      "login": "ericquan8"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/go-multi-module-resolution",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "ad830e84144870e06b720982383ffa38ce3ece5d",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1523,
+    "title": "feat(extraction): add Odin language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1523",
+    "state": "CLOSED",
+    "createdAt": "2026-08-06T14:45:22Z",
+    "updatedAt": "2026-10-30T17:37:33Z",
+    "closedAt": "2026-10-30T16:35:45Z",
+    "author": {
+      "login": "ivandrenjanin"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "odin-language-support",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "51266f264152185cac6b47817487938ab85c9146",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1525,
+    "title": "CG-24: explore response noise — allocation fixes, generated-file detection, and index-drift convergence",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1525",
+    "state": "MERGED",
+    "createdAt": "2026-08-07T01:29:50Z",
+    "updatedAt": "2026-08-07T01:45:30Z",
+    "closedAt": "2026-08-07T01:34:29Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-07T01:34:29Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/CG-24",
+    "baseRefOid": "d6d17288beedc1076b1cc1825db307f6455c9f98",
+    "headRefOid": "07338ff12e2a784f971db5921d47562222430b11",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "969ea1ec371dc62d056cbeb3920fa79036128842"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1526,
+    "title": "CG-33/CG-35: converge incremental sync with a full rebuild",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1526",
+    "state": "MERGED",
+    "createdAt": "2026-08-07T18:19:09Z",
+    "updatedAt": "2026-08-07T18:19:23Z",
+    "closedAt": "2026-08-07T18:19:21Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-07T18:19:21Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/CG-35",
+    "baseRefOid": "969ea1ec371dc62d056cbeb3920fa79036128842",
+    "headRefOid": "2c708caf7cce297dabdc03cfe9815ebdb3580d87",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "fa8a3d7226f737857002e8557325a5d1ff6890f2"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1527,
+    "title": "CG-38: guarantee an agent-named symbol renders, wherever it sits",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1527",
+    "state": "MERGED",
+    "createdAt": "2026-08-07T18:19:10Z",
+    "updatedAt": "2026-08-07T18:19:27Z",
+    "closedAt": "2026-08-07T18:19:26Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-07T18:19:26Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "bugfix/CG-38",
+    "baseRefOid": "969ea1ec371dc62d056cbeb3920fa79036128842",
+    "headRefOid": "89c53ddf242bd0498651d991badcf93a93bc560a",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "99f2ebf0d1f89ef3d126e6cddec1712c983d74e7"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1528,
+    "title": "feat(mcp): surface supported languages in MCP server instructions (recut of #678)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1528",
+    "state": "MERGED",
+    "createdAt": "2026-08-07T18:40:18Z",
+    "updatedAt": "2026-08-07T18:40:24Z",
+    "closedAt": "2026-08-07T18:40:21Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-07T18:40:21Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "issue/671-mcp-supported-languages",
+    "baseRefOid": "1b36132a89c2dae1d33e9047896787c073254893",
+    "headRefOid": "2962e7e1f4cdd135f13a1308162d08c7363ff584",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "c84ce5585537310216c2973d3b902471492fade8"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1529,
+    "title": "perf(mcp): fit SERVER_INSTRUCTIONS in Claude Code's 2,048-char cap (6,718 → 1,791); pin the budget with a test",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1529",
+    "state": "OPEN",
+    "createdAt": "2026-08-08T02:09:59Z",
+    "updatedAt": "2026-10-15T14:22:50Z",
+    "closedAt": null,
+    "author": {
+      "login": "zyrill"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/slim-server-instructions",
+    "baseRefOid": "3d86bcc0371079070d25901830fb2102100434c3",
+    "headRefOid": "b894317698915a0d667c493d35234b1311be42f0",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1530,
+    "title": "feat(search): surface camelCase symbols via segment vocab (#1520)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1530",
+    "state": "CLOSED",
+    "createdAt": "2026-08-08T15:26:05Z",
+    "updatedAt": "2026-10-30T16:35:49Z",
+    "closedAt": "2026-10-30T16:35:49Z",
+    "author": {
+      "login": "terrabeckhub"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/fts-camelcase-segment-1520",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "fede0c4fb9002fce11c38c9424792f2924b0a88b",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1538,
+    "title": "fix(resolution): constrain what an inheritance or import reference may resolve to (#1536, #1537)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1538",
+    "state": "CLOSED",
+    "createdAt": "2026-08-10T12:18:28Z",
+    "updatedAt": "2026-09-08T20:43:02Z",
+    "closedAt": "2026-09-08T20:43:02Z",
+    "author": {
+      "login": "ctype-lab"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/reference-target-kind",
+    "baseRefOid": "b9ca4b7981116909900368cc1686a1074cd4d4c1",
+    "headRefOid": "ae8d34071f4130811490b40ba761471b3a948884",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1540,
+    "title": "fix(status): detect committed source changes with a clean working tree",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1540",
+    "state": "CLOSED",
+    "createdAt": "2026-08-11T14:28:35Z",
+    "updatedAt": "2026-10-27T16:47:42Z",
+    "closedAt": "2026-10-27T16:47:42Z",
+    "author": {
+      "login": "WhoJay0609"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "codex/fix-status-clean-commit-detection",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "181a9ccf55e4f858d0c15de66b5ca0af824052fd",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1542,
+    "title": "perf(search): seek the name index for exact-name lookups",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1542",
+    "state": "MERGED",
+    "createdAt": "2026-08-12T10:16:15Z",
+    "updatedAt": "2026-08-22T16:54:28Z",
+    "closedAt": "2026-08-22T16:54:28Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-22T16:54:28Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "perf/name-lookup-index-seek",
+    "baseRefOid": "a74029105a8b3ff95d76f754d4d8d4097d948614",
+    "headRefOid": "6e54a5eef69bdc3796607b6453898bc4957bd586",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "9219967e43e77285b7541e7426570d39b9c86b6c"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1546,
+    "title": "feat(gleam): add full Gleam language support and Erlang FFI resolution",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1546",
+    "state": "CLOSED",
+    "createdAt": "2026-08-13T07:24:52Z",
+    "updatedAt": "2026-10-30T16:35:54Z",
+    "closedAt": "2026-10-30T16:35:54Z",
+    "author": {
+      "login": "zhoumao"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/gleam-language-support",
+    "baseRefOid": "3ed73bc127323e63153bf6ec8354afa82ce36aaf",
+    "headRefOid": "1dc773034cad842616606804f3084d3513e55b7c",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 1547,
+    "title": "fix(swift): remove catastrophic backtracking in Vapor route regex",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1547",
+    "state": "MERGED",
+    "createdAt": "2026-08-13T09:29:10Z",
+    "updatedAt": "2026-08-22T16:53:26Z",
+    "closedAt": "2026-08-22T16:53:26Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-22T16:53:26Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/1544-vapor-route-redos",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "ab1d4ecc96444b94011263f7ccada49eb289f49b",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "340d4b033ebcbf7b8010408829eff16c6c8c0a9a"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1548,
+    "title": "fix(resolution): load path aliases through tsconfig `extends` and base configs (#1534)",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1548",
+    "state": "MERGED",
+    "createdAt": "2026-08-13T09:29:16Z",
+    "updatedAt": "2026-08-22T16:55:01Z",
+    "closedAt": "2026-08-22T16:55:01Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-22T16:55:01Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/1534-tsconfig-extends",
+    "baseRefOid": "9219967e43e77285b7541e7426570d39b9c86b6c",
+    "headRefOid": "9c00804e45939fd8a5f2f5019e519607d4910d39",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "474f051d3ccd45255fb57d3b8f5e1bf15a6db812"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1551,
+    "title": "feat(installer): support project-local Codex installs",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1551",
+    "state": "MERGED",
+    "createdAt": "2026-08-14T12:58:05Z",
+    "updatedAt": "2026-08-22T16:55:10Z",
+    "closedAt": "2026-08-22T16:55:10Z",
+    "author": {
+      "login": "maxmilian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-08-22T16:55:10Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/1531-codex-project-local",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "7c85329520cb458861b11fb52636a3fc8897c4c1",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "bc894802ff84252046dbad42afad097146ebd0c6"
+    },
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1561,
+    "title": "feat: add Haskell language support",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1561",
+    "state": "CLOSED",
+    "createdAt": "2026-08-15T21:58:12Z",
+    "updatedAt": "2026-10-30T16:35:58Z",
+    "closedAt": "2026-10-30T16:35:58Z",
+    "author": {
+      "login": "mightybyte"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/haskell-language-support",
+    "baseRefOid": "ba3c21e50d9129d2f5f3843ec3728868ae6d47a1",
+    "headRefOid": "4c144feb7ed94860009ef7f5731c1c288f752944",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 1562,
+    "title": "fix: harden daemon and large-index recovery paths",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1562",
+    "state": "MERGED",
+    "createdAt": "2026-08-16T12:00:43Z",
+    "updatedAt": "2026-08-20T17:53:50Z",
+    "closedAt": "2026-08-20T17:53:50Z",
+    "author": {
+      "login": "danusha2345"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    },
+    "mergedAt": "2026-08-20T17:53:50Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/upstream-bug-reports-1553-1560",
+    "baseRefOid": "d8f2eeaddffd8c993f727d57bb621c8ffbc52abc",
+    "headRefOid": "68d0ab8809fa0ffdf8c4acd1315da0387ded4727",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "81e1f4a92fdbd9413ba73cf72c8a5408102a7897"
+    },
+    "reviews": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 1564,
+    "title": "fix(resolution): remove catastrophic backtracking in the Vapor route regex",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1564",
+    "state": "CLOSED",
+    "createdAt": "2026-08-17T01:57:50Z",
+    "updatedAt": "2026-08-25T02:07:25Z",
+    "closedAt": "2026-08-25T02:07:24Z",
+    "author": {
+      "login": "pucedoteth"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "fix/vapor-route-regex-backtracking",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "f3fb1387724382e5cb0620616baf964643092707",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1568,
+    "title": "diag(extraction): log when the git-based scan falls back to a filesystem walk",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1568",
+    "state": "CLOSED",
+    "createdAt": "2026-08-18T19:15:14Z",
+    "updatedAt": "2026-10-28T01:56:04Z",
+    "closedAt": "2026-10-28T01:56:04Z",
+    "author": {
+      "login": "milos85vasic"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": true,
+    "baseRefName": "main",
+    "headRefName": "fix/nested-gitignore-fallback-diagnostics",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "9fe8791dda55650d191372bd965f21562e9439fc",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1569,
+    "title": "Indexing coverage & freshness: batch init, --git-hooks, opt-in auto-init",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1569",
+    "state": "CLOSED",
+    "createdAt": "2026-08-19T03:03:35Z",
+    "updatedAt": "2026-10-30T16:36:02Z",
+    "closedAt": "2026-10-30T16:36:02Z",
+    "author": {
+      "login": "rajeshguntupalli59"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feature/indexing-coverage-and-freshness",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "aa7bfa6dd8402ec7871edb26ee8fd5fc99601cdd",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1570,
+    "title": "fix(mcp): reword explore guidance as advisory, not a quota",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1570",
+    "state": "CLOSED",
+    "createdAt": "2026-08-19T09:48:02Z",
+    "updatedAt": "2026-09-10T03:19:55Z",
+    "closedAt": "2026-09-10T03:19:55Z",
+    "author": {
+      "login": "rongbc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "main",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "1572d90d7174f0c65019e768c8f65728fae668c5",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 1571,
+    "title": "feat(installer): DeepSeek Harness (dsh) as a supported agent",
+    "url": "https://github.com/colbymchenry/codegraph/pull/1571",
+    "state": "CLOSED",
+    "createdAt": "2026-08-20T12:24:12Z",
+    "updatedAt": "2026-08-20T12:27:46Z",
+    "closedAt": "2026-08-20T12:27:46Z",
+    "author": {
+      "login": "luolin1024"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "feat/dsh-installer",
+    "baseRefOid": "c6aaa20358cd6adcd04b87bdef8e5803ad146f3a",
+    "headRefOid": "59d9382ddc1871657953406217963e24a1c46518",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  }
+]

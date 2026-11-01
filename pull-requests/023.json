@@ -1,0 +1,216 @@
+[
+  {
+    "number": 3206,
+    "title": "fix(swift): a static Type.member() call resolves on the type that declares it",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3206",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:38:57Z",
+    "updatedAt": "2026-11-01T15:51:07Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "pr/swift-type-calls",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "9716be0bd06d91950b2fe0ddb783a833aa866e0f",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3207,
+    "title": "feat(graph): rank questionable call edges for review",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3207",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:02Z",
+    "updatedAt": "2026-11-01T15:55:33Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "pr/suspects",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "ad0e18b5c0fbe4c09c4a57c5d822bc19ef088f86",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3208,
+    "title": "feat(search): group indexed content hits by symbol",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3208",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:07Z",
+    "updatedAt": "2026-11-01T15:52:25Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "pr/grep-by-symbol",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "13956f6c327dfbc9d05b94488671bd9704a5b8db",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3209,
+    "title": "feat(graph): show what depends on the lines a diff changed",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3209",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:12Z",
+    "updatedAt": "2026-11-01T15:53:35Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "pr/blast-base",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "1c0d04894c9ce7256abf9d6e99261b39ded5c159",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3210,
+    "title": "feat(graph): list the symbols a branch added that nothing uses",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3210",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:16Z",
+    "updatedAt": "2026-11-01T15:53:07Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "pr/orphans",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "f3b5926e1d1d6f8ce280f4bb26e8b58c2db7a8cc",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3214,
+    "title": "fix(resolution): what a resolver keeps goes when what it was read from moves",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3214",
+    "state": "MERGED",
+    "createdAt": "2026-11-01T16:20:55Z",
+    "updatedAt": "2026-11-01T16:22:35Z",
+    "closedAt": "2026-11-01T16:22:33Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": "2026-11-01T16:22:33Z",
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "claude/spd2-memo-clear",
+    "baseRefOid": "483a09884d272a334c2f279c024951e8e0504b66",
+    "headRefOid": "dfb883454e1727de610ccbc9c38909314f89cc00",
+    "mergedBy": {
+      "login": "colbymchenry"
+    },
+    "mergeCommit": {
+      "oid": "f72c9d2efb14454ff4f9fd7b8460abd82f19a287"
+    },
+    "reviews": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3215,
+    "title": "fix(resolution): what a walk answers doesn't depend on who asked first",
+    "url": "https://github.com/colbymchenry/codegraph/pull/3215",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T17:36:09Z",
+    "updatedAt": "2026-11-01T17:36:21Z",
+    "closedAt": null,
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    },
+    "mergedAt": null,
+    "isDraft": false,
+    "baseRefName": "main",
+    "headRefName": "claude/spd2-order-flips",
+    "baseRefOid": "f72c9d2efb14454ff4f9fd7b8460abd82f19a287",
+    "headRefOid": "b9d7af9f3f8ccc3565ff1c73c809ad9d1c5f8c26",
+    "mergedBy": null,
+    "mergeCommit": null,
+    "reviews": {
+      "totalCount": 0
+    }
+  }
+]

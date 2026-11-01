@@ -1,0 +1,1902 @@
+[
+  {
+    "number": 731,
+    "title": "Release request: publish the macOS watcher fd exhaustion fix",
+    "url": "https://github.com/colbymchenry/codegraph/issues/731",
+    "state": "CLOSED",
+    "createdAt": "2026-06-08T09:51:24Z",
+    "updatedAt": "2026-06-13T20:23:22Z",
+    "closedAt": "2026-06-13T20:23:22Z",
+    "author": {
+      "login": "ZHOUKAILIAN"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 736,
+    "title": "是还没适配codegraph吗",
+    "url": "https://github.com/colbymchenry/codegraph/issues/736",
+    "state": "CLOSED",
+    "createdAt": "2026-06-08T14:40:31Z",
+    "updatedAt": "2026-06-20T05:45:08Z",
+    "closedAt": "2026-06-20T05:45:08Z",
+    "author": {
+      "login": "PazzaTed"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 746,
+    "title": "Down-weight project-name / low-discriminative query tokens in search ranking (follow-up to #720)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/746",
+    "state": "CLOSED",
+    "createdAt": "2026-06-09T02:24:06Z",
+    "updatedAt": "2026-06-09T02:44:15Z",
+    "closedAt": "2026-06-09T02:44:15Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 747,
+    "title": "[Go] Index GoFrame route metadata (g.Meta path: + RouterGroup.Bind) as route→method edges (follow-up to #720)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/747",
+    "state": "CLOSED",
+    "createdAt": "2026-06-09T02:24:07Z",
+    "updatedAt": "2026-06-22T23:16:50Z",
+    "closedAt": "2026-06-22T23:16:13Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 750,
+    "title": "Tracking: chained factory/singleton call resolution across statically-typed languages",
+    "url": "https://github.com/colbymchenry/codegraph/issues/750",
+    "state": "OPEN",
+    "createdAt": "2026-06-09T03:41:58Z",
+    "updatedAt": "2026-08-05T10:40:51Z",
+    "closedAt": null,
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 9
+    }
+  },
+  {
+    "number": 756,
+    "title": "Can CodeGraph Identify Callback Functions in C Code?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/756",
+    "state": "CLOSED",
+    "createdAt": "2026-06-09T06:05:49Z",
+    "updatedAt": "2026-06-11T19:20:49Z",
+    "closedAt": "2026-06-11T19:20:29Z",
+    "author": {
+      "login": "zmcrazy"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 759,
+    "title": "New Feature Request: Could you add QML support for C++/QML applications that work together",
+    "url": "https://github.com/colbymchenry/codegraph/issues/759",
+    "state": "CLOSED",
+    "createdAt": "2026-06-09T14:29:11Z",
+    "updatedAt": "2026-06-20T05:44:12Z",
+    "closedAt": "2026-06-20T05:44:12Z",
+    "author": {
+      "login": "EmirhanPolat"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 764,
+    "title": "CodeGraph mixes up TypeScript classes with same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/764",
+    "state": "CLOSED",
+    "createdAt": "2026-06-09T21:01:03Z",
+    "updatedAt": "2026-06-11T21:24:46Z",
+    "closedAt": "2026-06-11T21:24:24Z",
+    "author": {
+      "login": "Igorgro"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 765,
+    "title": "Allow overriding MCP server instructions (e.g. .codegraph/instructions.md) — built-in text overstates explore/edge reliability on multi-language repos",
+    "url": "https://github.com/colbymchenry/codegraph/issues/765",
+    "state": "OPEN",
+    "createdAt": "2026-06-09T23:52:40Z",
+    "updatedAt": "2026-11-01T16:14:33Z",
+    "closedAt": null,
+    "author": {
+      "login": "monochrome3694"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 766,
+    "title": "Incremental sync (git-status fast path) bypasses the ignore matcher — tracked files in excluded dirs leak back into the index",
+    "url": "https://github.com/colbymchenry/codegraph/issues/766",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T00:01:56Z",
+    "updatedAt": "2026-06-22T15:51:47Z",
+    "closedAt": "2026-06-22T15:51:22Z",
+    "author": {
+      "login": "monochrome3694"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 767,
+    "title": "Possible to make codegraph learn non-preset languages and file extensions?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/767",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T02:33:55Z",
+    "updatedAt": "2026-06-20T05:45:57Z",
+    "closedAt": "2026-06-20T05:45:57Z",
+    "author": {
+      "login": "GarfieldJiang"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 768,
+    "title": "Feature Request: Support .astro and .css file indexing for Astro projects",
+    "url": "https://github.com/colbymchenry/codegraph/issues/768",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T03:52:04Z",
+    "updatedAt": "2026-06-11T23:59:07Z",
+    "closedAt": "2026-06-11T23:50:46Z",
+    "author": {
+      "login": "xingwangzhe"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 769,
+    "title": "feat: add MCP tool to list all initialized CodeGraph projects",
+    "url": "https://github.com/colbymchenry/codegraph/issues/769",
+    "state": "OPEN",
+    "createdAt": "2026-06-10T07:16:14Z",
+    "updatedAt": "2026-06-10T07:16:14Z",
+    "closedAt": null,
+    "author": {
+      "login": "woan-lufei"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 770,
+    "title": "Unable to auto sync symbol link file changes",
+    "url": "https://github.com/colbymchenry/codegraph/issues/770",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T07:45:49Z",
+    "updatedAt": "2026-09-27T13:25:35Z",
+    "closedAt": "2026-09-27T13:25:30Z",
+    "author": {
+      "login": "ztibeike"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 771,
+    "title": "Codegraph consumes too much Claude context",
+    "url": "https://github.com/colbymchenry/codegraph/issues/771",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T09:58:02Z",
+    "updatedAt": "2026-06-23T20:13:59Z",
+    "closedAt": "2026-06-23T20:13:59Z",
+    "author": {
+      "login": "starrylistener"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 772,
+    "title": "Would you want a Tauri IPC resolver?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/772",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T11:44:44Z",
+    "updatedAt": "2026-08-12T11:01:55Z",
+    "closedAt": "2026-08-12T11:01:55Z",
+    "author": {
+      "login": "vdavid"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 773,
+    "title": "Incremental watch-sync silently drops call edges (FOREIGN KEY constraint failed), corrupting callers/callees/trace over time",
+    "url": "https://github.com/colbymchenry/codegraph/issues/773",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T12:12:26Z",
+    "updatedAt": "2026-06-11T16:24:18Z",
+    "closedAt": "2026-06-11T16:24:18Z",
+    "author": {
+      "login": "Mikecranesync"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 774,
+    "title": "Python: class instantiation ClassName() is not a caller edge; impact <Class> returns containment, not dependents",
+    "url": "https://github.com/colbymchenry/codegraph/issues/774",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T12:12:30Z",
+    "updatedAt": "2026-06-11T16:25:57Z",
+    "closedAt": "2026-06-11T16:25:15Z",
+    "author": {
+      "login": "Mikecranesync"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 776,
+    "title": "Ideas: shrink the MCP surface — parameterized relations tool, MCP resources, allowlist presets",
+    "url": "https://github.com/colbymchenry/codegraph/issues/776",
+    "state": "OPEN",
+    "createdAt": "2026-06-10T12:31:28Z",
+    "updatedAt": "2026-06-10T12:31:28Z",
+    "closedAt": null,
+    "author": {
+      "login": "sebyx07"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 778,
+    "title": "MCP tool results use ATX Markdown headings (##/###) — render as oversized fonts in Markdown-rendering clients",
+    "url": "https://github.com/colbymchenry/codegraph/issues/778",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T18:57:44Z",
+    "updatedAt": "2026-06-22T17:06:59Z",
+    "closedAt": "2026-06-22T17:06:37Z",
+    "author": {
+      "login": "mdsharpe"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 779,
+    "title": "Release request: publish 0.9.10 — cross-file dependency fix (#708) is unreleased on npm",
+    "url": "https://github.com/colbymchenry/codegraph/issues/779",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T21:07:56Z",
+    "updatedAt": "2026-06-11T17:42:57Z",
+    "closedAt": "2026-06-11T17:42:57Z",
+    "author": {
+      "login": "beautyfree"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 780,
+    "title": "Preceding comments / docstrings are not captured for exported or decorated symbols",
+    "url": "https://github.com/colbymchenry/codegraph/issues/780",
+    "state": "CLOSED",
+    "createdAt": "2026-06-10T22:57:09Z",
+    "updatedAt": "2026-06-11T17:38:45Z",
+    "closedAt": "2026-06-11T17:38:24Z",
+    "author": {
+      "login": "caleb-kaiser"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 781,
+    "title": "Support for NixOS (packaging as Nix package or easy overlay)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/781",
+    "state": "OPEN",
+    "createdAt": "2026-06-10T23:18:40Z",
+    "updatedAt": "2026-07-21T13:42:59Z",
+    "closedAt": null,
+    "author": {
+      "login": "Yury-Zakharov"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 788,
+    "title": ".codegraph/.gitignore should include daemon.pid",
+    "url": "https://github.com/colbymchenry/codegraph/issues/788",
+    "state": "CLOSED",
+    "createdAt": "2026-06-11T07:21:35Z",
+    "updatedAt": "2026-06-11T16:09:07Z",
+    "closedAt": "2026-06-11T16:09:07Z",
+    "author": {
+      "login": "zeguang-cai"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 789,
+    "title": "[Bug] C++: free functions with namespaced parameter types are mis-named (unsearchable) and qualified calls don't resolve to callers",
+    "url": "https://github.com/colbymchenry/codegraph/issues/789",
+    "state": "CLOSED",
+    "createdAt": "2026-06-11T08:18:35Z",
+    "updatedAt": "2026-06-11T08:20:31Z",
+    "closedAt": "2026-06-11T08:20:31Z",
+    "author": {
+      "login": "songwei163"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 799,
+    "title": "Stdio MCP server busy-spins at 100% CPU forever when its client dies (orphaned on editor reload)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/799",
+    "state": "CLOSED",
+    "createdAt": "2026-06-11T15:11:13Z",
+    "updatedAt": "2026-06-13T19:21:21Z",
+    "closedAt": "2026-06-13T19:21:21Z",
+    "author": {
+      "login": "Venkateshvenki404224"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 800,
+    "title": "Codex installer writes lengthy CodeGraph instructions into global ~/.codex/AGENTS.md",
+    "url": "https://github.com/colbymchenry/codegraph/issues/800",
+    "state": "CLOSED",
+    "createdAt": "2026-06-11T15:24:46Z",
+    "updatedAt": "2026-06-11T15:47:04Z",
+    "closedAt": "2026-06-11T15:47:04Z",
+    "author": {
+      "login": "venotyh"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 808,
+    "title": "TS/JS class fields with type annotations are extracted as method-kind nodes",
+    "url": "https://github.com/colbymchenry/codegraph/issues/808",
+    "state": "CLOSED",
+    "createdAt": "2026-06-11T19:21:07Z",
+    "updatedAt": "2026-06-11T19:48:13Z",
+    "closedAt": "2026-06-11T19:48:13Z",
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 825,
+    "title": "Cross-file static method calls (ClassName.staticMethod()) are dropped: calls edge mis-promoted to instantiates",
+    "url": "https://github.com/colbymchenry/codegraph/issues/825",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T07:32:33Z",
+    "updatedAt": "2026-06-22T03:19:49Z",
+    "closedAt": "2026-06-13T19:48:53Z",
+    "author": {
+      "login": "contextFlow-lab"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 826,
+    "title": "[docs] Interactive installer already initializes the project, docs still suggest running `codegraph init -i` separately",
+    "url": "https://github.com/colbymchenry/codegraph/issues/826",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T09:29:39Z",
+    "updatedAt": "2026-06-21T17:59:22Z",
+    "closedAt": "2026-06-21T17:59:22Z",
+    "author": {
+      "login": "magentaqin"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 828,
+    "title": "CodeGraph currently only indexes Python files. I'm working on a large epidemiological research project with 30+ R scripts (.R files) and many Markdown documentation files, but CodeGraph can only see the single Python file in the project.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/828",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T13:08:00Z",
+    "updatedAt": "2026-06-12T18:18:05Z",
+    "closedAt": "2026-06-12T18:17:30Z",
+    "author": {
+      "login": "raf-159357"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 829,
+    "title": "REVIEWED SUCESSFUL",
+    "url": "https://github.com/colbymchenry/codegraph/issues/829",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T13:25:38Z",
+    "updatedAt": "2026-06-20T05:46:28Z",
+    "closedAt": "2026-06-20T05:46:28Z",
+    "author": {
+      "login": "psandeep02"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 831,
+    "title": "C# Records are not Indexed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/831",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T14:09:01Z",
+    "updatedAt": "2026-06-12T17:45:46Z",
+    "closedAt": "2026-06-12T17:45:46Z",
+    "author": {
+      "login": "b564518128"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 841,
+    "title": "forwardRef components get no JSX render edges — callers/impact silently return empty",
+    "url": "https://github.com/colbymchenry/codegraph/issues/841",
+    "state": "CLOSED",
+    "createdAt": "2026-06-12T18:34:06Z",
+    "updatedAt": "2026-06-21T16:36:17Z",
+    "closedAt": "2026-06-21T16:36:17Z",
+    "author": {
+      "login": "Arlandaren"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 845,
+    "title": "CodeGraph file watcher leaks file descriptors and causes macOS system-wide ENFILE / watchdog reboot",
+    "url": "https://github.com/colbymchenry/codegraph/issues/845",
+    "state": "CLOSED",
+    "createdAt": "2026-06-13T01:56:19Z",
+    "updatedAt": "2026-06-13T17:59:59Z",
+    "closedAt": "2026-06-13T17:35:20Z",
+    "author": {
+      "login": "ligson"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 848,
+    "title": "Git worktrees nested in the project (e.g. Claude Code's .claude/worktrees/) are indexed as N duplicate embedded repos, with no way to exclude them",
+    "url": "https://github.com/colbymchenry/codegraph/issues/848",
+    "state": "CLOSED",
+    "createdAt": "2026-06-13T10:15:44Z",
+    "updatedAt": "2026-06-14T20:40:41Z",
+    "closedAt": "2026-06-13T21:01:02Z",
+    "author": {
+      "login": "tphakala"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 849,
+    "title": "[featyre]  support goose ai",
+    "url": "https://github.com/colbymchenry/codegraph/issues/849",
+    "state": "CLOSED",
+    "createdAt": "2026-06-13T11:07:30Z",
+    "updatedAt": "2026-06-20T05:45:04Z",
+    "closedAt": "2026-06-20T05:45:04Z",
+    "author": {
+      "login": "MushiTheMoshi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 850,
+    "title": "codegraph cause 100% CPU",
+    "url": "https://github.com/colbymchenry/codegraph/issues/850",
+    "state": "CLOSED",
+    "createdAt": "2026-06-13T13:42:41Z",
+    "updatedAt": "2026-06-13T17:11:38Z",
+    "closedAt": "2026-06-13T14:48:46Z",
+    "author": {
+      "login": "songhlc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 857,
+    "title": "memory leak[macOS M5]",
+    "url": "https://github.com/colbymchenry/codegraph/issues/857",
+    "state": "CLOSED",
+    "createdAt": "2026-06-13T15:33:14Z",
+    "updatedAt": "2026-06-23T20:13:58Z",
+    "closedAt": "2026-06-23T20:13:58Z",
+    "author": {
+      "login": "dahai80"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 7
+    }
+  },
+  {
+    "number": 870,
+    "title": "ColdFusion/ CFML support ",
+    "url": "https://github.com/colbymchenry/codegraph/issues/870",
+    "state": "CLOSED",
+    "createdAt": "2026-06-14T00:45:31Z",
+    "updatedAt": "2026-06-20T05:44:13Z",
+    "closedAt": "2026-06-20T05:44:13Z",
+    "author": {
+      "login": "ghedwards"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 872,
+    "title": "Add a remote mode for MCP tools",
+    "url": "https://github.com/colbymchenry/codegraph/issues/872",
+    "state": "CLOSED",
+    "createdAt": "2026-06-14T01:57:47Z",
+    "updatedAt": "2026-06-23T20:14:09Z",
+    "closedAt": "2026-06-23T20:14:09Z",
+    "author": {
+      "login": "313782933"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 874,
+    "title": "Bug: `codegraph index` produces 0 nodes / 0 edges while `codegraph init` works correctly",
+    "url": "https://github.com/colbymchenry/codegraph/issues/874",
+    "state": "CLOSED",
+    "createdAt": "2026-06-14T04:59:30Z",
+    "updatedAt": "2026-06-15T05:45:39Z",
+    "closedAt": "2026-06-15T05:45:05Z",
+    "author": {
+      "login": "Arc-univer"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 876,
+    "title": "Watcher can stay half-broken after watch exhaustion or prolonged lock contention",
+    "url": "https://github.com/colbymchenry/codegraph/issues/876",
+    "state": "CLOSED",
+    "createdAt": "2026-06-14T08:14:02Z",
+    "updatedAt": "2026-06-15T04:33:24Z",
+    "closedAt": "2026-06-15T04:32:56Z",
+    "author": {
+      "login": "thismilktea"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 888,
+    "title": "feat: circular import detection via MCP tool + CLI subcommand",
+    "url": "https://github.com/colbymchenry/codegraph/issues/888",
+    "state": "CLOSED",
+    "createdAt": "2026-06-14T19:04:51Z",
+    "updatedAt": "2026-10-30T19:53:55Z",
+    "closedAt": "2026-10-30T19:53:55Z",
+    "author": {
+      "login": "goutham80808"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 890,
+    "title": "Feature Request: Add support for ArkTS",
+    "url": "https://github.com/colbymchenry/codegraph/issues/890",
+    "state": "CLOSED",
+    "createdAt": "2026-06-15T00:58:12Z",
+    "updatedAt": "2026-06-20T05:44:15Z",
+    "closedAt": "2026-06-20T05:44:15Z",
+    "author": {
+      "login": "CoderAdapter"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 896,
+    "title": "Critical minimum size that Codegraph adds value?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/896",
+    "state": "CLOSED",
+    "createdAt": "2026-06-15T06:32:05Z",
+    "updatedAt": "2026-06-21T12:49:14Z",
+    "closedAt": "2026-06-20T05:46:30Z",
+    "author": {
+      "login": "BernieHD"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 899,
+    "title": "Python: module-attribute callers still missed in large package tree after #715 / 1.0.1",
+    "url": "https://github.com/colbymchenry/codegraph/issues/899",
+    "state": "CLOSED",
+    "createdAt": "2026-06-15T12:09:59Z",
+    "updatedAt": "2026-07-25T10:43:07Z",
+    "closedAt": "2026-06-21T16:47:03Z",
+    "author": {
+      "login": "JosefAschauer"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 9
+    }
+  },
+  {
+    "number": 904,
+    "title": "子代理不会自动使用codegraph",
+    "url": "https://github.com/colbymchenry/codegraph/issues/904",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T09:16:28Z",
+    "updatedAt": "2026-06-23T20:14:21Z",
+    "closedAt": "2026-06-23T20:14:21Z",
+    "author": {
+      "login": "fashen97"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 905,
+    "title": "v1.0.1, serve --mcp --no-watch -p <monorepo>, after container restart, the first tools/call is unresponsive; CODEGRAPH_NO_DAEMON=1 can reproduce the recovery process.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/905",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T09:44:48Z",
+    "updatedAt": "2026-06-22T16:32:56Z",
+    "closedAt": "2026-06-22T16:31:51Z",
+    "author": {
+      "login": "HLanguage"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 906,
+    "title": "Allow custom extension → language mapping (opt-in, zero-config preserved)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/906",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T10:04:49Z",
+    "updatedAt": "2026-06-22T21:16:49Z",
+    "closedAt": "2026-06-22T21:16:25Z",
+    "author": {
+      "login": "JaceLei"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 907,
+    "title": "[Feature Request] Copilot support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/907",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T13:38:23Z",
+    "updatedAt": "2026-08-21T12:16:35Z",
+    "closedAt": "2026-06-20T05:45:05Z",
+    "author": {
+      "login": "alexgalie"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 4
+    }
+  },
+  {
+    "number": 908,
+    "title": "support claude code web?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/908",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T15:57:22Z",
+    "updatedAt": "2026-06-20T05:45:07Z",
+    "closedAt": "2026-06-20T05:45:07Z",
+    "author": {
+      "login": "gowy222"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 909,
+    "title": "Your project is in the Hermes Community Hub 🫡",
+    "url": "https://github.com/colbymchenry/codegraph/issues/909",
+    "state": "CLOSED",
+    "createdAt": "2026-06-16T18:31:56Z",
+    "updatedAt": "2026-06-20T05:46:27Z",
+    "closedAt": "2026-06-20T05:46:27Z",
+    "author": {
+      "login": "Ben-Home"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 910,
+    "title": "[Feature Request] Add local-only mode for `.codegraph/.gitignore`",
+    "url": "https://github.com/colbymchenry/codegraph/issues/910",
+    "state": "CLOSED",
+    "createdAt": "2026-06-17T01:24:37Z",
+    "updatedAt": "2026-10-30T20:56:20Z",
+    "closedAt": "2026-10-30T20:55:46Z",
+    "author": {
+      "login": "jadchene"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 912,
+    "title": "Bug Report: Lombok-generated methods are not indexed by CodeGraph",
+    "url": "https://github.com/colbymchenry/codegraph/issues/912",
+    "state": "CLOSED",
+    "createdAt": "2026-06-17T06:18:41Z",
+    "updatedAt": "2026-06-22T17:42:07Z",
+    "closedAt": "2026-06-22T17:41:28Z",
+    "author": {
+      "login": "git87663849"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 914,
+    "title": "LLM don't call codeGraph mcp tools in long-running task",
+    "url": "https://github.com/colbymchenry/codegraph/issues/914",
+    "state": "OPEN",
+    "createdAt": "2026-06-17T12:11:37Z",
+    "updatedAt": "2026-06-23T20:13:56Z",
+    "closedAt": null,
+    "author": {
+      "login": "CommanderXL"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 6
+    }
+  },
+  {
+    "number": 915,
+    "title": "Under large projects, using codegraph index or codegraph init -t results in extremely slow retrieval speeds",
+    "url": "https://github.com/colbymchenry/codegraph/issues/915",
+    "state": "CLOSED",
+    "createdAt": "2026-06-17T14:48:04Z",
+    "updatedAt": "2026-06-23T16:26:54Z",
+    "closedAt": "2026-06-23T16:26:24Z",
+    "author": {
+      "login": "Greenplumwine"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 916,
+    "title": "[Feature Request] Request for added support for the Slint language",
+    "url": "https://github.com/colbymchenry/codegraph/issues/916",
+    "state": "CLOSED",
+    "createdAt": "2026-06-17T16:16:49Z",
+    "updatedAt": "2026-06-20T05:44:16Z",
+    "closedAt": "2026-06-20T05:44:16Z",
+    "author": {
+      "login": "ZyphrZero"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 924,
+    "title": "Feature request: XDG directory spec support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/924",
+    "state": "OPEN",
+    "createdAt": "2026-06-19T04:06:24Z",
+    "updatedAt": "2026-09-17T14:16:46Z",
+    "closedAt": null,
+    "author": {
+      "login": "Fogapod"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 925,
+    "title": "MCP server keeps serving a deleted DB inode after .codegraph is removed+recreated at the same path (git worktree recreate); sync can't refresh it, only a server restart does",
+    "url": "https://github.com/colbymchenry/codegraph/issues/925",
+    "state": "CLOSED",
+    "createdAt": "2026-06-19T06:18:36Z",
+    "updatedAt": "2026-06-21T19:03:25Z",
+    "closedAt": "2026-06-21T19:03:09Z",
+    "author": {
+      "login": "polaris-arch"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 926,
+    "title": "MCP projectPath worktree queries falsely warn that a valid local worktree index belongs to the main repo",
+    "url": "https://github.com/colbymchenry/codegraph/issues/926",
+    "state": "CLOSED",
+    "createdAt": "2026-06-19T07:26:06Z",
+    "updatedAt": "2026-06-21T18:44:03Z",
+    "closedAt": "2026-06-21T18:43:44Z",
+    "author": {
+      "login": "Wermeling"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 928,
+    "title": "Console windows flash on Windows during auto-sync (git child processes spawned without windowsHide)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/928",
+    "state": "CLOSED",
+    "createdAt": "2026-06-19T07:53:18Z",
+    "updatedAt": "2026-10-03T18:05:24Z",
+    "closedAt": "2026-06-20T05:24:50Z",
+    "author": {
+      "login": "JamesChoeng"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 930,
+    "title": "install fails on MacOS",
+    "url": "https://github.com/colbymchenry/codegraph/issues/930",
+    "state": "CLOSED",
+    "createdAt": "2026-06-19T10:29:26Z",
+    "updatedAt": "2026-06-20T05:46:31Z",
+    "closedAt": "2026-06-20T05:46:31Z",
+    "author": {
+      "login": "abramche"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 932,
+    "title": "codegraph cannot handle function pointer in C/C++",
+    "url": "https://github.com/colbymchenry/codegraph/issues/932",
+    "state": "CLOSED",
+    "createdAt": "2026-06-20T08:59:17Z",
+    "updatedAt": "2026-06-22T18:34:32Z",
+    "closedAt": "2026-06-22T18:34:13Z",
+    "author": {
+      "login": "yuesong-feng"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 933,
+    "title": "`codegraph sync .` silently no-ops when worktree is ahead of index (0.9.4)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/933",
+    "state": "CLOSED",
+    "createdAt": "2026-06-20T20:13:31Z",
+    "updatedAt": "2026-06-21T19:33:31Z",
+    "closedAt": "2026-06-21T19:33:31Z",
+    "author": {
+      "login": "mojo-repository"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 935,
+    "title": "Path traversal blocked in batch reader {",
+    "url": "https://github.com/colbymchenry/codegraph/issues/935",
+    "state": "CLOSED",
+    "createdAt": "2026-06-21T11:53:20Z",
+    "updatedAt": "2026-06-22T22:23:44Z",
+    "closedAt": "2026-06-22T22:23:18Z",
+    "author": {
+      "login": "lintangtimur"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 936,
+    "title": "Windows/Codex MCP daemon fails to open project with path.relative './', preventing auto-sync",
+    "url": "https://github.com/colbymchenry/codegraph/issues/936",
+    "state": "CLOSED",
+    "createdAt": "2026-06-21T13:45:44Z",
+    "updatedAt": "2026-06-22T13:13:25Z",
+    "closedAt": "2026-06-22T13:13:25Z",
+    "author": {
+      "login": "pia"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 943,
+    "title": "MCP restart loop spawns unlimited volta.exe processes causing resource exhaustion",
+    "url": "https://github.com/colbymchenry/codegraph/issues/943",
+    "state": "CLOSED",
+    "createdAt": "2026-06-22T01:48:08Z",
+    "updatedAt": "2026-09-27T15:10:40Z",
+    "closedAt": "2026-09-27T15:10:34Z",
+    "author": {
+      "login": "Neurotoxin0"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 944,
+    "title": "有一个疑问，请求解答一下",
+    "url": "https://github.com/colbymchenry/codegraph/issues/944",
+    "state": "CLOSED",
+    "createdAt": "2026-06-22T03:06:52Z",
+    "updatedAt": "2026-06-22T17:10:58Z",
+    "closedAt": "2026-06-22T17:10:58Z",
+    "author": {
+      "login": "andoop"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 945,
+    "title": "Submodule worktree misclassified as embedded repo — indexed as duplicate code",
+    "url": "https://github.com/colbymchenry/codegraph/issues/945",
+    "state": "CLOSED",
+    "createdAt": "2026-06-22T04:24:17Z",
+    "updatedAt": "2026-06-22T13:46:38Z",
+    "closedAt": "2026-06-22T13:44:08Z",
+    "author": {
+      "login": "charlesxu2026-ship-it"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 946,
+    "title": "C++: class with export macro + inheritance mislabeled as kind=function in header",
+    "url": "https://github.com/colbymchenry/codegraph/issues/946",
+    "state": "CLOSED",
+    "createdAt": "2026-06-22T08:31:21Z",
+    "updatedAt": "2026-06-22T13:46:39Z",
+    "closedAt": "2026-06-22T13:45:52Z",
+    "author": {
+      "login": "spwlyzx"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 958,
+    "title": "When will support for Cline integration be available?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/958",
+    "state": "CLOSED",
+    "createdAt": "2026-06-23T01:37:40Z",
+    "updatedAt": "2026-09-07T15:52:55Z",
+    "closedAt": "2026-06-23T20:14:15Z",
+    "author": {
+      "login": "yoeaki"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 961,
+    "title": "`codegraph install` indexes the cwd in contrast to what the docs say",
+    "url": "https://github.com/colbymchenry/codegraph/issues/961",
+    "state": "CLOSED",
+    "createdAt": "2026-06-23T06:12:33Z",
+    "updatedAt": "2026-06-24T15:17:09Z",
+    "closedAt": "2026-06-23T16:51:31Z",
+    "author": {
+      "login": "CompartPKU"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 962,
+    "title": "zcode needed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/962",
+    "state": "CLOSED",
+    "createdAt": "2026-06-23T06:20:14Z",
+    "updatedAt": "2026-09-07T03:52:24Z",
+    "closedAt": "2026-06-23T20:14:17Z",
+    "author": {
+      "login": "better319"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 963,
+    "title": "[java] chain invoke don't build index",
+    "url": "https://github.com/colbymchenry/codegraph/issues/963",
+    "state": "CLOSED",
+    "createdAt": "2026-06-23T09:28:49Z",
+    "updatedAt": "2026-06-24T06:53:27Z",
+    "closedAt": "2026-06-23T20:14:19Z",
+    "author": {
+      "login": "antdong"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 964,
+    "title": "Allow MCP tools to be exposed without requiring an index at the MCP server root path",
+    "url": "https://github.com/colbymchenry/codegraph/issues/964",
+    "state": "CLOSED",
+    "createdAt": "2026-06-23T14:40:33Z",
+    "updatedAt": "2026-06-23T17:58:22Z",
+    "closedAt": "2026-06-23T17:57:49Z",
+    "author": {
+      "login": "MaiLunJiye"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 967,
+    "title": "Tracking: framework-aware route & edge coverage requests",
+    "url": "https://github.com/colbymchenry/codegraph/issues/967",
+    "state": "OPEN",
+    "createdAt": "2026-06-23T20:11:45Z",
+    "updatedAt": "2026-10-07T17:19:54Z",
+    "closedAt": null,
+    "author": {
+      "login": "colbymchenry"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 5
+    }
+  },
+  {
+    "number": 969,
+    "title": "Only 1 tool (codegraph_explore) after npm update — was multiple tools before",
+    "url": "https://github.com/colbymchenry/codegraph/issues/969",
+    "state": "CLOSED",
+    "createdAt": "2026-06-24T05:13:33Z",
+    "updatedAt": "2026-06-24T05:15:18Z",
+    "closedAt": "2026-06-24T05:15:18Z",
+    "author": {
+      "login": "kisszuopumingdao"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 970,
+    "title": "Allow opting out of embedded git repo discovery in gitignored directories",
+    "url": "https://github.com/colbymchenry/codegraph/issues/970",
+    "state": "CLOSED",
+    "createdAt": "2026-06-24T06:55:38Z",
+    "updatedAt": "2026-06-26T06:28:11Z",
+    "closedAt": "2026-06-24T17:49:16Z",
+    "author": {
+      "login": "moshuying"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 971,
+    "title": "Support Micronaut framework route extraction",
+    "url": "https://github.com/colbymchenry/codegraph/issues/971",
+    "state": "OPEN",
+    "createdAt": "2026-06-24T07:07:51Z",
+    "updatedAt": "2026-07-22T13:59:47Z",
+    "closedAt": null,
+    "author": {
+      "login": "lw-yang"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 974,
+    "title": "Codex MCP tool call fails with Transport closed on v1.1.0 while CLI status/sync are healthy",
+    "url": "https://github.com/colbymchenry/codegraph/issues/974",
+    "state": "CLOSED",
+    "createdAt": "2026-06-24T07:31:40Z",
+    "updatedAt": "2026-06-24T19:49:24Z",
+    "closedAt": "2026-06-24T19:48:18Z",
+    "author": {
+      "login": "yjtdkj"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 975,
+    "title": "Codegraph consume more tokens than just talk to claudecode.",
+    "url": "https://github.com/colbymchenry/codegraph/issues/975",
+    "state": "OPEN",
+    "createdAt": "2026-06-24T08:29:11Z",
+    "updatedAt": "2026-06-30T15:21:08Z",
+    "closedAt": null,
+    "author": {
+      "login": "charlietsao"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 976,
+    "title": "[BUG] Currently, it is impossible to turn off the indexing of nested repositories",
+    "url": "https://github.com/colbymchenry/codegraph/issues/976",
+    "state": "CLOSED",
+    "createdAt": "2026-06-24T09:34:03Z",
+    "updatedAt": "2026-06-24T17:49:18Z",
+    "closedAt": "2026-06-24T17:49:18Z",
+    "author": {
+      "login": "tuauatyro1"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 978,
+    "title": "Feature Request: Code Index Support js for ExtJS and RequireJS",
+    "url": "https://github.com/colbymchenry/codegraph/issues/978",
+    "state": "OPEN",
+    "createdAt": "2026-06-24T10:04:48Z",
+    "updatedAt": "2026-06-24T10:04:48Z",
+    "closedAt": null,
+    "author": {
+      "login": "shichenzhe-p"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 982,
+    "title": "explore/query relevance: a generic token's exact name-match overboosts in peripheral dirs — follow-up to #746",
+    "url": "https://github.com/colbymchenry/codegraph/issues/982",
+    "state": "CLOSED",
+    "createdAt": "2026-06-24T19:25:49Z",
+    "updatedAt": "2026-08-22T16:55:16Z",
+    "closedAt": "2026-08-22T16:55:16Z",
+    "author": {
+      "login": "michaelHMK"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 985,
+    "title": "Feature Request: Add CLI & SKILL Support as Alternative to stdio MCP",
+    "url": "https://github.com/colbymchenry/codegraph/issues/985",
+    "state": "OPEN",
+    "createdAt": "2026-06-25T02:53:47Z",
+    "updatedAt": "2026-06-26T20:42:12Z",
+    "closedAt": null,
+    "author": {
+      "login": "Zeoy2020"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 986,
+    "title": "Support custom storage directory for CodeGraph index",
+    "url": "https://github.com/colbymchenry/codegraph/issues/986",
+    "state": "OPEN",
+    "createdAt": "2026-06-25T07:08:56Z",
+    "updatedAt": "2026-06-30T14:23:29Z",
+    "closedAt": null,
+    "author": {
+      "login": "275145"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 987,
+    "title": "[Feature] Shared daemon serializes concurrent tool calls — N clients = N× tail latency",
+    "url": "https://github.com/colbymchenry/codegraph/issues/987",
+    "state": "CLOSED",
+    "createdAt": "2026-06-25T08:51:38Z",
+    "updatedAt": "2026-06-27T01:46:03Z",
+    "closedAt": "2026-06-27T01:46:03Z",
+    "author": {
+      "login": "zpuzhs"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 990,
+    "title": "WAL: auto-detect filesystem mmap support and fall back to DELETE mode",
+    "url": "https://github.com/colbymchenry/codegraph/issues/990",
+    "state": "CLOSED",
+    "createdAt": "2026-06-25T13:30:58Z",
+    "updatedAt": "2026-08-19T06:04:43Z",
+    "closedAt": "2026-08-19T06:04:43Z",
+    "author": {
+      "login": "wings1848"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 991,
+    "title": "codegraph cannot handle function pointer in C/C++",
+    "url": "https://github.com/colbymchenry/codegraph/issues/991",
+    "state": "CLOSED",
+    "createdAt": "2026-06-25T13:55:33Z",
+    "updatedAt": "2026-06-26T22:53:47Z",
+    "closedAt": "2026-06-26T22:53:20Z",
+    "author": {
+      "login": "yuesong-feng"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 993,
+    "title": "Agent omits projectPath by default",
+    "url": "https://github.com/colbymchenry/codegraph/issues/993",
+    "state": "CLOSED",
+    "createdAt": "2026-06-25T22:01:27Z",
+    "updatedAt": "2026-06-27T09:34:28Z",
+    "closedAt": "2026-06-27T00:31:13Z",
+    "author": {
+      "login": "wauxhall"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 994,
+    "title": "prompt-hook gate regex skips non-English (Chinese) prompts — UserPromptSubmit never injects context",
+    "url": "https://github.com/colbymchenry/codegraph/issues/994",
+    "state": "CLOSED",
+    "createdAt": "2026-06-26T02:20:33Z",
+    "updatedAt": "2026-06-26T23:39:57Z",
+    "closedAt": "2026-06-26T23:39:35Z",
+    "author": {
+      "login": "whinc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 995,
+    "title": "WSL + Windows shared working tree on /mnt causes CodeGraph disk I/O error unless CODEGRAPH_DIR is split manually",
+    "url": "https://github.com/colbymchenry/codegraph/issues/995",
+    "state": "CLOSED",
+    "createdAt": "2026-06-26T07:08:22Z",
+    "updatedAt": "2026-09-28T05:23:20Z",
+    "closedAt": "2026-09-28T05:22:20Z",
+    "author": {
+      "login": "Jek-Mena"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 996,
+    "title": "Feature request: Distinguish read vs write references for variables (lvalue/rvalue)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/996",
+    "state": "OPEN",
+    "createdAt": "2026-06-26T13:27:57Z",
+    "updatedAt": "2026-06-26T13:27:57Z",
+    "closedAt": null,
+    "author": {
+      "login": "FrankSnipes1983"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 997,
+    "title": "Daemon fails with ENOTSUP on ExFAT / external volumes (no tmpdir fallback for unsupported socket)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/997",
+    "state": "CLOSED",
+    "createdAt": "2026-06-26T14:17:55Z",
+    "updatedAt": "2026-06-27T18:48:27Z",
+    "closedAt": "2026-06-27T18:47:31Z",
+    "author": {
+      "login": "zengwenliang416"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 999,
+    "title": "codegraph index wedges indefinitely at \"Resolving refs\" 94% on a repo with a large *tracked* JS/TS asset dir and there's no way to exclude it",
+    "url": "https://github.com/colbymchenry/codegraph/issues/999",
+    "state": "CLOSED",
+    "createdAt": "2026-06-26T16:13:15Z",
+    "updatedAt": "2026-06-27T01:26:22Z",
+    "closedAt": "2026-06-27T01:25:49Z",
+    "author": {
+      "login": "DANOX2"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1001,
+    "title": "deleteResolvedReferences is the one IN-list query not chunked -> \"too many SQL variables\" (follow-up to #540)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/1001",
+    "state": "CLOSED",
+    "createdAt": "2026-06-26T19:49:28Z",
+    "updatedAt": "2026-06-28T13:36:35Z",
+    "closedAt": "2026-06-27T19:00:56Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 1014,
+    "title": "Very slow indexing and MCP hangs on Windows when project is on a remote macOS SMB shared drive",
+    "url": "https://github.com/colbymchenry/codegraph/issues/1014",
+    "state": "CLOSED",
+    "createdAt": "2026-06-27T02:58:45Z",
+    "updatedAt": "2026-10-22T01:18:13Z",
+    "closedAt": "2026-10-22T01:18:13Z",
+    "author": {
+      "login": "cutey-none"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 1015,
+    "title": "Missing parse-time concurrency",
+    "url": "https://github.com/colbymchenry/codegraph/issues/1015",
+    "state": "CLOSED",
+    "createdAt": "2026-06-27T05:14:38Z",
+    "updatedAt": "2026-06-27T20:33:35Z",
+    "closedAt": "2026-06-27T20:32:52Z",
+    "author": {
+      "login": "iacore"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 1016,
+    "title": "Make MAX_FILE_SIZE configurable via environment variable",
+    "url": "https://github.com/colbymchenry/codegraph/issues/1016",
+    "state": "OPEN",
+    "createdAt": "2026-06-27T08:49:37Z",
+    "updatedAt": "2026-08-09T15:10:07Z",
+    "closedAt": null,
+    "author": {
+      "login": "shadow55"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  }
+]

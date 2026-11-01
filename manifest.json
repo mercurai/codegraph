@@ -1,0 +1,23 @@
+{
+  "source": "colbymchenry/codegraph",
+  "destination": "mercurai/codegraph",
+  "captured_at": "2026-11-01T19:14:14.250984+00:00",
+  "archive_type": "metadata snapshot, not native GitHub issue/PR migration",
+  "issue_count": 982,
+  "pull_request_count": 2207,
+  "source_tracker_accessible": true,
+  "source_reported_open_count": 228,
+  "status": "all enumerated issue/PR metadata captured",
+  "excluded": [
+    "bodies",
+    "comment text",
+    "review text",
+    "attachments",
+    "event history",
+    "diffs",
+    "checks",
+    "reactions",
+    "original native identities"
+  ],
+  "automatic_sync_enabled": false
+}

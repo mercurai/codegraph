@@ -1,0 +1,1560 @@
+[
+  {
+    "number": 2761,
+    "title": "JS/TS: override-dispatch edges link a static method to an instance method of the same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2761",
+    "state": "CLOSED",
+    "createdAt": "2026-10-21T18:41:12Z",
+    "updatedAt": "2026-10-22T20:09:00Z",
+    "closedAt": "2026-10-22T20:08:43Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2770,
+    "title": "`codegraph index` tells you to run `codegraph daemon stop`, which the CLI rejects",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2770",
+    "state": "CLOSED",
+    "createdAt": "2026-10-22T01:23:17Z",
+    "updatedAt": "2026-10-22T23:32:54Z",
+    "closedAt": "2026-10-22T23:32:33Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 3
+    }
+  },
+  {
+    "number": 2780,
+    "title": "security: update bundled Node v24.16.0 to v24.22.1 (October security release)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2780",
+    "state": "CLOSED",
+    "createdAt": "2026-10-22T04:11:22Z",
+    "updatedAt": "2026-10-22T23:32:53Z",
+    "closedAt": "2026-10-22T23:32:12Z",
+    "author": {
+      "login": "IdealBoy709"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2805,
+    "title": "Kotlin: call on the result of an unqualified helper (`repository().m()`) resolves to a same-named decoy in another package",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2805",
+    "state": "CLOSED",
+    "createdAt": "2026-10-22T15:14:59Z",
+    "updatedAt": "2026-10-23T02:12:56Z",
+    "closedAt": "2026-10-23T02:12:44Z",
+    "author": {
+      "login": "mindcipherrr"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2829,
+    "title": "Resolution: a call that names nothing in the index still pays full receiver-type inference",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2829",
+    "state": "CLOSED",
+    "createdAt": "2026-10-23T05:45:33Z",
+    "updatedAt": "2026-10-23T12:48:25Z",
+    "closedAt": "2026-10-23T12:48:09Z",
+    "author": {
+      "login": "luojiyin1987"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2833,
+    "title": "List the implementations of a trait or interface (`codegraph implementations <name>`); getTypeHierarchy() returns no descendants",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2833",
+    "state": "CLOSED",
+    "createdAt": "2026-10-23T07:56:13Z",
+    "updatedAt": "2026-10-30T20:19:04Z",
+    "closedAt": "2026-10-30T20:18:42Z",
+    "author": {
+      "login": "jocax"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2836,
+    "title": "Rust: a receiver with more than one field access is dropped from the call reference (`self.a.b.m()` recorded as `m`)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2836",
+    "state": "CLOSED",
+    "createdAt": "2026-10-23T08:42:08Z",
+    "updatedAt": "2026-10-23T14:08:05Z",
+    "closedAt": "2026-10-23T14:07:47Z",
+    "author": {
+      "login": "jocax"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2849,
+    "title": "Bug: Git-ignored directory paths are treated as unanchored patterns, excluding unrelated source files",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2849",
+    "state": "CLOSED",
+    "createdAt": "2026-10-23T16:49:53Z",
+    "updatedAt": "2026-10-23T20:07:08Z",
+    "closedAt": "2026-10-23T20:06:42Z",
+    "author": {
+      "login": "Victor-Rodriguez-Garcia"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2870,
+    "title": "perf(resolution): avoid repeated local-binding checks per exact-name match",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2870",
+    "state": "CLOSED",
+    "createdAt": "2026-10-24T00:25:15Z",
+    "updatedAt": "2026-10-27T18:33:02Z",
+    "closedAt": "2026-10-27T18:32:45Z",
+    "author": {
+      "login": "luojiyin1987"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2878,
+    "title": "Add QML language support",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2878",
+    "state": "OPEN",
+    "createdAt": "2026-10-24T05:57:47Z",
+    "updatedAt": "2026-10-24T05:57:47Z",
+    "closedAt": null,
+    "author": {
+      "login": "EdgeLord69-dev"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2904,
+    "title": "Full indexing reports unstaged Git deletions as source read failures",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2904",
+    "state": "CLOSED",
+    "createdAt": "2026-10-25T18:35:52Z",
+    "updatedAt": "2026-10-27T18:04:10Z",
+    "closedAt": "2026-10-27T18:03:52Z",
+    "author": {
+      "login": "xianzhi-xzw"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2905,
+    "title": "C#/ASP.NET Core: attribute routes keep [controller] and [action], drop action-level [Route] and miss several attribute forms",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2905",
+    "state": "OPEN",
+    "createdAt": "2026-10-25T19:44:52Z",
+    "updatedAt": "2026-10-25T19:44:52Z",
+    "closedAt": null,
+    "author": {
+      "login": "Gobakabana"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2906,
+    "title": "C#: calls through ?., extension methods, method groups and calls on a method result are not linked",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2906",
+    "state": "OPEN",
+    "createdAt": "2026-10-25T19:45:19Z",
+    "updatedAt": "2026-10-25T19:45:19Z",
+    "closedAt": null,
+    "author": {
+      "login": "Gobakabana"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2907,
+    "title": "TS/JS: calls on browser globals (window.open, localStorage.getItem, location.reload, history.back) link to same-named project methods",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2907",
+    "state": "CLOSED",
+    "createdAt": "2026-10-25T19:45:40Z",
+    "updatedAt": "2026-10-29T20:57:50Z",
+    "closedAt": "2026-10-29T20:57:29Z",
+    "author": {
+      "login": "Gobakabana"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2908,
+    "title": "Qualified symbol lookup matches inside a class name: callers Format.Price also returns LegacyFormat.Price",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2908",
+    "state": "CLOSED",
+    "createdAt": "2026-10-25T19:46:05Z",
+    "updatedAt": "2026-10-29T20:32:19Z",
+    "closedAt": "2026-10-29T20:31:59Z",
+    "author": {
+      "login": "Gobakabana"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2909,
+    "title": "callers shows one call site per caller and leaves out recursive calls, although the index stores them",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2909",
+    "state": "CLOSED",
+    "createdAt": "2026-10-25T19:46:31Z",
+    "updatedAt": "2026-10-30T15:30:41Z",
+    "closedAt": "2026-10-30T15:30:41Z",
+    "author": {
+      "login": "Gobakabana"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2911,
+    "title": "sync() re-runs repo-wide callback synthesis on nearly every edit, so a sync costs the same whatever its size",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2911",
+    "state": "CLOSED",
+    "createdAt": "2026-10-26T00:02:25Z",
+    "updatedAt": "2026-10-30T21:14:21Z",
+    "closedAt": "2026-10-30T21:13:58Z",
+    "author": {
+      "login": "LunarWerxs"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2913,
+    "title": "codegraph status repairs indexes during a live rebuild, causing SQLITE_BUSY_SNAPSHOT (517)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2913",
+    "state": "CLOSED",
+    "createdAt": "2026-10-26T02:37:55Z",
+    "updatedAt": "2026-10-27T22:26:29Z",
+    "closedAt": "2026-10-27T17:36:30Z",
+    "author": {
+      "login": "sealad886"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2917,
+    "title": "Add Multiple project for mcp server",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2917",
+    "state": "OPEN",
+    "createdAt": "2026-10-26T18:12:27Z",
+    "updatedAt": "2026-10-27T16:41:38Z",
+    "closedAt": null,
+    "author": {
+      "login": "Cebonk03"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2918,
+    "title": "Daemon can keep a dead writer lock, then run for hours with ready:false while every query times out",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2918",
+    "state": "OPEN",
+    "createdAt": "2026-10-26T22:08:46Z",
+    "updatedAt": "2026-10-28T06:13:52Z",
+    "closedAt": null,
+    "author": {
+      "login": "mradwankhalil"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2944,
+    "title": "TypeScript: a call to a function nested in one describe() links to a same-named function in another describe() by line distance",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2944",
+    "state": "OPEN",
+    "createdAt": "2026-10-27T23:46:16Z",
+    "updatedAt": "2026-10-28T00:04:00Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2945,
+    "title": "TypeScript: an import resolves to a same-named method of an exported object literal instead of the exported function",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2945",
+    "state": "CLOSED",
+    "createdAt": "2026-10-27T23:47:34Z",
+    "updatedAt": "2026-10-30T15:20:44Z",
+    "closedAt": "2026-10-30T15:20:24Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2946,
+    "title": "TypeScript: a local assigned from a static factory is typed by its variable name, not the factory's return type",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2946",
+    "state": "OPEN",
+    "createdAt": "2026-10-27T23:48:12Z",
+    "updatedAt": "2026-10-27T23:48:12Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2947,
+    "title": "TypeScript: a local initialized from a library call takes the one-method guess (follow-up to #2589)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2947",
+    "state": "OPEN",
+    "createdAt": "2026-10-27T23:57:13Z",
+    "updatedAt": "2026-10-27T23:57:13Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2948,
+    "title": "TypeScript: this.a.b.m() resolves by bare name, onto an unrelated method or a property",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2948",
+    "state": "OPEN",
+    "createdAt": "2026-10-27T23:57:51Z",
+    "updatedAt": "2026-10-29T23:49:25Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2949,
+    "title": "TypeScript: a local that shadows a project import is ignored from a nested arrow; the call links to the import",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2949",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:03:46Z",
+    "updatedAt": "2026-10-28T00:03:46Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2951,
+    "title": "TypeScript: calls through a re-exported namespace (import { z } of import * as z; export { z }) aren't followed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2951",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:15:42Z",
+    "updatedAt": "2026-10-28T00:15:42Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2952,
+    "title": "JavaScript: every mod.x() through a CommonJS require links to the module's one anonymous exports.y = function",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2952",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:16:21Z",
+    "updatedAt": "2026-10-28T00:16:21Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2953,
+    "title": "TypeScript: x.m() links to an imported function x, even when a parameter or local shadows it",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2953",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:23:33Z",
+    "updatedAt": "2026-10-28T01:27:41Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2954,
+    "title": "TypeScript: this.m() links to an imported function m instead of the class's own m",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2954",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:28:10Z",
+    "updatedAt": "2026-10-29T23:49:22Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2957,
+    "title": "Python: a local built through a module attribute (x = pkg.Cls()) is typed by its variable name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2957",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:38:06Z",
+    "updatedAt": "2026-10-28T00:38:06Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2958,
+    "title": "Python: self.x() on an instance attribute links to an unrelated module-level function x",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2958",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:38:46Z",
+    "updatedAt": "2026-10-29T23:49:23Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2959,
+    "title": "[Security Vulnerabiliy] Vulnerable bundled `node.exe` detected (Node2Shell - CVE-2026-111497)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2959",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T00:42:24Z",
+    "updatedAt": "2026-10-30T07:02:30Z",
+    "closedAt": null,
+    "author": {
+      "login": "libedi"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2962,
+    "title": "TypeScript: a spread call of a destructured local ({...register('x')}) links to an unrelated project function",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2962",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T01:19:18Z",
+    "updatedAt": "2026-10-28T01:19:18Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2963,
+    "title": "Python: calls to a typing.overload'ed function link to the first @overload stub, not the implementation",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2963",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T01:25:01Z",
+    "updatedAt": "2026-10-28T01:25:01Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2964,
+    "title": "JavaScript: require('..') of a directory with package.json \"main\" isn't followed; the call links to the local const",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2964",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T01:27:01Z",
+    "updatedAt": "2026-10-28T01:27:01Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2966,
+    "title": "JavaScript: Ctor.prototype.m = function () {} methods get no node; this.m() inside them links to unrelated namesakes",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2966",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T01:29:03Z",
+    "updatedAt": "2026-10-28T01:31:52Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2967,
+    "title": "JS/TS: an exported name (export { x as y }, export default x, module.exports = x) binds to a nested same-named local declared earlier",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2967",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T01:39:50Z",
+    "updatedAt": "2026-10-28T01:39:50Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2968,
+    "title": "JS/TS: an `export default NAME` line inside a template literal is taken as the module's default export",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2968",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T01:44:31Z",
+    "updatedAt": "2026-10-30T12:55:23Z",
+    "closedAt": "2026-10-30T12:55:23Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2970,
+    "title": "explore Flow drops a named symbol when a shorter route reaches it first (walkCalls keeps first depth only)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2970",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:07:45Z",
+    "updatedAt": "2026-10-30T15:52:46Z",
+    "closedAt": "2026-10-30T15:52:46Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2971,
+    "title": "search: FTS special characters are deleted, not separated, so leaf(entry) matches nothing",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2971",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:07:57Z",
+    "updatedAt": "2026-10-30T13:31:04Z",
+    "closedAt": "2026-10-30T13:31:04Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2973,
+    "title": "JS: the EventEmitter pass pairs emit/on by event name only and picks the handler by name project-wide",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2973",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T02:13:01Z",
+    "updatedAt": "2026-10-28T02:13:01Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2974,
+    "title": "tier synthesis: fetch to a third-party absolute URL links to the project's own route with the same path",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2974",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T02:13:28Z",
+    "updatedAt": "2026-10-28T02:13:28Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2975,
+    "title": "Laravel: a route's controller is picked by short name, ignoring the route file's use import",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2975",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T02:13:55Z",
+    "updatedAt": "2026-10-31T12:10:25Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2976,
+    "title": "Java: a static call through a wildcard import resolves to a same-named class in an unimported package",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2976",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T02:14:30Z",
+    "updatedAt": "2026-10-31T09:09:37Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 2
+    }
+  },
+  {
+    "number": 2977,
+    "title": "sync: a tsconfig paths (or go.mod module) change keeps resolving imports with the old mapping",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2977",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:19:19Z",
+    "updatedAt": "2026-10-30T10:57:37Z",
+    "closedAt": "2026-10-30T10:57:09Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2978,
+    "title": "sync: retargeting a barrel's re-export (export { foo } from './a' -> './b') leaves importers on the old module",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2978",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:20:10Z",
+    "updatedAt": "2026-10-30T11:30:08Z",
+    "closedAt": "2026-10-30T11:29:48Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2979,
+    "title": "lock: taking over a stale FileLock is racy, so several processes can hold the writer lock at once",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2979",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:25:52Z",
+    "updatedAt": "2026-10-30T10:40:46Z",
+    "closedAt": "2026-10-30T10:40:46Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2980,
+    "title": "db: concurrent opens of an index with a pending migration fail with SQLITE_BUSY (deferred BEGIN)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2980",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:31:41Z",
+    "updatedAt": "2026-10-30T11:15:28Z",
+    "closedAt": "2026-10-30T11:15:28Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2981,
+    "title": "mcp: a non-object tools/call arguments crashes the handler and is reported as an internal error to retry",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2981",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:31:57Z",
+    "updatedAt": "2026-10-30T14:16:45Z",
+    "closedAt": "2026-10-30T14:16:45Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2982,
+    "title": "mcp: a projectPath naming a file inside a project returns isError (\"Path is not a directory\")",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2982",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T02:32:53Z",
+    "updatedAt": "2026-10-30T15:01:14Z",
+    "closedAt": "2026-10-30T15:00:56Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2989,
+    "title": "Astro: self-closing inline script consumes the following client script and drops its symbols",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2989",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T13:13:33Z",
+    "updatedAt": "2026-10-30T14:03:08Z",
+    "closedAt": "2026-10-30T14:02:55Z",
+    "author": {
+      "login": "rezaularif"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 2991,
+    "title": "MCP stdout failure bypasses graceful session cleanup while stdin and host stay alive",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2991",
+    "state": "CLOSED",
+    "createdAt": "2026-10-28T16:19:25Z",
+    "updatedAt": "2026-10-30T11:48:07Z",
+    "closedAt": "2026-10-30T11:48:07Z",
+    "author": {
+      "login": "iiijiashu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 2993,
+    "title": "Feature discussion: suspend idle stdio backends while preserving the client connection",
+    "url": "https://github.com/colbymchenry/codegraph/issues/2993",
+    "state": "OPEN",
+    "createdAt": "2026-10-28T16:20:20Z",
+    "updatedAt": "2026-10-28T16:20:20Z",
+    "closedAt": null,
+    "author": {
+      "login": "iiijiashu"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3002,
+    "title": "When is the next release (1.6.3) planned?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3002",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T09:57:15Z",
+    "updatedAt": "2026-10-29T09:57:15Z",
+    "closedAt": null,
+    "author": {
+      "login": "vio-lin"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3006,
+    "title": "sync never links a call left with one candidate after a delete or a rename",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3006",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T12:36:22Z",
+    "updatedAt": "2026-10-30T12:00:45Z",
+    "closedAt": "2026-10-30T12:00:21Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3007,
+    "title": "`codegraph status` stays silent when `package.json` alone adds or drops a framework",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3007",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T12:36:24Z",
+    "updatedAt": "2026-10-30T14:36:31Z",
+    "closedAt": "2026-10-30T14:36:14Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3008,
+    "title": "doc: Guidance for using CodeGraph with Serena hooks in Claude Code and Codex",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3008",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T14:39:25Z",
+    "updatedAt": "2026-10-29T14:39:25Z",
+    "closedAt": null,
+    "author": {
+      "login": "sohrabafard"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3015,
+    "title": "sync: a call through an imported object stays put when a sync adds or removes the object's member",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3015",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T17:12:21Z",
+    "updatedAt": "2026-10-29T23:50:57Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3016,
+    "title": "sync: importers of a file that shrinks back under the size limit miss their import of it",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3016",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T17:12:23Z",
+    "updatedAt": "2026-10-30T12:11:54Z",
+    "closedAt": "2026-10-30T12:11:37Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3019,
+    "title": "SDK 1.6.2: retain partial parse diagnostics when symbols survive",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3019",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T18:47:51Z",
+    "updatedAt": "2026-10-29T18:47:51Z",
+    "closedAt": null,
+    "author": {
+      "login": "vizanto"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3027,
+    "title": "The query worker pool grows on a burst and never shrinks; each worker opens every project",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3027",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T21:02:03Z",
+    "updatedAt": "2026-11-01T04:02:02Z",
+    "closedAt": "2026-11-01T04:02:02Z",
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3033,
+    "title": "Kotlin Multiplatform: a Java call to a Kotlin object links the commonMain `expect` instead of the platform `actual`",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3033",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T23:07:16Z",
+    "updatedAt": "2026-11-01T09:35:47Z",
+    "closedAt": "2026-11-01T09:35:47Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3034,
+    "title": "`this.method()` links an imported function of the same name instead of the class's own method",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3034",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T23:07:17Z",
+    "updatedAt": "2026-10-29T23:49:35Z",
+    "closedAt": "2026-10-29T23:49:35Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3035,
+    "title": "A call through an interface's optional function property links an unrelated class's method of the same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3035",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T23:07:18Z",
+    "updatedAt": "2026-10-29T23:50:31Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3036,
+    "title": "A method call on a Map, an Array or a library-typed value links an unrelated project method of the same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3036",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T23:07:19Z",
+    "updatedAt": "2026-10-29T23:49:40Z",
+    "closedAt": "2026-10-29T23:49:40Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3037,
+    "title": "Python: a local `name = lambda ...` doesn't shadow a module function of the same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3037",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T23:41:19Z",
+    "updatedAt": "2026-10-29T23:50:33Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3038,
+    "title": "Python: a method call on a value typed by a function's stdlib return annotation links an unrelated project method",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3038",
+    "state": "OPEN",
+    "createdAt": "2026-10-29T23:41:20Z",
+    "updatedAt": "2026-10-29T23:50:35Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3039,
+    "title": "Python: `self.attr(...)` on an instance attribute links an unrelated, un-imported module function of the same name",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3039",
+    "state": "CLOSED",
+    "createdAt": "2026-10-29T23:41:21Z",
+    "updatedAt": "2026-10-29T23:49:38Z",
+    "closedAt": "2026-10-29T23:49:38Z",
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3040,
+    "title": "Java: when two overloads take the call's argument count, the call links to the first overload of any arity",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3040",
+    "state": "OPEN",
+    "createdAt": "2026-10-30T00:17:12Z",
+    "updatedAt": "2026-10-30T00:17:26Z",
+    "closedAt": null,
+    "author": {
+      "login": "inth3shadows"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3054,
+    "title": "Windows: npm-shim spawnSync missing windowsHide flashes a console window on every MCP server launch",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3054",
+    "state": "OPEN",
+    "createdAt": "2026-10-30T09:11:47Z",
+    "updatedAt": "2026-10-31T02:47:30Z",
+    "closedAt": null,
+    "author": {
+      "login": "xuanwujian"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3073,
+    "title": "Invalid regular expression: /\\boperator++\\s* error still ocurring despite reported being fixed",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3073",
+    "state": "CLOSED",
+    "createdAt": "2026-10-30T14:55:12Z",
+    "updatedAt": "2026-10-30T15:11:57Z",
+    "closedAt": "2026-10-30T15:11:39Z",
+    "author": {
+      "login": "6461746170756e6b"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3084,
+    "title": "Kotlin: an extension on an imported receiver alias is missing from callers",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3084",
+    "state": "OPEN",
+    "createdAt": "2026-10-30T17:10:42Z",
+    "updatedAt": "2026-10-30T17:10:42Z",
+    "closedAt": null,
+    "author": {
+      "login": "mixxer"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3086,
+    "title": "status misses changes to gitignored first-party source selected by include",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3086",
+    "state": "OPEN",
+    "createdAt": "2026-10-30T17:12:14Z",
+    "updatedAt": "2026-10-30T17:12:14Z",
+    "closedAt": null,
+    "author": {
+      "login": "mixxer"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3093,
+    "title": "A `../` entry in package.json `workspaces` makes a folder outside the project count as a workspace package, and a call gets linked to the wrong function",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3093",
+    "state": "OPEN",
+    "createdAt": "2026-10-30T18:21:34Z",
+    "updatedAt": "2026-10-30T18:21:34Z",
+    "closedAt": null,
+    "author": {
+      "login": "bompus"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3137,
+    "title": "Watchdog kill->respawn loop under memory exhaustion exhausts system commit and crashes unrelated apps (Windows, v1.2.0)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3137",
+    "state": "OPEN",
+    "createdAt": "2026-10-31T09:00:16Z",
+    "updatedAt": "2026-10-31T11:03:20Z",
+    "closedAt": null,
+    "author": {
+      "login": "sageri"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 1
+    }
+  },
+  {
+    "number": 3154,
+    "title": "Q: is .codegraph/ deteministic?",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3154",
+    "state": "OPEN",
+    "createdAt": "2026-10-31T19:21:01Z",
+    "updatedAt": "2026-10-31T19:21:01Z",
+    "closedAt": null,
+    "author": {
+      "login": "laur89"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3158,
+    "title": "callers: a call through a require-bound namespace is attributed to the definition file",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3158",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T00:02:51Z",
+    "updatedAt": "2026-11-01T00:02:51Z",
+    "closedAt": null,
+    "author": {
+      "login": "spritehc"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3160,
+    "title": "1.6.1/1.6.2 scan only 1 file at the root of a large Java monorepo (1.6.0 indexes 12,831)",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3160",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T02:03:04Z",
+    "updatedAt": "2026-11-01T02:03:04Z",
+    "closedAt": null,
+    "author": {
+      "login": "zcsunt"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3211,
+    "title": "A fork with one shared server per machine, an index builder, worktree copies and session focus",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3211",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:25Z",
+    "updatedAt": "2026-11-01T15:39:25Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3212,
+    "title": "Swift: tree-sitter-swift 0.7.3 mis-parses `if try await f() {` (trailing closure), stretching methods",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3212",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:28Z",
+    "updatedAt": "2026-11-01T15:39:28Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  },
+  {
+    "number": 3213,
+    "title": "Swift: declaredSupertypes reads a nested declaration's inheritance clause as the outer type's",
+    "url": "https://github.com/colbymchenry/codegraph/issues/3213",
+    "state": "OPEN",
+    "createdAt": "2026-11-01T15:39:31Z",
+    "updatedAt": "2026-11-01T15:39:31Z",
+    "closedAt": null,
+    "author": {
+      "login": "bob-codedaptive"
+    },
+    "labels": {
+      "totalCount": 0,
+      "nodes": []
+    },
+    "comments": {
+      "totalCount": 0
+    }
+  }
+]
